@@ -139,258 +139,73 @@
                     <div class="col-xl-8 mx-auto mt-3">
                         <div id="offerList" class="list">
                             <div class="offerList offerList-list">
-                                <div class="offer-list-box position-relative mb-4">
-                                    <div class="apartment-box project-gradient">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-4">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie</p>
-                                                    <p class="mb-0">nr 8</p>
+                                @if($properties)
+                                    @foreach($properties as $r)
+                                        <div class="offer-list-box position-relative mb-4">
+                                            <div class="apartment-box project-gradient">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-4">
+                                                        <div class="apartment-box__name">
+                                                            <p class="">{{$r->name_list}}</p>
+                                                            <p class="mb-0">nr {{$r->number}}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="apartment-box__details row my-4">
+                                                            <div class="col-sm-4 pe-0">
+                                                                <p class="">Metraż: {{$r->area}} m<sup>2</sup></p>
+                                                            </div>
+                                                            <div class="col-sm-4 text-center">
+                                                                <p class="">Pokoje: {{$r->rooms}}</p>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <p class="">{{$r->floor->name}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2).'-m2']) }}" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                            </div>
+                                            <div class="offer-list-box__status-container offer-list-box__status--{{ Str::slug(roomStatus($r->status)) }}"><div class="offer-list-box__status "><span>{{ roomStatus($r->status) }}</span></div></div>
                                         </div>
-                                    </div>
-                                    <div class="offer-list-box__status-container offer-list-box__status--dostepne"><div class="offer-list-box__status "><span>Dostępne</span></div></div>
-                                </div>
-                                <div class="offer-list-box position-relative mb-4">
-                                    <div class="apartment-box project-gradient">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-4">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie</p>
-                                                    <p class="mb-0">nr 8</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="offer-list-box__status-container offer-list-box__status--sprzedane"><div class="offer-list-box__status"><span>Sprzedane</span></div></div>
-                                </div>
-                                <div class="offer-list-box position-relative mb-4">
-                                    <div class="apartment-box project-gradient">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-4">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie</p>
-                                                    <p class="mb-0">nr 8</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="offer-list-box__status-container offer-list-box__status--rezerwacja"><div class="offer-list-box__status"><span>Rezerwacja</span></div></div>
-                                </div>
+                                    @endforeach
+                                @endif
                             </div>
                             <div class="offerList offerList-grid">
                                 <div class="row">
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="offer-list-box">
-                                            <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="rzut mieszkania" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie nr 1</p>
-                                                </div>
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
+                                    @if($properties)
+                                        @foreach($properties as $r)
+                                            <div class="col-lg-4 mb-4">
+                                                <div class="offer-list-box">
+                                                    <div class="apartment-box project-gradient mb-2">
+                                                        <img src="{{ asset('images/placeholder.svg') }}" alt="Rzut {{$r->name}}" class="apartment-box__img" width="60" height="60" loading="lazy">
+                                                        <div class="apartment-box__name">
+                                                            <p class="">{{$r->name}}</p>
+                                                        </div>
+                                                        <div class="apartment-box__details row my-4">
+                                                            <div class="col-sm-4 pe-0">
+                                                                <p class="">Metraż: {{$r->area}} m<sup>2</sup></p>
+                                                            </div>
+                                                            <div class="col-sm-4 text-center">
+                                                                <p class="">Pokoje: {{$r->rooms}}</p>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <p class="">{{$r->floor->name}}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2).'-m2']) }}" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--dostepne"><div class="offer-list-box__status "><span>Dostępne</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="offer-list-box">
-                                            <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="rzut mieszkania" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie nr 2</p>
-                                                </div>
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                                    </div>
+                                                    <div class="offer-list-box__status-container offer-list-box__status--{{ Str::slug(roomStatus($r->status)) }}"><div class="offer-list-box__status "><span>{{ roomStatus($r->status) }}</span></div></div>
                                                 </div>
                                             </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--sprzedane"><div class="offer-list-box__status"><span>Sprzedane</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="offer-list-box">
-                                            <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="rzut mieszkania" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie nr 3</p>
-                                                </div>
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--rezerwacja"><div class="offer-list-box__status"><span>Rezerwacja</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="offer-list-box">
-                                            <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="rzut mieszkania" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie nr 1</p>
-                                                </div>
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--dostepne"><div class="offer-list-box__status "><span>Dostępne</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="offer-list-box">
-                                            <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="rzut mieszkania" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie nr 2</p>
-                                                </div>
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--sprzedane"><div class="offer-list-box__status"><span>Sprzedane</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="offer-list-box">
-                                            <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="rzut mieszkania" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
-                                                    <p class="">Mieszkanie nr 3</p>
-                                                </div>
-                                                <div class="apartment-box__details row my-4">
-                                                    <div class="col-sm-4 pe-0">
-                                                        <p class="">Metraż: 45 m<sup>2</sup></p>
-                                                    </div>
-                                                    <div class="col-sm-4 text-center">
-                                                        <p class="">Pokoje: 2</p>
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <p class="">Piętro: 4</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--rezerwacja"><div class="offer-list-box__status"><span>Rezerwacja</span></div></div>
-                                        </div>
-                                    </div>
+                                        @endforeach
+                                    @endif
                                 </div>
                             </div>
                         </div>

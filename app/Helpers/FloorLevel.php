@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 if (! function_exists('floorLevel')) {
-    function floorLevel(int $number, bool $slug): string
+    function floorLevel($number, bool $slug): string
     {
         $floorLevels = [
             0 => 'Parter',

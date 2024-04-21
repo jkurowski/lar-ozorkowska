@@ -184,7 +184,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="offer-list-box__status-container offer-list-box__status--dostepne"><div class="offer-list-box__status "><span>Dostępne</span></div></div>
+                                    <div class="offer-list-box__status-container offer-list-box__status--{{ Str::slug(roomStatus($r->status)) }}"><div class="offer-list-box__status "><span>{{ roomStatus($r->status) }}</span></div></div>
                                 </div>
                                 @endforeach
                                 @endif
@@ -196,8 +196,16 @@
                                     <div class="col-lg-4 mb-4">
                                         <div class="offer-list-box">
                                             <div class="apartment-box project-gradient mb-2">
-                                                <img src="{{ asset('images/placeholder.svg') }}" alt="Rzut {{$r->name}}" class="apartment-box__img" width="60" height="60" loading="lazy">
-                                                <div class="apartment-box__name">
+                                                @if($r->file)
+                                                    <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2).'-m2']) }}">
+                                                        <picture>
+                                                            <source type="image/webp" srcset="/investment/property/list/webp/{{$r->file_webp}}">
+                                                            <source type="image/jpeg" srcset="/investment/property/list/{{$r->file}}">
+                                                            <img src="/investment/property/list/{{$r->file}}" alt="{{$r->name}}" class="w-100">
+                                                        </picture>
+                                                    </a>
+                                                @endif
+                                                <div class="apartment-box__name mt-3">
                                                     <p class="">{{$r->name}}</p>
                                                 </div>
                                                 <div class="apartment-box__details row my-4">
@@ -217,7 +225,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="offer-list-box__status-container offer-list-box__status--dostepne"><div class="offer-list-box__status "><span>Dostępne</span></div></div>
+                                            <div class="offer-list-box__status-container offer-list-box__status--{{ Str::slug(roomStatus($r->status)) }}"><div class="offer-list-box__status "><span>{{ roomStatus($r->status) }}</span></div></div>
                                         </div>
                                     </div>
                                     @endforeach
