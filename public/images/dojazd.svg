@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <filter id="Ellipse_11" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#d5d5d5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_611" data-name="Group 611" transform="translate(9 5.559)">
+    <g transform="matrix(1, 0, 0, 1, -9, -5.56)" filter="url(#Ellipse_11)">
+      <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="15" cy="15" r="15" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="car_1_" data-name="car (1)" d="M19.63,71.216a.4.4,0,0,0-.353-.243H17.471a.4.4,0,0,0-.353.243,2.925,2.925,0,0,0-.1.366l-1.206-3.338a1.4,1.4,0,0,0-1.311-.92H5.27a1.4,1.4,0,0,0-1.311.92L2.753,71.582a2.934,2.934,0,0,0-.1-.366.4.4,0,0,0-.353-.243H.491a.4.4,0,0,0-.353.243,1.779,1.779,0,0,0,0,1.37.4.4,0,0,0,.353.243H2.3l-.027.075a.926.926,0,0,0-.634.878V79.9a.445.445,0,0,0,.445.445h2.24a.445.445,0,0,0,.445-.445V77.734H15V79.9a.445.445,0,0,0,.445.445h2.24a.445.445,0,0,0,.445-.445V73.783a.926.926,0,0,0-.634-.878l-.027-.076h1.811a.4.4,0,0,0,.353-.243A1.779,1.779,0,0,0,19.63,71.216ZM5.441,68.962h8.885l1.408,3.895H4.033ZM5.689,75.6H3.814a.728.728,0,0,1,0-1.456H5.689a.728.728,0,0,1,0,1.456Zm10.265,0H14.079a.728.728,0,0,1,0-1.456h1.874a.728.728,0,0,1,0,1.456Z" transform="translate(5.096 -58.531)" stroke="rgba(0,0,0,0.16)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

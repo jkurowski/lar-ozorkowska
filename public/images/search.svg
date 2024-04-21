@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="65px" height="65px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 65 65"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:white;stroke-width:0.75;stroke-miterlimit:22.9256}
+    .fil1 {fill:none;fill-rule:nonzero}
+    .fil2 {fill:#C3A989;fill-rule:nonzero}
+    .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Warstwa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2983302158880">
+   <g id="Group_283" data-name="Group 283">
+    <g filter="url(#Rectangle_334)">
+     <g id="Rectangle_334-2" data-name="Rectangle 334">
+      <path class="fil0" d="M32 2l0 0c17.118,0 31,13.882 31,31l0 0c0,17.118 -13.882,31 -31,31l0 0c-17.118,0 -31,-13.882 -31,-31l0 0c0,-17.118 13.882,-31 31,-31z"/>
+      <path class="fil1 str0" d="M32 2.477l0 0c16.854,0 30.523,13.669 30.523,30.523l0 0c0,16.854 -13.669,30.523 -30.523,30.523l0 0c-16.854,0 -30.523,-13.669 -30.523,-30.523l0 0c0,-16.854 13.669,-30.523 30.523,-30.523z"/>
+     </g>
+    </g>
+    <path id="Icon_ionic-ios-search" class="fil2" d="M44.576 44.474l-7.163 -7.23c1.43,-1.803 2.211,-4.041 2.211,-6.344 0,-5.636 -4.57,-10.206 -10.206,-10.206 -5.635,0 -10.205,4.57 -10.205,10.206 0,5.636 4.57,10.206 10.205,10.206 2.348,0 4.627,-0.811 6.446,-2.293l7.115 7.183c0.209,0.217 0.498,0.341 0.799,0.341 0.282,0 0.554,-0.108 0.758,-0.302 0.218,-0.209 0.341,-0.498 0.341,-0.801 0,-0.282 -0.108,-0.554 -0.301,-0.76l0 0zm-15.185 -5.576c-4.45,-0.001 -8.057,-3.608 -8.057,-8.059 0,-4.45 3.609,-8.06 8.06,-8.06 4.45,0 8.059,3.61 8.059,8.06 0,2.137 -0.85,4.189 -2.36,5.699 -1.504,1.511 -3.549,2.36 -5.68,2.36 -0.007,0 -0.015,0 -0.021,0l-0.001 0z" data-name="Icon ionic-ios-search"/>
+   </g>
+  </g>
+ </g>
+</svg>

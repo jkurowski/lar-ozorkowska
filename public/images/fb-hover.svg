@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cfba9f"/>
+      <stop offset="0.456" stop-color="#ae8c61"/>
+      <stop offset="1" stop-color="#937144"/>
+    </linearGradient>
+    <filter id="Ellipse_11" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#cfba9f"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_849" data-name="Group 849" transform="translate(-1300 -353)">
+    <g transform="matrix(1, 0, 0, 1, 1300, 353)" filter="url(#Ellipse_11)">
+      <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="18" cy="18" r="18" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Icon_zocial-facebook" data-name="Icon zocial-facebook" d="M13.257,9.742V6.277h2.794V4.535a4.559,4.559,0,0,1,1.224-3.211A3.894,3.894,0,0,1,20.241,0h2.776V3.465H20.241a.611.611,0,0,0-.489.3,1.216,1.216,0,0,0-.218.735V6.277h3.483V9.741H19.534v8.4H16.051v-8.4Z" transform="translate(1308.743 368)" fill="#fff"/>
+  </g>
+</svg>
