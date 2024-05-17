@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::middleware(['restrictIp'])->group(function () {
     Auth::routes();
 
-    Route::get('routes', function() {
+    Route::get('routes', function () {
         \Artisan::call('route:list');
         return '<pre>' . \Artisan::output() . '</pre>';
     });
@@ -41,25 +42,42 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
     Route::get('/', 'IndexController@index')->name('index');
 
     // Static pages
-    Route::get('kontakt',
-        'ContactController@index')->name('contact.index');
+    Route::get(
+        'kontakt',
+        'ContactController@index'
+    )->name('contact.index');
     Route::post('/kontakt', 'ContactController@contact')->name('contact.form');
     Route::post('/kontakt/{property}', 'ContactController@property')->name('contact.property');
 
-    Route::get('inwestor',
-        'Static\IndexController@investor')->name('investor');
+    Route::get(
+        'inwestor',
+        'Static\IndexController@investor'
+    )->name('investor');
 
-    Route::get('o-inwestycji',
-        'Static\IndexController@investment')->name('investment');
+    Route::get(
+        'o-inwestycji',
+        'Static\IndexController@investment'
+    )->name('investment');
 
-    Route::get('udogodnienia',
-        'Static\IndexController@amenities')->name('amenities');
+    Route::get(
+        'udogodnienia',
+        'Static\IndexController@amenities'
+    )->name('amenities');
 
-    Route::get('pakiety',
-        'Static\IndexController@packages')->name('packages');
+    Route::get(
+        'galeria',
+        'Static\IndexController@gallery'
+    )->name('gallery');
 
-    Route::get('finansowanie',
-        'Static\IndexController@financing')->name('financing');
+    Route::get(
+        'pakiety',
+        'Static\IndexController@packages'
+    )->name('packages');
+
+    Route::get(
+        'finansowanie',
+        'Static\IndexController@financing'
+    )->name('financing');
 
     // DeveloPro
     Route::group(['namespace' => 'Developro', 'as' => 'developro.'], function () {

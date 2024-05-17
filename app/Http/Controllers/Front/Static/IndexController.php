@@ -39,4 +39,10 @@ class IndexController extends Controller
         $page = Page::find(5);
         return view('front.static.financing', compact('page'));
     }
+
+    public function gallery()
+    {
+        $page = Page::find(5);
+        return view('front.static.gallery', compact('page'));
+    }
 }
