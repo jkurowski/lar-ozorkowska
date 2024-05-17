@@ -1,27 +1,32 @@
 @extends('layouts.homepage', ['body_class' => 'homepage'])
-@if($isAdmin)
+@if ($isAdmin)
     @include('layouts.partials.inline')
 @endif
 @section('content')
     <main class="home">
         <section class="hero-baner first-sec position-relative">
-            <img src="{{ asset('images/baner.jpg') }}" alt="inwestycja" class="img-bg" width="1920" height="970" loading="eager">
+            <img src="{{ asset('images/baner.jpg') }}" alt="inwestycja" class="img-bg" width="1920" height="970"
+                loading="eager">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 text-center text-sm-start">
                         <div class="section-header">
-                            <h1 class= "section-header__title section-header__title--h1">Budynek PREMIUM <br>w Twojej okolicy</h1>
+                            <h1 class= "section-header__title section-header__title--h1">Budynek PREMIUM <br>w Twojej
+                                okolicy</h1>
                             <p class="section-header__subtitle"> Wybierz apartamenty Hitower</p>
                             <div>
                                 <div class="hero-baner__description mt-3 mb-5">
-                                    <p class="">Wszystko to, czego potrzebujesz, znajduje się na wyciągnięcie ręki - w naszej ofercie znajdziesz mieszkania o wysokim standardzie zlokalizowane z dala od wielkomiejskiego zgiełku</p>
+                                    <p class="">Wszystko to, czego potrzebujesz, znajduje się na wyciągnięcie ręki - w
+                                        naszej ofercie znajdziesz mieszkania o wysokim standardzie zlokalizowane z dala od
+                                        wielkomiejskiego zgiełku</p>
                                 </div>
-                                <a href="" class="project-btn">Sprawdź</a>
+                                <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>
                             </div>
                         </div>
                     </div>
                     <div class="photo-anim col-lg-6 align-self-end">
-                        <img src="{{ asset('images/widok1.png') }}" alt="inwestycja" class="img-hero" width="500" height="850" loading="eager">
+                        <img src="{{ asset('images/widok1.png') }}" alt="inwestycja" class="img-hero" width="500"
+                            height="850" loading="eager">
                     </div>
                 </div>
             </div>
@@ -75,7 +80,8 @@
                                     </div>
                                     <div class="col-sm-1 align-self-center text-center mt-3 mt-sm-0 p-0">
                                         <button type="submit">
-                                            <img src="{{ asset('images/search.svg') }}" alt="ikona szukaj" width="65" height="65" loading="lazy">
+                                            <img src="{{ asset('images/search.svg') }}" alt="ikona szukaj" width="65"
+                                                height="65" loading="lazy">
                                         </button>
                                     </div>
                                 </div>
@@ -90,39 +96,46 @@
                 <div class="row">
                     <div class="col-xl-6 text-center text-sm-start">
                         <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
-                            <h2 class="section-header__title" >Doświadczony deweloper</h2>
+                            <h2 class="section-header__title">Doświadczony deweloper</h2>
                             <p class="section-header__subtitle">Mieszkania, które spełniają oczekiwania</p>
                         </div>
                         <div class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            <p>Posiadamy wieloletnie doświadczenie w zarządzaniu projektami budowlanymi na terenie całej Polski. Wszystkie nasze działania od zawsze cechuje wysoki standard i dbałość o szczegóły.</p>
+                            <p>Posiadamy wieloletnie doświadczenie w zarządzaniu projektami budowlanymi na terenie całej
+                                Polski. Wszystkie nasze działania od zawsze cechuje wysoki standard i dbałość o szczegóły.
+                            </p>
                         </div>
                         <div class="row my-5">
                             <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
                                 <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
-                                    <img src="{{ asset('images/lokalizacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/lokalizacja.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p class="advantages__desc">dogodna lokalizacja</p>
                                 </div>
                             </div>
                             <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
                                 <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
-                                    <img src="{{ asset('images/standard.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/standard.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p class="advantages__desc">wysoki standard</p>
                                 </div>
                             </div>
                             <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
                                 <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
-                                    <img src="{{ asset('images/zielone.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/zielone.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p class="advantages__desc">zielone przestrzenie</p>
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="project-link">Czytaj więcej</a>
+                        <a href="{{ route('front.investor') }}" class="project-link">Czytaj więcej</a>
                     </div>
                     <div class="col-xl-6 position-relative">
                         <div class="advantages__bg blurred-bg">
-                            <img src="{{ asset('images/advantages-bg.jpg') }}" alt="budynek" width="360" height="576" loading="lazy">
+                            <img src="{{ asset('images/advantages-bg.jpg') }}" alt="budynek" width="360"
+                                height="576" loading="lazy">
                         </div>
-                        <img src="{{ asset('images/advantages-photo.png') }}" alt="ludzie" width="530" height="530" loading="lazy" class="advantages__photo">
+                        <img src="{{ asset('images/advantages-photo.png') }}" alt="ludzie" width="530"
+                            height="530" loading="lazy" class="advantages__photo">
                     </div>
 
                 </div>
@@ -137,42 +150,48 @@
                             <h2 class="section-header__title">Galeria inwestycji</h2>
                             <p class="section-header__subtitle">Poznaj nas bliżej</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER to nowoczesny budynek, który łączy funkcjonalne rozwiązania z nowoczesnym designem.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER
+                            to nowoczesny budynek, który łączy funkcjonalne rozwiązania z nowoczesnym designem.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mb-4">
                         <div class="gallery-photo-container">
                             <a href="{{ asset('images/g1.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
+                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo"
+                                    loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g1.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
+                            <a href="{{ asset('images/g2.jpg') }}" class="glightbox">
+                                <img src="{{ asset('images/g2.jpg') }}" alt="Wizualizacja" class="gallery-photo"
+                                    loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g1.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
+                            <a href="{{ asset('images/g3.jpg') }}" class="glightbox">
+                                <img src="{{ asset('images/g3.jpg') }}" alt="Wizualizacja" class="gallery-photo"
+                                    loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g1.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
+                            <a href="{{ asset('images/g4.jpg') }}" class="glightbox">
+                                <img src="{{ asset('images/g4.jpg') }}" alt="Wizualizacja" class="gallery-photo"
+                                    loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g1.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
+                            <a href="{{ asset('images/g5.jpg') }}" class="glightbox">
+                                <img src="{{ asset('images/g5.jpg') }}" alt="Wizualizacja" class="gallery-photo"
+                                    loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -187,7 +206,9 @@
                             <h2 class="section-header__title">Dostępne mieszkania</h2>
                             <p class="section-header__subtitle">Zamieszkaj w sercu Łodzi</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Przygotowaliśmy ofertę dla najbardziej wymagających klientów, którzy bezkompromisowo dążą do osiągnięcia swojego celu jakim jest podwyższenie standardu życia.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                            Przygotowaliśmy ofertę dla najbardziej wymagających klientów, którzy bezkompromisowo dążą do
+                            osiągnięcia swojego celu jakim jest podwyższenie standardu życia.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -212,7 +233,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                            <a href="" class="project-link project-link--white"
+                                                target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +258,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                            <a href="" class="project-link project-link--white"
+                                                target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
                                 </div>
@@ -260,7 +283,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                            <a href="" class="project-link project-link--white"
+                                                target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +308,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                            <a href="" class="project-link project-link--white"
+                                                target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
                                 </div>
@@ -308,7 +333,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white" target="_blank">Sprawdź</a>
+                                            <a href="" class="project-link project-link--white"
+                                                target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
                                 </div>
@@ -318,7 +344,7 @@
                 </div>
                 <div class="row pt-5 pt-sm-0">
                     <div class="col-12 text-center pt-5">
-                        <a href="" class="project-link">Sprawdź więcej</a>
+                        <a href="{{ route('front.developro.investment.index') }}" class="project-link">Sprawdź więcej</a>
                     </div>
                 </div>
             </div>
@@ -331,61 +357,77 @@
                             <h2 class="section-header__title">Nasze atuty</h2>
                             <p class="section-header__subtitle">Dlaczego warto nas wybrać</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER to unikatowy projekt w okolicy – jako jedyni oferujemy apartamenty o wysokim standardzie, które dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla przyszłych mieszkańców rozwiązań.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER
+                            to unikatowy projekt w okolicy – jako jedyni oferujemy apartamenty o wysokim standardzie, które
+                            dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla przyszłych mieszkańców
+                            rozwiązań.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 order-1 order-lg-1 align-self-end" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+                    <div class="col-lg-4 order-1 order-lg-1 align-self-end" data-aos="fade-up" data-aos-duration="700"
+                        data-aos-delay="500">
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list1.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
                                 <p>Funkcjonalne rozkłady</p>
-                                <p>W naszej ofercie znajdziesz mieszkania 2, 3 i 4-pokojowe o powierzchni użytkowej od 39 m<sup>2</sup> do 78 m<sup>2</sup></p>
+                                <p>W naszej ofercie znajdziesz mieszkania 2, 3 i 4-pokojowe o powierzchni użytkowej od 39
+                                    m<sup>2</sup> do 78 m<sup>2</sup></p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list2.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
                                 <p>Świetna lokalizacja</p>
-                                <p>Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej</p>
+                                <p>Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i
+                                    usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list3.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                                <p>BEZPIECZEŃSTWO</p>
+                                <p>Zamknięte osiedle z przewidzianym monitoringiem oraz instalacją videodomofonów.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mt-5 mt-lg-0 order-3 order-lg-2 position-relative align-self-end">
                         <div class="why-us__img-bg">
                             <div class="blurred-bg">
-                                <img src="{{ asset('images/udogodnienia-tlo.png') }}" alt="budynek" class="img-bg" width="438" height="458" loading="lazy">
+                                <img src="{{ asset('images/udogodnienia-tlo.png') }}" alt="budynek" class="img-bg"
+                                    width="438" height="458" loading="lazy">
                             </div>
                         </div>
-                        <img src="{{ asset('images/udogodnienia.png') }}" alt="budynek" class="why-us__img d-block mx-auto" width="349" height="606" loading="lazy">
+                        <img src="{{ asset('images/udogodnienia.png') }}" alt="budynek"
+                            class="why-us__img d-block mx-auto" width="349" height="606" loading="lazy">
                     </div>
-                    <div class="col-lg-4 order-2 order-lg-3 align-self-end" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+                    <div class="col-lg-4 order-2 order-lg-3 align-self-end" data-aos="fade-up" data-aos-duration="700"
+                        data-aos-delay="500">
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list4.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                                <p>NOWOCZESNE I KOMFORTOWE ROZWIĄZANIA</p>
+                                <p>W standardzie wykończenia każdego apartamentu zapewniamy Smart Home oraz klimatyzację.
+                                </p>
+
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list5.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                                <p>MIEJSCA POSTOJOWE</p>
+                                <p>Na terenie osiedla przewidziano dwie kondygnacje podziemnej hali garażowej.
+                                </p>
+
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list6.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                                <p>CZĘŚCI WSPÓLNE</p>
+                                <p>Oprócz wysokiego standardu korytarzy i klatek schodowych zaprojektowaliśmy także
+                                    rowerownię oraz taras widokowy ze strefą wypoczynku.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -395,11 +437,14 @@
         <section class="cta sec-pad-big">
             <div class="container">
                 <div class="row">
-                    <div class="col-11 col-sm-10 col-xxl-8 mx-auto cta__box project-gradient" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="col-11 col-sm-10 col-xxl-8 mx-auto cta__box project-gradient" data-aos="zoom-in"
+                        data-aos-duration="700">
                         <div class="cta__img-bg">
-                            <img src="{{ asset('images/tlo-cta.jpg') }}" alt="budynek" class="" width="420" height="400" loading="lazy">
+                            <img src="{{ asset('images/tlo-cta.jpg') }}" alt="budynek" class="" width="420"
+                                height="400" loading="lazy">
                         </div>
-                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="458" height="434" loading="lazy">
+                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="458"
+                            height="434" loading="lazy">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="section-header text-center text-sm-start mb-3">
@@ -421,7 +466,7 @@
                                         <img src="{{ asset('images/email.svg') }}" alt="email">
                                         <div class="cta__contact-details">
                                             <p>napisz</p>
-                                            <a href="mailto:ozorkowska@testmail.com">ozorkowska@testmail.com</a>
+                                            <a href="mailto:sprzedaz@ozorkowska28.pl">sprzedaz@ozorkowska28.pl</a>
                                         </div>
                                     </div>
                                 </div>
@@ -439,7 +484,12 @@
                             <h2 class="section-header__title">Lokalizacja</h2>
                             <p class="section-header__subtitle">Poznaj naszą okolicę</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest w samym sercu miasta, dzięki czemu przyszli mieszkańcy HI TOWER będą mogli korzystać ze wszystkich udogodnień z tym związanych. W najbliższym sąsiedztwie znajduje się wiele punktów usługowych i handlowych, restauracji, terenów zielonych oraz przystanków komunikacji miejskiej.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                            Nasza inwestycja zlokalizowana jest w samym sercu miasta, dzięki czemu przyszli mieszkańcy HI
+                            TOWER będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to
+                            najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową
+                            okolicę, która zapewni Ci komfortowe i wygodne życie.
+                        </p>
                     </div>
                 </div>
                 <div class="row">
@@ -447,29 +497,35 @@
                         <div class="row mb-5">
                             <div class="col-6">
                                 <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/zakupy.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/zakupy.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p>zakupy</p>
                                 </div>
                                 <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/edukacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/edukacja.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p>edukacja</p>
                                 </div>
                                 <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/zdrowie.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/zdrowie.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p>zdrowie</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/rekreacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/rekreacja.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p>rekreacja</p>
                                 </div>
                                 <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/komunikacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/komunikacja.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p>komunikacja</p>
                                 </div>
                                 <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/rozrywka.svg') }}" alt="ikonka" width="64" height="64" loading="lazy">
+                                    <img src="{{ asset('images/rozrywka.svg') }}" alt="ikonka" width="64"
+                                        height="64" loading="lazy">
                                     <p>rozrywka</p>
                                 </div>
                             </div>
@@ -488,7 +544,8 @@
             </div>
         </section>
         <section class="choose-size blurred-bg sec-pad position-relative">
-            <img src="{{ asset('images/mloda-para.jpg') }}" alt="inwestycja" class="img-bg" width="1920" height="1015" loading="lazy">
+            <img src="{{ asset('images/mloda-para.jpg') }}" alt="inwestycja" class="img-bg" width="1920"
+                height="1015" loading="lazy">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 mx-auto text-center mb-5">
@@ -496,7 +553,9 @@
                             <h2 class="section-header__title">Mieszkanie Twoich marzeń</h2>
                             <p class="section-header__subtitle">Dostosowane do Twoich potrzeb</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Szeroka oferta apartamentów pozwala dostosować się do Twoich indywidualnych potrzeb, oczekiwań i planów.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Szeroka
+                            oferta apartamentów pozwala dostosować się do Twoich indywidualnych potrzeb, oczekiwań i planów.
+                        </p>
                     </div>
                 </div>
                 <div class="row">
@@ -505,10 +564,14 @@
                             <div class="col-xl-4">
                                 <a href="">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
-                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika" class="choose-size__box-bg" width="320" height="394">
-                                        <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika" class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika" class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika" class="choose-size__box-img-hover" width="250" height="180">
+                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
+                                            class="choose-size__box-bg" width="320" height="394">
+                                        <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
+                                            class="choose-size__box-bg-hover" width="320" height="394">
+                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika"
+                                            class="choose-size__box-img" width="250" height="180">
+                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
+                                            class="choose-size__box-img-hover" width="250" height="180">
 
                                         <p>Mieszkania do 40 m<sup>2</sup></p>
 
@@ -518,10 +581,14 @@
                             <div class="col-xl-4">
                                 <a href="">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
-                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika" class="choose-size__box-bg" width="320" height="394">
-                                        <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika" class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika" class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika" class="choose-size__box-img-hover" width="250" height="180">
+                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
+                                            class="choose-size__box-bg" width="320" height="394">
+                                        <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
+                                            class="choose-size__box-bg-hover" width="320" height="394">
+                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika"
+                                            class="choose-size__box-img" width="250" height="180">
+                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
+                                            class="choose-size__box-img-hover" width="250" height="180">
 
                                         <p>Mieszkania do 40 m<sup>2</sup></p>
 
@@ -531,10 +598,14 @@
                             <div class="col-xl-4">
                                 <a href="">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
-                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika" class="choose-size__box-bg" width="320" height="394">
-                                        <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika" class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika" class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika" class="choose-size__box-img-hover" width="250" height="180">
+                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
+                                            class="choose-size__box-bg" width="320" height="394">
+                                        <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
+                                            class="choose-size__box-bg-hover" width="320" height="394">
+                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika"
+                                            class="choose-size__box-img" width="250" height="180">
+                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
+                                            class="choose-size__box-img-hover" width="250" height="180">
 
                                         <p>Mieszkania do 40 m<sup>2</sup></p>
 
@@ -546,7 +617,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-12 text-center">
-                        <a href="" class="project-link">Zobacz więcej</a>
+                        <a href="{{ route('front.developro.investment.index') }}" class="project-link">Zobacz więcej</a>
                     </div>
                 </div>
             </div>

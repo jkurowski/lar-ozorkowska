@@ -11,7 +11,7 @@
                 <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Strona główna</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Pakiety wykończenia</li>
+                        <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
                     </ol>
                 </nav>
             </div>
@@ -25,7 +25,7 @@
                             <p class="section-header__subtitle">skontaktuj się z nami</p>
                         </div>
                         <div class="section-desc text-center mb-5">
-                            <p> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum.</p>
+                            <p> Skontaktuj się z naszymi doradcami, aby poznać wszystkie szczegóły oferty.</p>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
@@ -42,7 +42,7 @@
                                     <img src="{{ asset('images/email.svg') }}" alt="email" width="70" height="70">
                                     <div class="contact-details">
                                         <p>napisz</p>
-                                        <a href="mailto:ozorkowska@testmail.com">ozorkowska@testmail.com</a>
+                                        <a href="mailto:sprzedaz@ozorkowska28.pl">sprzedaz@ozorkowska28.pl</a>
                                     </div>
                                 </div>
                             </div>
@@ -52,9 +52,11 @@
                 <div class="row mt-5">
                     <div class="col-11 col-sm-10 mx-auto cta__box project-gradient">
                         <div class="cta__img-bg">
-                            <img src="{{ asset('images/tlo-cta2.jpg') }}" alt="budynek" class="" width="476" height="569" loading="lazy">
+                            <img src="{{ asset('images/tlo-cta2.jpg') }}" alt="budynek" class="" width="476"
+                                height="569" loading="lazy">
                         </div>
-                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="550" height="522" loading="lazy">
+                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="550"
+                            height="522" loading="lazy">
                         <div class="row">
                             <div class="col-xl-6">
                                 <form class="contact-form">
@@ -76,10 +78,12 @@
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="check1">
-                                        <label class="form-check-label" for="check1">Akceptuję <a href="polityka-prywatnosci.html">Politykę prywatności*.</a> </label>
+                                        <label class="form-check-label" for="check1">Akceptuję <a
+                                                href="polityka-prywatnosci.html">Politykę prywatności*.</a> </label>
                                     </div>
                                     <div class="text-center text-sm-end">
-                                        <button type="submit" class="project-btn project-btn--white"><span>Wyślij</span></button>
+                                        <button type="submit"
+                                            class="project-btn project-btn--white"><span>Wyślij</span></button>
                                     </div>
                                 </form>
                             </div>
@@ -90,4 +94,3 @@
         </section>
     </main>
 @endsection
-

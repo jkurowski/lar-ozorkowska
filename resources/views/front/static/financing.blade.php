@@ -22,19 +22,25 @@
                     <div class="col-xl-5 text-center text-sm-start">
                         <div class="section-header mb-3">
                             <h1 class="section-header__title section-header__title--h1">Finansowanie</h1>
-                            <p class="section-header__subtitle">Lorem ipsum dolor sit</p>
+                            <p class="section-header__subtitle">PROFESJONALNA OPIEKA SPECJALISTY</p>
                         </div>
                         <div class="section-desc mb-4">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                            <p> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum.</p>
+                            <p>Oferujemy pomoc na każdym etapie finansowania nieruchomości. Specjaliści z firmy GREMIUM
+                                znajdą dla Ciebie najlepszą ofertę i przeprowadzą przez wszystkie formalności związane z
+                                uzyskaniem kredytu. Odpowiedzą także na wszystkie Twoje pytania i rozwieją ewentualne
+                                wątpliwości.</p>
+
                         </div>
                         <a href="{{ route('front.contact.index') }}" class="project-btn">Kontakt</a>
                     </div>
-                    <div class="photo-anim col-xl-6 offset-xl-1 position-relative d-flex justify-content-end align-items-end">
+                    <div
+                        class="photo-anim col-xl-6 offset-xl-1 position-relative d-flex justify-content-end align-items-end">
                         <div class="img-sec__bg blurred-bg">
-                            <img src="{{ asset('images/finansowanie-tlo.jpg') }}" alt="grafika" width="340" height="576" loading="eager">
+                            <img src="{{ asset('images/finansowanie-tlo.jpg') }}" alt="grafika" width="340"
+                                height="576" loading="eager">
                         </div>
-                        <img src="{{ asset('images/finansowanie.png') }}" alt="kobieta" width="580" height="580" loading="eager" class="sec__photo">
+                        <img src="{{ asset('images/finansowanie.png') }}" alt="kobieta" width="580" height="580"
+                            loading="eager" class="sec__photo">
                     </div>
 
                 </div>
@@ -43,11 +49,14 @@
         <section class="cta sec-pad-big">
             <div class="container">
                 <div class="row">
-                    <div class="col-11 col-sm-10 col-xxl-8 mx-auto cta__box project-gradient" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="col-11 col-sm-10 col-xxl-8 mx-auto cta__box project-gradient" data-aos="zoom-in"
+                        data-aos-duration="700">
                         <div class="cta__img-bg">
-                            <img src="{{ asset('images/tlo-cta.jpg') }}" alt="budynek" class="" width="420" height="400" loading="lazy">
+                            <img src="{{ asset('images/tlo-cta.jpg') }}" alt="budynek" class="" width="420"
+                                height="400" loading="lazy">
                         </div>
-                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="458" height="434" loading="lazy">
+                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="458"
+                            height="434" loading="lazy">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="section-header text-center text-sm-start mb-3">
@@ -55,7 +64,7 @@
                                     <p class="section-header__subtitle">Kontakt z nami</p>
                                 </div>
                                 <div class="cta__box-desc text-center text-sm-start mb-4">
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+                                    <p>Skontaktuj się z naszymi doradcami, aby poznać wszystkie szczegóły oferty.</p>
                                 </div>
                                 <div class="cta__contact">
                                     <div class="d-flex align-items-center me-sm-5 mb-4 mb-md-0">
@@ -69,7 +78,7 @@
                                         <img src="{{ asset('images/email.svg') }}" alt="email">
                                         <div class="cta__contact-details">
                                             <p>napisz</p>
-                                            <a href="mailto:ozorkowska@testmail.com">ozorkowska@testmail.com</a>
+                                            <a href="mailto:sprzedaz@ozorkowska28.pl">sprzedaz@ozorkowska28.pl</a>
                                         </div>
                                     </div>
                                 </div>
