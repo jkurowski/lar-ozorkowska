@@ -5,8 +5,8 @@
 @section('content')
     <main class="home">
         <section class="hero-baner first-sec position-relative">
-            <img src="{{ asset('images/baner.jpg') }}" alt="inwestycja" class="img-bg" width="1920" height="970"
-                loading="eager">
+            <img src="{{ asset('images/baner.jpg') }}" srcset="{{ asset('images/baner_mobile.webp') }} 575w" alt="inwestycja"
+                class="img-bg" width="1920" height="970" loading="eager">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 text-center text-sm-start">
