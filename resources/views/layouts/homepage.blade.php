@@ -140,6 +140,19 @@
         </div>
     @endif
     <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            const paragraphs = document.querySelectorAll("p");
+
+            paragraphs.forEach(paragraph => {
+                const text = paragraph.innerHTML;
+                // Match the last three words in the paragraph
+                const regex = /(\s)(\S+)\s(\S+)\s(\S+)\s*$/;
+                const newText = text.replace(regex, '$1$2&nbsp;$3&nbsp;$4');
+                paragraph.innerHTML = newText;
+            });
+        });
+
+
         const mapElement = document.querySelector('#map');
         if (mapElement) {
             const observer = new IntersectionObserver((entries, observer) => {
