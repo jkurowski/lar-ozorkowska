@@ -39,7 +39,7 @@
                             <p class="section-header__subtitle">Indywidualnie dostosowane do potrzeb</p>
                         </div>
                         <div class="desc-anim">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era.</p>
+                           
 
                             <div class="w-75">
                                 <div class="row my-5 apartment__details">
@@ -83,7 +83,7 @@
                             <h2 class="section-header__title">Podobne mieszkania</h2>
                             <p class="section-header__subtitle">Alternatywne oferty</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                       
                     </div>
                 </div>
                 <div class="row">
@@ -134,7 +134,7 @@
                             <h2 class="section-header__title">Zapytaj o ofertę</h2>
                             <p class="section-header__subtitle">Indywidualne konsultacje</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                        
                     </div>
                 </div>
                 <div class="row">

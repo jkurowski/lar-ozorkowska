@@ -151,8 +151,9 @@
                             <h2 class="section-header__title">Galeria inwestycji</h2>
                             <p class="section-header__subtitle">Poznaj nas bliżej</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Lorem
-                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                            HI TOWER to nowoczesny budynek, który łączy funkcjonalne rozwiązania z nowoczesnym designem
+                        </p>
                     </div>
                 </div>
                 <div class="row">

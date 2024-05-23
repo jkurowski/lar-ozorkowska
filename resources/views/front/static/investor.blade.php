@@ -84,11 +84,7 @@
                             <p class="section-header__subtitle">Współpraca z podwykonawcami</p>
                         </div>
                         <div class="section-desc mb-5" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            <p>Siłą naszej firmy są ludzie, którzy ją tworzą i z nią współpracują. Skupiamy wiedzę i
-                                doświadczenie w prowadzeniu przedsięwzięć budowlanych architektów, kierowników projektu,
-                                kierowników budowy, inżynierów kontraktu, inżynierów budowy oraz specjalistów branżowych i
-                                bardzo dobrych wykonawców. Bez nich proces budowlany nie byłby możliwy do zrealizowania w
-                                odpowiedniej jakości i terminach.</p>
+                            <p>Siłą naszej firmy są ludzie, którzy ją tworzą i z nią współpracują. Skupiamy wiedzę i doświadczenie w prowadzeniu przedsięwzięć budowlanych architektów, kierowników projektu, kierowników budowy, inżynierów kontraktu, inżynierów budowy oraz specjalistów branżowych i bardzo dobrych wykonawców. Bez nich proces budowlany nie byłby możliwy do zrealizowania w odpowiedniej jakości i terminach.</p>
                         </div>
 
                         <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>
@@ -105,13 +101,7 @@
                             <p class="section-header__subtitle">zarządzanie nieruchomościami</p>
                         </div>
                         <div class="section-desc mb-5" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            <p>Przedmiot naszej działalności obejmuje cały zakres zarządzania projektami - planowanie (w tym
-                                analiza parametrów technicznych i ekonomicznych projektu), opracowanie budżetów i
-                                harmonogramów inwestycji, projektowanie z uzyskaniem pozwolenia na budowę, wybór wykonawców
-                                i ich kontraktowanie, kierowanie procesem budowlanym, nadzorowanie prac i rozliczanie
-                                wszystkich uczestników procesu, odbiory i uzyskanie pozwolenia na użytkowanie, rozliczenie
-                                kontraktu oraz innych czynności związanych z zakończeniem procesu inwestycyjnego.</p>
-
+                            <p>Przedmiot naszej działalności obejmuje cały zakres zarządzania projektami - planowanie (w tym analiza parametrów technicznych i ekonomicznych projektu), opracowanie budżetów i harmonogramów inwestycji, projektowanie z uzyskaniem pozwolenia na budowę, wybór wykonawców i ich kontraktowanie, kierowanie procesem budowlanym, nadzorowanie prac i rozliczanie wszystkich uczestników procesu, odbiory i uzyskanie pozwolenia na użytkowanie, rozliczenie kontraktu oraz innych czynności związanych z zakończeniem procesu inwestycyjnego.</p>
                         </div>
 
                         <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>

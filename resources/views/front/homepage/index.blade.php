@@ -358,9 +358,8 @@
                             <p class="section-header__subtitle">Dlaczego warto nas wybrać</p>
                         </div>
                         <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER
-                            to unikatowy projekt w okolicy – jako jedyni oferujemy apartamenty o wysokim standardzie, które
-                            dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla przyszłych mieszkańców
-                            rozwiązań.</p>
+                            to unikatowy projekt w okolicy - jako jedyni oferujemy apartamenty o wysokim standardzie, które
+                            dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla przyszłych mieszkańców rozwiązań.</p>
                     </div>
                 </div>
                 <div class="row">
