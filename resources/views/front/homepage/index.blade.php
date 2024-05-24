@@ -359,7 +359,8 @@
                         </div>
                         <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER
                             to unikatowy projekt w okolicy - jako jedyni oferujemy apartamenty o wysokim standardzie, które
-                            dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla przyszłych mieszkańców rozwiązań.</p>
+                            dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla przyszłych mieszkańców
+                            rozwiązań.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -377,8 +378,9 @@
                             <img src="{{ asset('images/list2.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
                                 <p>Świetna lokalizacja</p>
-                                <p>Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i
-                                    usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.</p>
+                                <p>
+                                    Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
+                                </p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">

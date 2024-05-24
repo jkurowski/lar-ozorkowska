@@ -46,8 +46,8 @@
                                 <p>
                                     ŚWIETNA LOKALIZACJA
                                 </p>
-                                <p>Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i
-                                    usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
+                                <p>
+                                    Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
                                 </p>
                             </div>
                         </div>
