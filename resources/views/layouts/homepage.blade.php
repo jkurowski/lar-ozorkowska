@@ -118,7 +118,7 @@
     <script src="{{ asset('/js/jquery.min.js') }}" charset="utf-8"></script>
     <script src="{{ asset('/js/slick.min.js') }}" charset="utf-8"></script>
     <script src="{{ asset('/js/bootstrap.bundle.min.js') }}" charset="utf-8"></script>
-    <script src="{{ asset('/js/leaflet.js') }}" charset="utf-8"></script>
+    <fscript src="{{ asset('/js/leaflet.js') }}" charset="utf-8"></fscript>
     <script src="{{ asset('/js/aos.js') }}" charset="utf-8"></script>
     <fscript src="{{ asset('/js/main.js') }}" charset="utf-8"></fscript>
 
