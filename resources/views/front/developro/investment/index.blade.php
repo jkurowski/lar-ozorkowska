@@ -184,7 +184,7 @@
                                             <div class="col-lg-4 mb-4">
                                                 <div class="offer-list-box position-relative">
                                                     <div class="apartment-box project-gradient mb-2">
-                                                        <img src="{{ asset('images/placeholder.svg') }}"
+                                                        <img src="{{ asset('investment/property/thumbs/webp/'. $r->file_webp) }}"
                                                             alt="Rzut {{ $r->name }}" class="apartment-box__img"
                                                             width="60" height="60" loading="lazy">
                                                         <div class="apartment-box__name">
