@@ -22,7 +22,8 @@
                 <div class="row">
                     <div class="col-xl-6 mx-auto text-center">
                         <div class="section-header mb-3">
-                            <h1 class="section-header__title section-header__title--h1">Nowe Mieszkania przy Księżym Młynie</h1>
+                            <h1 class="section-header__title section-header__title--h1">Nowe Mieszkania przy Księżym Młynie
+                            </h1>
                             <p class="section-header__subtitle">rodzaje mieszkań</p>
                         </div>
                     </div>
@@ -134,7 +135,7 @@
                                 @if ($properties)
                                     @foreach ($properties as $r)
                                         <div class="offer-list-box position-relative mb-4">
-                                            
+
                                             <div class="apartment-box project-gradient">
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-4">
@@ -171,8 +172,7 @@
                                                 </div>
                                             </div>
                                             <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                class="stretched-link"
-                                                target="_blank"></a>
+                                                class="stretched-link" target="_blank"></a>
                                         </div>
                                     @endforeach
                                 @endif
@@ -181,12 +181,14 @@
                                 <div class="row">
                                     @if ($properties)
                                         @foreach ($properties as $r)
-                                            <div class="col-lg-4 mb-4">
+                                            <div class="col-sm-6 col-lg-4 mb-4">
                                                 <div class="offer-list-box position-relative">
                                                     <div class="apartment-box project-gradient mb-2">
-                                                        <img src="{{ asset('investment/property/thumbs/webp/'. $r->file_webp) }}"
-                                                            alt="Rzut {{ $r->name }}" class="apartment-box__img"
-                                                            width="60" height="60" loading="lazy">
+                                                        <div class="apartment-box__img_wrapper">
+                                                            <img src="{{ asset('investment/property/thumbs/webp/' . $r->file_webp) }}"
+                                                                alt="Rzut {{ $r->name }}" class="apartment-box__img"
+                                                                width="" height="60" loading="lazy">
+                                                        </div>
                                                         <div class="apartment-box__name">
                                                             <p class="">{{ $r->name }}</p>
                                                         </div>
@@ -217,8 +219,7 @@
                                                         </div>
                                                     </div>
                                                     <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                        class="stretched-link"
-                                                        target="_blank"></a>
+                                                        class="stretched-link" target="_blank"></a>
                                                 </div>
                                             </div>
                                         @endforeach

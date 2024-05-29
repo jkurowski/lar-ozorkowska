@@ -586,7 +586,7 @@ main {
     font-size: 1rem;
 }
 .search-container select {
-    padding: 0px 10px 10px 0;
+    padding: 0px 10px 5px 10px;
     border-radius: 0;
     border: 0;
     border-bottom: 1px solid #fff;
@@ -1149,12 +1149,15 @@ main {
     border: solid var(--text-color-main);
     border-width: 0 1px 1px 0;
 }
-.offerList.offerList-grid .apartment-box__img {
-    width: 3.75rem;
-    height: 3.75rem;
-    -o-object-fit: cover;
-    object-fit: cover;
+.apartment-box__img_wrapper {
+    aspect-ratio:160/113;
     margin-bottom: 1rem;
+}
+.offerList.offerList-grid .apartment-box__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 0;
 }
 .offerList.offerList-grid .apartment-box {
     padding-top: 1rem;
@@ -1592,7 +1595,7 @@ main {
         font-size: 1rem;
     }
     .offerList.offerList-grid .apartment-box__details p {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
     .number-box {
         margin: 0 auto;
