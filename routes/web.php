@@ -82,7 +82,7 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
     // DeveloPro
     Route::group(['namespace' => 'Developro', 'as' => 'developro.'], function () {
         // Pan
-        Route::get('/apartamenty', 'InvestmentController@index')->name('investment.index');
+        Route::get('/mieszkania', 'InvestmentController@index')->name('investment.index');
 
         // Contact form
         Route::get('/{slug}/kontakt', 'Contact\IndexController@index')->name('investment.contact');

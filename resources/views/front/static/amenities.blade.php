@@ -256,7 +256,7 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="section-header text-center text-sm-start mb-3">
-                                    <h2 class="section-header__title">Zapytaj o ofertę</h2>
+                                    <h2 class="section-header__title">Zapytaj o mieszkanie</h2>
                                     <p class="section-header__subtitle">Kontakt z nami</p>
                                 </div>
                                 <div class="cta__box-desc text-center text-sm-start mb-4">

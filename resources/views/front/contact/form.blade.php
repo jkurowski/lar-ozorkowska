@@ -22,7 +22,7 @@
                     <form method="post" action="" class="contact-form validateForm">
                         {{ csrf_field() }}
                         <div class="box-anim mb-3">
-                            <label for="name" class="lab-anim">Imię i Nazwisko / Nazwa firmy</label>
+                            <label for="name" class="lab-anim">Imię</label>
                             <input name="form_name" type="text" class="form-control validate[required] @error('form_name') is-invalid @enderror" id="name" value="{{ old('form_name') }}">
                             @error('form_name')
                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

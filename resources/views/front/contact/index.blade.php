@@ -61,7 +61,7 @@
                             <div class="col-xl-6">
                                 <form class="contact-form">
                                     <div class="box-anim mb-3">
-                                        <label for="name" class="lab-anim">Imię i Nazwisko / Nazwa firmy</label>
+                                        <label for="name" class="lab-anim">Imię</label>
                                         <input type="text" class="form-control" id="name">
                                     </div>
                                     <div class="box-anim mb-3">

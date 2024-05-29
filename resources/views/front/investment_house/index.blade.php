@@ -73,7 +73,7 @@
                                 <img src="{{ asset('images/pdf.svg') }}" alt="pdf ikona" class="me-3" width="21" height="24" loading="eager">  <a href="{{ asset('investment/property/pdf/'.$property->file_pdf) }}" target="_blank">Pobierz pdf</a>
                             </div>
                             <div class="d-inline-block">
-                                <a href="#formularz-kontaktowy" class="project-btn project-btn--gray">Zapytaj o ofertę</a>
+                                <a href="#formularz-kontaktowy" class="project-btn project-btn--gray">Zapytaj o mieszkanie</a>
                             </div>
 
                         </div>

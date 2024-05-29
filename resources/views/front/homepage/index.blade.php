@@ -233,10 +233,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white"
+                                            <a href=""
+                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
                                                 target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
+                                    <a href="" class="stretched-link" target="_blank"></a>
                                 </div>
                             </div>
                             <div>
@@ -258,10 +260,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white"
+                                            <a href=""
+                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
                                                 target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
+                                    <a href="" class="stretched-link" target="_blank"></a>
                                 </div>
                             </div>
                             <div>
@@ -283,10 +287,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white"
+                                            <a href=""
+                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
                                                 target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
+                                    <a href="" class="stretched-link" target="_blank"></a>
                                 </div>
                             </div>
                             <div>
@@ -308,10 +314,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white"
+                                            <a href=""
+                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
                                                 target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
+                                    <a href="" class="stretched-link" target="_blank"></a>
                                 </div>
                             </div>
                             <div>
@@ -333,10 +341,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="" class="project-link project-link--white"
+                                            <a href=""
+                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
                                                 target="_blank">Sprawdź</a>
                                         </div>
                                     </div>
+                                    <a href="" class="stretched-link" target="_blank"></a>
                                 </div>
                             </div>
                         </div>
@@ -379,7 +389,8 @@
                             <div class="why-us__list-desc">
                                 <p>Świetna lokalizacja</p>
                                 <p>
-                                    Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
+                                    Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i
+                                    usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
                                 </p>
                             </div>
                         </div>
@@ -449,7 +460,7 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="section-header text-center text-sm-start mb-3">
-                                    <h2 class="section-header__title">Zapytaj o ofertę</h2>
+                                    <h2 class="section-header__title">Zapytaj o mieszkanie</h2>
                                     <p class="section-header__subtitle">Kontakt z nami</p>
                                 </div>
                                 <div class="cta__box-desc text-center text-sm-start mb-4">
@@ -563,7 +574,7 @@
                     <div class="col-xl-11 col-xxl-9 mx-auto">
                         <div class="row">
                             <div class="col-xl-4">
-                                <a href="">
+                                <a href="%placeholder%">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
                                         <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
                                             class="choose-size__box-bg" width="320" height="394">
@@ -580,15 +591,15 @@
                                 </a>
                             </div>
                             <div class="col-xl-4">
-                                <a href="">
+                                <a href="%placeholder%">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
                                         <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
                                             class="choose-size__box-bg" width="320" height="394">
                                         <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
                                             class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika"
+                                        <img src="{{ asset('images/wiz-kontur-2.png') }}" alt="grafika"
                                             class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
+                                        <img src="{{ asset('images/wiz-kolor-2.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
 
                                         <p>Mieszkania do 40 m<sup>2</sup></p>
@@ -597,15 +608,15 @@
                                 </a>
                             </div>
                             <div class="col-xl-4">
-                                <a href="">
+                                <a href="%placeholder%">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
                                         <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
                                             class="choose-size__box-bg" width="320" height="394">
                                         <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
                                             class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika"
+                                        <img src="{{ asset('images/wiz-kontur-3.png') }}" alt="grafika"
                                             class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
+                                        <img src="{{ asset('images/wiz-kolor-3.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
 
                                         <p>Mieszkania do 40 m<sup>2</sup></p>

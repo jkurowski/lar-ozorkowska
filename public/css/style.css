@@ -1259,7 +1259,7 @@ main {
 }
 .single-apartment .apartment__details p {
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.7798rem + 0.4587vw, 1.25rem);
     margin-bottom: 0;
 }
 .single-apartment .apartment__details .col-4:nth-child(1) p {
@@ -1837,5 +1837,17 @@ main {
     }
     .apartment-desc .project-link {
         font-size: 1rem;
+    }
+}
+
+.border-color-current {
+    border-color: currentColor !important;
+}
+.offer-list-box,.apartment-box {
+    position: relative;
+}
+@media (min-width:1200px) and (max-width: 1399.98px) {
+    .fs-xl-xxl-small {
+        font-size: 0.825rem;
     }
 }
