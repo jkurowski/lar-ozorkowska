@@ -65,10 +65,10 @@
 
                             </div>
                             <div class="">
-                                <a href="%placeholder%"
-                                    class="d-inline-block me-3 pb-3 link-offset-2  text-decoration-underline link-underline-opacity-75-hover">Pobierz
-                                    kartę PDF</a>
                                 <a href="#formularz-kontaktowy" class="project-btn">Zapytaj o mieszkanie</a>
+                                <a href="%placeholder%"
+                                    class="d-inline-block ms-3 pt-3 link-offset-2  text-decoration-underline link-underline-opacity-75-hover">Pobierz
+                                    kartę PDF</a>
                             </div>
                         </div>
                     </div>
