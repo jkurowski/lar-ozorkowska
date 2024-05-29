@@ -4,7 +4,7 @@
 @endif
 @section('content')
     <main class="home">
-        <section class="hero-baner first-sec position-relative">
+        <section class="hero-baner first-sec position-relative d-flex align-items-end">
             <img src="{{ asset('images/baner.jpg') }}" srcset="{{ asset('images/baner_mobile.webp') }} 575w" alt="inwestycja"
                 class="img-bg" width="1920" height="970" loading="eager">
             <div class="container">
