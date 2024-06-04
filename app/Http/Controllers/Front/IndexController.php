@@ -3,12 +3,9 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
-use App\Models\Award;
 use App\Models\Image;
 use App\Models\Inline;
-use App\Models\Investment;
-use App\Models\News;
-use App\Models\Review;
+use App\Models\Property;
 use App\Models\RodoSettings;
 use Illuminate\Http\Request;
 
@@ -28,11 +25,15 @@ class IndexController extends Controller
         $rules = RodoRules::orderBy('sort')->whereStatus(1)->get();
         $popup = 0;
 
-        $investments_soon = Investment::whereStatus(4)->get();
-        $investments_planned = Investment::whereStatus(3)->get();
-
-        $news = News::where('status', 1)->orderBy('date', 'DESC')->limit(5)->get();
         $array = Inline::getElements(3);
+
+        $similar = Property::select('properties.*', 'floors.number as floor_number')
+            ->where('properties.status', '=', 1)
+            ->where('properties.id', '<>', 4)
+            ->join('floors', 'properties.floor_id', '=', 'floors.id')
+            ->inRandomOrder()
+            ->limit(6)
+            ->get();
 
         if(settings()->get("popup_status") == "1") {
             if(settings()->get("popup_mode") == "1") {
@@ -55,12 +56,10 @@ class IndexController extends Controller
             'obligation',
             'sliders',
             'popup',
-            'news',
-            'investments_soon',
-            'investments_planned',
             'array',
             'isAdmin',
-            'images'
+            'images',
+            'similar'
         ));
     }
 }

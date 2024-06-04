@@ -219,141 +219,36 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="available-slider">
-                            <div>
-                                <div class="apartment-box project-gradient">
-                                    <div class="apartment-box__name">
-                                        <p class="">Mieszkanie</p>
-                                        <p class="">nr 32</p>
+                            @foreach ($similar as $r)
+                                <div>
+                                    <div class="apartment-box project-gradient">
+                                        <div class="apartment-box__name">
+                                            <p class="">{{ $r->name_list }}</p>
+                                            <p class="">nr {{ $r->number }}</p>
+                                        </div>
+                                        <div class="apartment-box__details row my-4">
+                                            <div class="col-sm-4 pe-0">
+                                                <p class="">Metraż: {{ $r->area }} m<sup>2</sup></p>
+                                            </div>
+                                            <div class="col-sm-4 text-center">
+                                                <p class="">Pokoje: {{ $r->rooms }}</p>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p class="">{{ $r->floor->name }}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
+                                                   class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
+                                                   target="_blank">Sprawdź</a>
+                                            </div>
+                                        </div>
+                                        <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
+                                           class="stretched-link" target="_blank"></a>
                                     </div>
-                                    <div class="apartment-box__details row my-4">
-                                        <div class="col-sm-4 pe-0">
-                                            <p class="">Metraż: 45 m<sup>2</sup></p>
-                                        </div>
-                                        <div class="col-sm-4 text-center">
-                                            <p class="">Pokoje: 2</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="">Piętro: 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href=""
-                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                target="_blank">Sprawdź</a>
-                                        </div>
-                                    </div>
-                                    <a href="" class="stretched-link" target="_blank"></a>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="apartment-box project-gradient">
-                                    <div class="apartment-box__name">
-                                        <p class="">Mieszkanie</p>
-                                        <p class="">nr 15</p>
-                                    </div>
-                                    <div class="apartment-box__details row my-4">
-                                        <div class="col-sm-4 pe-0">
-                                            <p class="">Metraż: 45 m<sup>2</sup></p>
-                                        </div>
-                                        <div class="col-sm-4 text-center">
-                                            <p class="">Pokoje: 2</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="">Piętro: 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href=""
-                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                target="_blank">Sprawdź</a>
-                                        </div>
-                                    </div>
-                                    <a href="" class="stretched-link" target="_blank"></a>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="apartment-box project-gradient">
-                                    <div class="apartment-box__name">
-                                        <p class="">Mieszkanie</p>
-                                        <p class="">nr 8</p>
-                                    </div>
-                                    <div class="apartment-box__details row my-4">
-                                        <div class="col-sm-4 pe-0">
-                                            <p class="">Metraż: 45 m<sup>2</sup></p>
-                                        </div>
-                                        <div class="col-sm-4 text-center">
-                                            <p class="">Pokoje: 2</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="">Piętro: 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href=""
-                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                target="_blank">Sprawdź</a>
-                                        </div>
-                                    </div>
-                                    <a href="" class="stretched-link" target="_blank"></a>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="apartment-box project-gradient">
-                                    <div class="apartment-box__name">
-                                        <p class="">Mieszkanie</p>
-                                        <p class="">nr 17</p>
-                                    </div>
-                                    <div class="apartment-box__details row my-4">
-                                        <div class="col-sm-4 pe-0">
-                                            <p class="">Metraż: 45 m<sup>2</sup></p>
-                                        </div>
-                                        <div class="col-sm-4 text-center">
-                                            <p class="">Pokoje: 2</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="">Piętro: 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href=""
-                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                target="_blank">Sprawdź</a>
-                                        </div>
-                                    </div>
-                                    <a href="" class="stretched-link" target="_blank"></a>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="apartment-box project-gradient">
-                                    <div class="apartment-box__name">
-                                        <p class="">Mieszkanie</p>
-                                        <p class="">nr 24</p>
-                                    </div>
-                                    <div class="apartment-box__details row my-4">
-                                        <div class="col-sm-4 pe-0">
-                                            <p class="">Metraż: 45 m<sup>2</sup></p>
-                                        </div>
-                                        <div class="col-sm-4 text-center">
-                                            <p class="">Pokoje: 2</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="">Piętro: 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a href=""
-                                                class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                target="_blank">Sprawdź</a>
-                                        </div>
-                                    </div>
-                                    <a href="" class="stretched-link" target="_blank"></a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
