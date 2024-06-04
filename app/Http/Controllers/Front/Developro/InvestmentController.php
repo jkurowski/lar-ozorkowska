@@ -27,11 +27,20 @@ class InvestmentController extends Controller
 
         $investment_room = $investment->load(array(
             'properties' => function ($query) use ($request) {
-                if ($request->input('rooms')) {
-                    $query->where('rooms', $request->input('rooms'));
+                if ($request->input('s_pokoje')) {
+                    $query->where('rooms', $request->input('s_pokoje'));
                 }
                 if ($request->input('status')) {
                     $query->where('status', $request->input('status'));
+                }
+                if ($request->input('s_pietro')) {
+                    $query->where('floor_id', $request->input('s_pietro'));
+                }
+                if ($request->input('s_metry')) {
+                    $area_param = explode('-', $request->input('s_metry'));
+                    $min = $area_param[0];
+                    $max = $area_param[1];
+                    $query->whereBetween('area', [$min, $max]);
                 }
                 if ($request->input('sort')) {
                     $order_param = explode(':', $request->input('sort'));

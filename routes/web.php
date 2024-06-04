@@ -79,6 +79,9 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
         'Static\IndexController@financing'
     )->name('financing');
 
+    Route::get('galeria',
+        'Gallery\IndexController@index')->name('gallery');
+
     // DeveloPro
     Route::group(['namespace' => 'Developro', 'as' => 'developro.'], function () {
         // Pan

@@ -68,11 +68,10 @@
                                                 <div class="select-container">
                                                     <label for="s_metry" class="form-label">Metraż</label>
                                                     <select id="s_metry" name="s_metry" class="form-select">
-                                                        <option value=""></option>
-                                                        <option value="30">30 m² - 40 m²</option>
-                                                        <option value="40">40 m² - 52 m²</option>
-                                                        <option value="52">52 m² - 67 m²</option>
-                                                        <option value="67">67 m²- 90 m²</option>
+                                                        <option value="">Wszystkie</option>
+                                                        <option value="30-41" @if(request()->input('s_metry') == '30-41') selected @endif>30 m² - 41 m²</option>
+                                                        <option value="41-60" @if(request()->input('s_metry') == '41-60') selected @endif>41 m² - 60 m²</option>
+                                                        <option value="60-100" @if(request()->input('s_metry') == '60-100') selected @endif>60 m² - 100 m²</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -80,23 +79,29 @@
                                                 <div class="select-container">
                                                     <label for="s_pokoje" class="form-label">Ilość pokoi</label>
                                                     <select name="s_pokoje" id="s_pokoje" class="form-select">
-                                                        <option value=""></option>
-                                                        <option value="1">1 pokojowe</option>
-                                                        <option value="2">2 pokojowe</option>
-                                                        <option value="3">3 pokojowe</option>
-                                                        <option value="4">4 pokojowe</option>
+                                                        <option value="">Wszystkie</option>
+                                                        <option value="1" @if(request()->input('s_pokoje') == 1) selected @endif>1 pokojowe</option>
+                                                        <option value="2" @if(request()->input('s_pokoje') == 2) selected @endif>2 pokojowe</option>
+                                                        <option value="3" @if(request()->input('s_pokoje') == 3) selected @endif>3 pokojowe</option>
+                                                        <option value="4" @if(request()->input('s_pokoje') == 4) selected @endif>4 pokojowe</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="select-container">
-                                                    <label for="s_pokojedo" class="form-label">Piętro</label>
-                                                    <select name="s_pokojedo" id="s_pokojedo" class="form-select">
-                                                        <option value=""></option>
-                                                        <option value="0">Parter</option>
-                                                        <option value="1">1 piętro</option>
-                                                        <option value="2">2 piętro</option>
-                                                        <option value="3">3 piętro</option>
+                                                    <label for="s_pietro" class="form-label">Piętro</label>
+                                                    <select name="s_pietro" id="s_pietro" class="form-select">
+                                                        <option value="">Wszystkie</option>
+                                                        <option value="1" @if(request()->input('s_pietro') == 1) selected @endif>1 piętro</option>
+                                                        <option value="2" @if(request()->input('s_pietro') == 2) selected @endif>2 piętro</option>
+                                                        <option value="3" @if(request()->input('s_pietro') == 3) selected @endif>3 piętro</option>
+                                                        <option value="8" @if(request()->input('s_pietro') == 8) selected @endif>4 piętro</option>
+                                                        <option value="11" @if(request()->input('s_pietro') == 11) selected @endif>5 piętro</option>
+                                                        <option value="12" @if(request()->input('s_pietro') == 12) selected @endif>6 piętro</option>
+                                                        <option value="14" @if(request()->input('s_pietro') == 14) selected @endif>7 piętro</option>
+                                                        <option value="15" @if(request()->input('s_pietro') == 15) selected @endif>8 piętro</option>
+                                                        <option value="16" @if(request()->input('s_pietro') == 16) selected @endif>9 piętro</option>
+                                                        <option value="17" @if(request()->input('s_pietro') == 17) selected @endif>10 piętro</option>
                                                     </select>
                                                 </div>
                                             </div>
