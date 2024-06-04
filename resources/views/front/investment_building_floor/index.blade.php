@@ -79,7 +79,7 @@
             </div>
         </section>
 
-        <section class="search-results sec-pad">
+        <section class="search-results">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 mx-auto pt-5 d-flex aligm-items-center justify-content-end">
