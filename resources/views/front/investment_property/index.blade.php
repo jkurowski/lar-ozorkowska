@@ -146,7 +146,7 @@
                 </div>
             </section>
         @endif
-        <section id="formularz-kontaktowy" class="sec-pad project-gradient">
+        <section id="formularz-kontaktowy" class="sec-pad project-gradient @if($similar->count() == 0) mt-5 @endif">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 mx-auto text-center mb-5">
