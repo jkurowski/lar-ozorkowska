@@ -87,6 +87,8 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
         // Pan
         Route::get('/mieszkania', 'InvestmentController@index')->name('investment.index');
 
+        Route::get('/properties/filter', 'InvestmentPropertyController@filter')->name('investment.property.filter');
+
         // Contact form
         Route::get('/{slug}/kontakt', 'Contact\IndexController@index')->name('investment.contact');
         Route::post('/{slug}/kontakt', 'Contact\IndexController@form')->name('investment.contact.form');

@@ -30,23 +30,11 @@ class InvestmentController extends Controller
                 if ($request->input('s_pokoje')) {
                     $query->where('rooms', $request->input('s_pokoje'));
                 }
-                if ($request->input('status')) {
-                    $query->where('status', $request->input('status'));
-                }
                 if ($request->input('s_pietro')) {
                     $query->where('floor_id', $request->input('s_pietro'));
                 }
                 if ($request->input('s_metry')) {
-                    $area_param = explode('-', $request->input('s_metry'));
-                    $min = $area_param[0];
-                    $max = $area_param[1];
-                    $query->whereBetween('area', [$min, $max]);
-                }
-                if ($request->input('sort')) {
-                    $order_param = explode(':', $request->input('sort'));
-                    $column = $order_param[0];
-                    $direction = $order_param[1];
-                    $query->orderBy($column, $direction);
+                    $query->where('area', $request->input('s_metry'));
                 }
             },
             'properties.floor'
@@ -60,6 +48,43 @@ class InvestmentController extends Controller
             'properties' => $properties,
             'uniqueRooms' => $this->repository->getUniqueRooms($investment_room->properties),
             'page' => $page
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+        $query = Property::query();
+
+        // Apply filters based on request parameters
+        if ($request->has('rooms') && !empty($request->input('rooms'))) {
+            $query->where('rooms', $request->input('rooms'));
+        }
+
+        if ($request->has('area') && !empty($request->input('area'))) {
+            $query->where('area', $request->input('area'));
+        }
+
+        if ($request->has('floor') && !empty($request->input('floor'))) {
+            $query->whereHas('floor', function ($q) use ($request) {
+                $q->where('id', $request->input('floor'));
+            });
+        }
+
+        // Get the filtered properties
+        $properties = $query->get();
+
+        // Get distinct values for each filter based on filtered properties
+        $areas = $properties->pluck('area')->unique()->sort()->values();
+        $rooms = $properties->pluck('rooms')->unique()->sort()->values();
+        $floors = $properties->pluck('floor.id', 'floor.number')->sort();
+
+        return response()->json([
+            'properties' => $properties,
+            'filters' => [
+                'areas' => $areas,
+                'rooms' => $rooms,
+                'floors' => $floors,
+            ],
         ]);
     }
 }

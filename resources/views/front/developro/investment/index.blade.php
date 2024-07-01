@@ -66,42 +66,29 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="select-container">
-                                                    <label for="s_metry" class="form-label">Metraż</label>
-                                                    <select id="s_metry" name="s_metry" class="form-select">
+                                                    <label for="rooms" class="form-label">Ilość pokoi</label>
+                                                    <select id="rooms" name="s_pokoje" class="form-select">
                                                         <option value="">Wszystkie</option>
-                                                        <option value="30-41" @if(request()->input('s_metry') == '30-41') selected @endif>30 m² - 41 m²</option>
-                                                        <option value="41-60" @if(request()->input('s_metry') == '41-60') selected @endif>41 m² - 60 m²</option>
-                                                        <option value="60-100" @if(request()->input('s_metry') == '60-100') selected @endif>60 m² - 100 m²</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="select-container">
-                                                    <label for="s_pokoje" class="form-label">Ilość pokoi</label>
-                                                    <select name="s_pokoje" id="s_pokoje" class="form-select">
+                                                    <label for="area" class="form-label">Metraż</label>
+                                                    <select id="area" name="s_metry" class="form-select">
                                                         <option value="">Wszystkie</option>
-                                                        <option value="1" @if(request()->input('s_pokoje') == 1) selected @endif>1 pokojowe</option>
-                                                        <option value="2" @if(request()->input('s_pokoje') == 2) selected @endif>2 pokojowe</option>
-                                                        <option value="3" @if(request()->input('s_pokoje') == 3) selected @endif>3 pokojowe</option>
-                                                        <option value="4" @if(request()->input('s_pokoje') == 4) selected @endif>4 pokojowe</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="select-container">
-                                                    <label for="s_pietro" class="form-label">Piętro</label>
-                                                    <select name="s_pietro" id="s_pietro" class="form-select">
+                                                    <label for="floor" class="form-label">Piętro</label>
+                                                    <select id="floor" name="s_pietro" class="form-select">
                                                         <option value="">Wszystkie</option>
-                                                        <option value="1" @if(request()->input('s_pietro') == 1) selected @endif>1 piętro</option>
-                                                        <option value="2" @if(request()->input('s_pietro') == 2) selected @endif>2 piętro</option>
-                                                        <option value="3" @if(request()->input('s_pietro') == 3) selected @endif>3 piętro</option>
-                                                        <option value="8" @if(request()->input('s_pietro') == 8) selected @endif>4 piętro</option>
-                                                        <option value="11" @if(request()->input('s_pietro') == 11) selected @endif>5 piętro</option>
-                                                        <option value="12" @if(request()->input('s_pietro') == 12) selected @endif>6 piętro</option>
-                                                        <option value="14" @if(request()->input('s_pietro') == 14) selected @endif>7 piętro</option>
-                                                        <option value="15" @if(request()->input('s_pietro') == 15) selected @endif>8 piętro</option>
-                                                        <option value="16" @if(request()->input('s_pietro') == 16) selected @endif>9 piętro</option>
-                                                        <option value="17" @if(request()->input('s_pietro') == 17) selected @endif>10 piętro</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -242,4 +229,83 @@
     <script src="{{ asset('/js/plan/imagemapster.js') }}" charset="utf-8"></script>
     <script src="{{ asset('/js/plan/plan.js') }}" charset="utf-8"></script>
     <link href="{{ asset('/css/developro.min.css') }}" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+
+            // Get the CSRF token from the meta tag
+            let csrfToken = $('meta[name="csrf-token"]').attr('content');
+
+            function fetchFilters(method) {
+                let rooms;
+                let area;
+                let floor;
+
+                if(method === 'load') {
+                    rooms = {!! (request()->input('s_pokoje')) ? request()->input('s_pokoje') : "''" !!};
+                } else {
+                    rooms = $('#rooms').val();
+                }
+
+                if(method === 'load') {
+                    area = {!! (request()->input('s_metry')) ? request()->input('s_metry') : "''" !!};
+                } else {
+                    area = $('#area').val();
+                }
+
+                if(method === 'load') {
+                    floor = {!! (request()->input('s_pietro')) ? request()->input('s_pietro') : "''" !!};
+                } else {
+                    floor = $('#floor').val();
+                }
+
+                $.ajax({
+                    url: "{{ route('front.developro.investment.property.filter') }}",
+                    method: 'GET',
+                    data: {
+                        rooms: rooms,
+                        area: area,
+                        floor: floor
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken
+                    },
+                    success: function(response) {
+                        // Update select options based on response
+                        updateSelect('#rooms', response.filters.rooms, rooms);
+                        updateSelect('#area', response.filters.areas, area);
+                        updateFloorSelect('#floor', response.filters.floors, floor);
+                    }
+                });
+            }
+
+            function updateSelect(selector, options, selectedValue) {
+                // Convert all options to strings for comparison
+                options = options.map(option => option.toString());
+                selectedValue = selectedValue.toString(); // Convert selectedValue to string
+
+                $(selector).html('<option value="">Wszystkie</option>');
+                options.forEach(option => {
+                    let selected = option === selectedValue ? 'selected' : '';
+                    $(selector).append(`<option value="${option}" ${selected}>${option}</option>`);
+                });
+            }
+
+            function updateFloorSelect(selector, options, selectedValue) {
+                $(selector).html('<option value="">Wszystkie</option>');
+                $.each(options, function(key, option) {
+                    let id = option;
+                    let value = option === 'object' ? option : key;
+                    let selected = id === parseInt(selectedValue) ? 'selected' : '';
+                    $(selector).append(`<option value="${option}" ${selected}>Piętro ${value}</option>`);
+                });
+            }
+
+            $('#rooms, #area, #floor').on('change', function() {
+                fetchFilters('update');
+            });
+
+            // Initial fetch
+            fetchFilters('load');
+        });
+    </script>
 @endpush

@@ -202,6 +202,63 @@
                     popModal.hide();
                 }, {{ settings()->get('popup_timeout') }});
             @endif
+
+            // Get the CSRF token from the meta tag
+            let csrfToken = $('meta[name="csrf-token"]').attr('content');
+
+            function fetchFilters() {
+                let rooms = $('#rooms').val();
+                let area = $('#area').val();
+                let floor = $('#floor').val();
+
+                $.ajax({
+                    url: "{{ route('front.developro.investment.property.filter') }}",
+                    method: 'GET',
+                    data: {
+                        rooms: rooms,
+                        area: area,
+                        floor: floor
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken
+                    },
+                    success: function(response) {
+                        // Update select options based on response
+                        updateSelect('#rooms', response.filters.rooms, rooms);
+                        updateSelect('#area', response.filters.areas, area);
+                        updateFloorSelect('#floor', response.filters.floors, floor);
+                    }
+                });
+            }
+
+            function updateSelect(selector, options, selectedValue) {
+                // Convert all options to strings for comparison
+                options = options.map(option => option.toString());
+                selectedValue = selectedValue.toString(); // Convert selectedValue to string
+
+                $(selector).html('<option value="">Wszystkie</option>');
+                options.forEach(option => {
+                    let selected = option === selectedValue ? 'selected' : '';
+                    $(selector).append(`<option value="${option}" ${selected}>${option}</option>`);
+                });
+            }
+
+            function updateFloorSelect(selector, options, selectedValue) {
+                $(selector).html('<option value="">Wszystkie</option>');
+                $.each(options, function(key, option) {
+                    let id = option;
+                    let value = option === 'object' ? option : key;
+                    let selected = id === parseInt(selectedValue) ? 'selected' : '';
+                    $(selector).append(`<option value="${option}" ${selected}>Piętro ${value}</option>`);
+                });
+            }
+
+            $('#rooms, #area, #floor').on('change', function() {
+                fetchFilters();
+            });
+
+            // Initial fetch
+            fetchFilters();
         });
 
         @if (session('success') || session('warning') || $errors->any())
