@@ -173,42 +173,7 @@
             document.querySelectorAll('p').forEach(function(p) {
                 p.innerHTML = p.innerHTML.replace(/ (\w) /g, ' $1&nbsp;');
             });
-
-
-
-
             const glightbox = new GLightbox()
-
-            const mapElement = document.querySelector('#map');
-            if (mapElement) {
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            observer.unobserve(entry.target);
-                            initLeafletMap();
-                        }
-                    });
-                });
-
-                observer.observe(mapElement);
-            }
-
-            function initLeafletMap() {
-                const map = L.map(mapElement).setView([51.74445857171649, 19.487093873682273], 13);
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a
-                    href = "https://carto.com/attributions" > CARTO < /a>`,
-                    subdomains: 'abcd',
-                    maxZoom: 20
-                }).addTo(map);
-
-                L.marker([51.74445857171649, 19.487093873682273]).addTo(map)
-                    .bindPopup(
-                        `<img src="{{ asset('/images/logo.svg') }}" width="73" height="27" alt="logo" class="mb-2"> <br> ul.Ozorkowska 28, <br> 93 - 286 Łódź `
-                    )
-                    .openPopup();
-            }
-
         })
 
         $(document).on('scroll', function() {

@@ -391,44 +391,32 @@
                     <div class="col-lg-6">
                         <div class="row mb-5">
                             <div class="col-6">
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/zakupy.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>zakupy</p>
+                                <div class="map__legend d-flex align-items-center" data-group="1">
+                                    <img src="{{ asset('images/zakupy.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>zakupy</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/edukacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>edukacja</p>
+                                <div class="map__legend d-flex align-items-center" data-group="2">
+                                    <img src="{{ asset('images/edukacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>edukacja</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/zdrowie.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>zdrowie</p>
+                                <div class="map__legend d-flex align-items-center" data-group="3">
+                                    <img src="{{ asset('images/zdrowie.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>zdrowie</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/rekreacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>rekreacja</p>
+                                <div class="map__legend d-flex align-items-center" data-group="4">
+                                    <img src="{{ asset('images/rekreacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>rekreacja</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/komunikacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>komunikacja</p>
+                                <div class="map__legend d-flex align-items-center" data-group="5">
+                                    <img src="{{ asset('images/komunikacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>komunikacja</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/rozrywka.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>rozrywka</p>
+                                <div class="map__legend d-flex align-items-center" data-group="6">
+                                    <img src="{{ asset('images/rozrywka.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"><p>rozrywka</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row mb-4 mb-lg-0">
                             <div class="col-12">
-                                <p>Dojazd do centrum w …..</p>
-                                <p>Dojazd do autostrady A1 w …..</p>
+                                <p>Dojazd do centrum w 10 minut.</p>
+                                <p>Dojazd do autostrady A1 w 15 minut.</p>
                             </div>
                         </div>
                     </div>

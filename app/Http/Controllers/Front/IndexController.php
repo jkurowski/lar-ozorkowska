@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Models\Image;
 use App\Models\Inline;
+use App\Models\Map;
 use App\Models\Property;
 use App\Models\RodoSettings;
 use Illuminate\Http\Request;
@@ -50,6 +51,7 @@ class IndexController extends Controller
         }
 
         $isAdmin = auth()->check();
+        $markers = Map::all();
 
         return view('front.homepage.index', compact(
             'rules',
@@ -59,6 +61,7 @@ class IndexController extends Controller
             'array',
             'isAdmin',
             'images',
+            'markers',
             'similar'
         ));
     }

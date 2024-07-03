@@ -5,23 +5,17 @@ if (! function_exists('mapCategory')) {
     {
         switch ($number) {
             case '1':
-                return "Przedszkola i szkoły podstawowe";
+                return "Zakupy";
             case '2':
-                return "Transport publiczny";
+                return "Edukacja";
             case '3':
-                return "Wylot na Autostradę A1";
+                return "Zdrowie";
             case '4':
-                return "Tereny rekreacyjne, place zabaw, parki rowerowe";
+                return "Rekreacja";
             case '5':
-                return "Gastronomia";
+                return "Komunikacja";
             case '6':
-                return "Przychodnie publicznych i prywatne";
-            case '7':
-                return "Apteki";
-            case '8':
-                return "Kościoły";
-            case '9':
-                return "Markety, sklepy, drogerie";
+                return "Rozrywka";
         }
     }
 }
