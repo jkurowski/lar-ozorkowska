@@ -3,22 +3,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 text-center text-sm-start">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="{{ asset('images/logo.svg') }}" width="204" height="56" alt="logo"
-                            loading="eager">
+                    <a href="/" class="navbar-brand">
+                        <img src="{{ asset('images/logo.svg') }}" width="204" height="56" alt="logo" loading="eager">
                     </a>
 
                     <p class="mt-4">Zaobserwuj nas:</p>
                     <div class="social-media d-flex align-items-center">
                         <div class="social-media-item d-flex align-items-center pe-md-3 pe-xxl-4">
-                            <img src="{{ asset('images/ig.svg') }}" alt="instagram" class="social-icon" width="48"
-                                height="48" loading="lazy">
-                            <a href="">@Ozorkowska.28</a>
+                            <img src="{{ asset('images/ig.svg') }}" alt="instagram" class="social-icon" width="48" height="48" loading="lazy">
+                            <a href="https://www.instagram.com/hitower_lodz/" target="_blank">@Ozorkowska.28</a>
                         </div>
                         <div class="social-media-item d-flex align-items-center">
-                            <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon" width="48"
-                                height="48" loading="lazy">
-                            <a href="">/Ozorkowska.28</a>
+                            <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon" width="48" height="48" loading="lazy">
+                            <a href="https://www.facebook.com/hitowerlodz" target="_blank">/Ozorkowska.28</a>
                         </div>
                     </div>
                 </div>
