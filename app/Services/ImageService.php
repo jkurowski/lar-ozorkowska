@@ -11,6 +11,17 @@ class ImageService
 {
     public function upload(UploadedFile $file, object $model, bool $delete = false)
     {
+        $baseDir = public_path('uploads/gallery/images/');
+        $webpDir = public_path('uploads/gallery/images/webp/');
+        $thumbDir = public_path('uploads/gallery/images/thumbs/');
+        $thumbWebpDir = public_path('uploads/gallery/images/thumbs/webp/');
+
+
+        foreach ([$baseDir, $webpDir, $thumbDir, $thumbWebpDir] as $dir) {
+            if (!File::exists($dir)) {
+                File::makeDirectory($dir, 0755, true);
+            }
+        }
 
         if ($delete) {
             if (File::isFile(public_path('uploads/gallery/images/' . $model->file))) {
