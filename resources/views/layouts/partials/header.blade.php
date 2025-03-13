@@ -17,7 +17,7 @@
                         <a class="nav-link" href="{{ route('front.investment') }}">O inwestycji</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('front.developro.investment.index') }}">Mieszkania</a>
+                        <a class="nav-link" href="{{ route('front.developro.investment.index') }}">Apartamenty</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('front.gallery')}}">Galeria</a>
@@ -40,10 +40,6 @@
             </div>
             <div class="d-flex align-items-center top-menu__fast-contact">
                 <div class="top-menu__social d-flex align-items-center">
-                    <a href="https://www.instagram.com/hitower_lodz/" class="social-link social-link-ig" target="_blank">
-                        <img src="{{ asset('images/ig.svg') }}" alt="instagram" class="social-icon social-icon-ig">
-                        <img src="{{ asset('images/ig-hover.svg') }}" alt="instagram" class="social-icon-hover social-icon-ig-hover">
-                    </a>
                     <a href="https://www.facebook.com/hitowerlodz" class="social-link social-link-fb" target="_blank">
                         <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon social-icon-fb">
                         <img src="{{ asset('images/fb-hover.svg') }}" alt="facebook" class="social-icon-hover social-icon-fb-hover">

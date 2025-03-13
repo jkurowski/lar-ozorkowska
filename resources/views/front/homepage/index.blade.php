@@ -11,14 +11,12 @@
                 <div class="row">
                     <div class="col-lg-5 text-center text-sm-start">
                         <div class="section-header">
-                            <h1 class= "section-header__title section-header__title--h1">Budynek PREMIUM <br>w Twojej
+                            <h1 class= "section-header__title section-header__title--h1">APARTAMENTY PREMIUM <br>w Twojej
                                 okolicy</h1>
-                            <p class="section-header__subtitle"> Wybierz apartamenty Hitower</p>
+                            <p class="section-header__subtitle"> Ozorkowska 28</p>
                             <div>
                                 <div class="hero-baner__description mt-3 mb-5">
-                                    <p class="">Wszystko to, czego potrzebujesz, znajduje się na wyciągnięcie ręki - w
-                                        naszej ofercie znajdziesz mieszkania o wysokim standardzie zlokalizowane z dala od
-                                        wielkomiejskiego zgiełku</p>
+                                    <p class="">Ozorkowska 28 – Blisko natury, kultury i miasta! <br>To więcej niż adres – to komfortowe życie w idealnym miejscu. Tu masz blisko do wszystkiego, co ważne! <br>To lokalizacja, która łączy najlepsze cechy Łodzi – historyczny klimat, nowoczesne udogodnienia i bliskość natury.</p>
                                 </div>
                                 <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>
                             </div>
@@ -82,50 +80,52 @@
         <section class="advantages sec-pad">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 text-center text-sm-start">
-                        <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
-                            <h2 class="section-header__title">Doświadczony deweloper</h2>
-                            <p class="section-header__subtitle">Mieszkania, które spełniają oczekiwania</p>
-                        </div>
-                        <div class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            <p>Posiadamy wieloletnie doświadczenie w zarządzaniu projektami budowlanymi na terenie całej
-                                Polski. Wszystkie nasze działania od zawsze cechuje wysoki standard i dbałość o szczegóły.
-                            </p>
-                        </div>
-                        <div class="row my-5">
-                            <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
-                                <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
-                                    <img src="{{ asset('images/lokalizacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p class="advantages__desc">dogodna lokalizacja</p>
+                    <div class="col-xl-7 text-center text-sm-start d-flex align-items-center">
+                        <div class="pe-5">
+                            <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
+                                <h2 class="section-header__title">Doświadczony deweloper</h2>
+                                <p class="section-header__subtitle">Mieszkania, które spełniają oczekiwania</p>
+                            </div>
+                            <div class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                                <p>Posiadamy wieloletnie doświadczenie w zarządzaniu projektami budowlanymi na terenie całej
+                                    Polski. Wszystkie nasze działania od zawsze cechuje wysoki standard i dbałość o szczegóły.
+                                </p>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
+                                    <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
+                                        <img src="{{ asset('images/lokalizacja.svg') }}" alt="ikonka" width="48"
+                                             height="48" loading="lazy">
+                                        <p class="advantages__desc">26 lat doświadczenia</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
+                                    <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
+                                        <img src="{{ asset('images/standard.svg') }}" alt="ikonka" width="48"
+                                             height="48" loading="lazy">
+                                        <p class="advantages__desc">wysoki standard</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
+                                    <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
+                                        <img src="{{ asset('images/zielone.svg') }}" alt="ikonka" width="48"
+                                             height="48" loading="lazy">
+                                        <p class="advantages__desc">10 zrealizowanych projektów</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
-                                <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
-                                    <img src="{{ asset('images/standard.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p class="advantages__desc">wysoki standard</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500">
-                                <div class="d-flex align-items-center advantages__box mb-4 mb-md-0">
-                                    <img src="{{ asset('images/zielone.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p class="advantages__desc">zielone przestrzenie</p>
-                                </div>
-                            </div>
+                            <a href="{{ route('front.investor') }}" class="project-link">Czytaj więcej</a>
                         </div>
-                        <a href="{{ route('front.investor') }}" class="project-link">Czytaj więcej</a>
                     </div>
-                    <div class="col-xl-6 position-relative">
-                        <div class="advantages__bg blurred-bg">
-                            <img src="{{ asset('images/advantages-bg.jpg') }}" alt="budynek" width="360"
-                                height="576" loading="lazy">
-                        </div>
-                        <img src="{{ asset('images/advantages-photo.png') }}" alt="ludzie" width="530"
-                            height="530" loading="lazy" class="advantages__photo">
+                    <div class="col-xl-5 position-relative d-none d-xl-block">
+                        <img src="{{ asset('images/doswiadczony-deweloper.jpg') }}"
+                             alt="ludzie"
+                             width="580"
+                             height="580"
+                             loading="lazy"
+                             class="w-100 h-auto"
+                        >
                     </div>
-
                 </div>
             </div>
         </section>
@@ -136,7 +136,7 @@
                     <div class="col-lg-4 mx-auto text-center">
                         <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
                             <h2 class="section-header__title">Galeria inwestycji</h2>
-                            <p class="section-header__subtitle">Poznaj nas bliżej</p>
+                            <p class="section-header__subtitle">Twój apartament - Twój Vibe!</p>
                         </div>
                         <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">HI TOWER
                             to nowoczesny budynek, który łączy funkcjonalne rozwiązania z nowoczesnym designem.</p>
@@ -263,34 +263,28 @@
                             <img src="{{ asset('images/list1.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
                                 <p>Funkcjonalne rozkłady</p>
-                                <p>W naszej ofercie znajdziesz mieszkania 2, 3 i 4-pokojowe o powierzchni użytkowej od 39
-                                    m<sup>2</sup> do 78 m<sup>2</sup></p>
+                                <p>W naszej ofercie znajdziesz apartamenty  2, 3 i 4 pokojowe o powierzchni użytkowej od 40 m<sup>2</sup> do 79 m<sup>2</sup></p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list2.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
                                 <p>Świetna lokalizacja</p>
-                                <p>
-                                    Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i
-                                    usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
-                                </p>
+                                <p>Bliska okolica inwestycji gwarantuje dostęp do wszelkiego rodzaju udogodnień – obiektów handlowo-usługowych, placówek edukacyjnych i zdrowotnych, miejsc do rekreacji i odpoczynku oraz szerokiej oferty gastronomicznej.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list3.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>BEZPIECZEŃSTWO</p>
-                                <p>Zamknięte osiedle z przewidzianym monitoringiem oraz instalacją videodomofonów.
-                                </p>
+                                <p>Bezpieczeństwo</p>
+                                <p>Teren osiedla ogrodzony i monitorowany z możliwością podglądu przez mieszkańców z systemu wideodomofonów. Drzwi wejściowe do mieszkań o podwyższonej klacie antywłamaniowej.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mt-5 mt-lg-0 order-3 order-lg-2 position-relative align-self-end">
                         <div class="why-us__img-bg">
                             <div class="blurred-bg">
-                                <img src="{{ asset('images/udogodnienia-tlo.png') }}" alt="budynek" class="img-bg"
-                                    width="438" height="458" loading="lazy">
+                                <img src="{{ asset('images/udogodnienia-tlo.png') }}" alt="budynek" class="img-bg" width="438" height="458" loading="lazy">
                             </div>
                         </div>
                         <img src="{{ asset('images/udogodnienia.png') }}" alt="budynek"
@@ -301,28 +295,22 @@
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list4.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>NOWOCZESNE I KOMFORTOWE ROZWIĄZANIA</p>
-                                <p>W standardzie wykończenia każdego apartamentu zapewniamy Smart Home oraz klimatyzację.
-                                </p>
-
+                                <p>Nowoczesne i komfortowe rozwiązania</p>
+                                <p>Możliwość sterowania oświetleniem z jednego miejsca w każdym apartamencie, skrzynki paczkowe, wózkownia oraz rowerowania do dyspozycji mieszkańców.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list5.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>MIEJSCA POSTOJOWE</p>
-                                <p>Na terenie osiedla przewidziano dwie kondygnacje podziemnej hali garażowej.
-                                </p>
-
+                                <p>Miejsca postojowe</p>
+                                <p>Dwukondygnacyjna zamykana automatycznie hala garażowa z wydzielonymi komórkami lokatorskimi.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list6.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>CZĘŚCI WSPÓLNE</p>
-                                <p>Oprócz wysokiego standardu korytarzy i klatek schodowych zaprojektowaliśmy także
-                                    rowerownię oraz taras widokowy ze strefą wypoczynku.
-                                </p>
+                                <p>Części wspólne</p>
+                                <p>Niepowtarzalny taras widokowy ze strefą wypoczynku zlokalizowany na 10 piętrze budynku oraz wysoki standard wykończenia holu wejściowego i klatek schodowych.</p>
                             </div>
                         </div>
                     </div>
@@ -343,11 +331,8 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="section-header text-center text-sm-start mb-3">
-                                    <h2 class="section-header__title">Zapytaj o mieszkanie</h2>
+                                    <h2 class="section-header__title">Porozmawiajmy o Twoim apartamencie</h2>
                                     <p class="section-header__subtitle">Kontakt z nami</p>
-                                </div>
-                                <div class="cta__box-desc text-center text-sm-start mb-4">
-                                    <p>Skontaktuj się z naszymi doradcami, aby poznać wszystkie szczegóły oferty.</p>
                                 </div>
                                 <div class="cta__contact">
                                     <div class="d-flex align-items-center me-sm-5 mb-4 mb-md-0">
@@ -379,12 +364,7 @@
                             <h2 class="section-header__title">Lokalizacja</h2>
                             <p class="section-header__subtitle">Poznaj naszą okolicę</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            Nasza inwestycja zlokalizowana jest w samym sercu miasta, dzięki czemu przyszli mieszkańcy HI
-                            TOWER będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to
-                            najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową
-                            okolicę, która zapewni Ci komfortowe i wygodne życie.
-                        </p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzysteć ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -415,8 +395,8 @@
                         </div>
                         <div class="row mb-4 mb-lg-0">
                             <div class="col-12">
-                                <p>Dojazd do centrum w 10 minut.</p>
-                                <p>Dojazd do autostrady A1 w 15 minut.</p>
+                                <p>Dojazd do centrum: 8 minut.</p>
+                                <p>Dojazd do autostrady A1: 15 minut.</p>
                             </div>
                         </div>
                     </div>
