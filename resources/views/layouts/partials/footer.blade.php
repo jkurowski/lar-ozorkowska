@@ -41,7 +41,7 @@
                         <div class="footer__contact-item d-flex align-items-center pe-md-4">
                             <img src="{{ asset('images/phone.svg') }}" alt="telefon" class="contact-icon"
                                 width="48" height="48" loading="lazy">
-                            <a href="tel:+48705548142">705 548 142</a>
+                            <a href="tel:+48536882090">536 882 090</a>
                         </div>
                         <div class="footer__contact-item d-flex align-items-center pe-md-4">
                             <img src="{{ asset('images/email.svg') }}" alt="email" class="contact-icon"

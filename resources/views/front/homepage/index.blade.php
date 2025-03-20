@@ -189,14 +189,12 @@
         <section class="available-sec">
             <div class="container">
                 <div class="row mb-5">
-                    <div class="col-lg-4 mx-auto text-center">
+                    <div class="col-lg-5 mx-auto text-center">
                         <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
-                            <h2 class="section-header__title">Dostępne mieszkania</h2>
-                            <p class="section-header__subtitle">Zamieszkaj w sercu Łodzi</p>
+                            <h2 class="section-header__title">Dostępne apartamenty</h2>
+                            <p class="section-header__subtitle">Wejdź w nowoczesne życie - Hi Tower czeka!</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            Przygotowaliśmy ofertę dla najbardziej wymagających klientów, którzy bezkompromisowo dążą do
-                            osiągnięcia swojego celu jakim jest podwyższenie standardu życia.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Oferujemy apartamenty 2 i 3 pokojowe o najlepszych układach, w metrażach od 40 m<sup>2</sup> do 55 m<sup>2</sup> oraz jeden wyjątkowy apartament 4 pokojowy o powierzchni 79 m<sup>2</sup>.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -339,7 +337,7 @@
                                         <img src="{{ asset('images/phone.svg') }}" alt="telefon">
                                         <div class="cta__contact-details">
                                             <p>zadzwoń</p>
-                                            <a href="tel:+48705548142">705 548 142</a>
+                                            <a href="tel:+48536882090">536 882 090</a>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -364,7 +362,7 @@
                             <h2 class="section-header__title">Lokalizacja</h2>
                             <p class="section-header__subtitle">Poznaj naszą okolicę</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzysteć ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -413,12 +411,10 @@
                 <div class="row">
                     <div class="col-lg-5 mx-auto text-center mb-5">
                         <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
-                            <h2 class="section-header__title">Mieszkanie Twoich marzeń</h2>
-                            <p class="section-header__subtitle">Dostosowane do Twoich potrzeb</p>
+                            <h2 class="section-header__title">Apartamenty Twoich marzeń</h2>
+                            <p class="section-header__subtitle">Komfort - Styl - Funkcjonalność</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Szeroka
-                            oferta apartamentów pozwala dostosować się do Twoich indywidualnych potrzeb, oczekiwań i planów.
-                        </p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Wybierz apartament idealny dla Ciebie - przemyślane układy, przestronne balkony oraz technologia Smart Home.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -436,8 +432,7 @@
                                         <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
 
-                                        <p>Mieszkania do 40 m<sup>2</sup></p>
-
+                                        <p>Apartamenty 2 pokojowe</p>
                                     </div>
                                 </a>
                             </div>
@@ -453,8 +448,7 @@
                                         <img src="{{ asset('images/wiz-kolor-2.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
 
-                                        <p>Mieszkania do 40 m<sup>2</sup></p>
-
+                                        <p>Apartamenty 3 pokojowe</p>
                                     </div>
                                 </a>
                             </div>
@@ -470,8 +464,7 @@
                                         <img src="{{ asset('images/wiz-kolor-3.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
 
-                                        <p>Mieszkania do 40 m<sup>2</sup></p>
-
+                                        <p>Apartament 4 pokojowy</p>
                                     </div>
                                 </a>
                             </div>

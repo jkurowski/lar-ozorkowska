@@ -173,7 +173,7 @@
                                                     eximaco@eximaco-development.pl</a>
                                             </div>
                                             <div class="d-flex align-items-center">
-                                                <a href="tel:+48537801301">
+                                                <a href="tel:+48536882090">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" class="project-icon">
                                                         <g transform="translate(-769 -3586)">
                                                             <g data-name="Ellipse 20" transform="translate(769 3586)" fill="none" stroke="#fff" stroke-width="1">

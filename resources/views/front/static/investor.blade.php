@@ -144,7 +144,7 @@
                                         <img src="{{ asset('images/phone.svg') }}" alt="telefon">
                                         <div class="cta__contact-details">
                                             <p>zadzwoń</p>
-                                            <a href="tel:+48705548142">705 548 142</a>
+                                            <a href="tel:+48536882090">536 882 090</a>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">

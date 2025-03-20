@@ -1086,7 +1086,7 @@ main {
     height: 100%;
 }
 .offer-list-box__status-container.offer-list-box__status--dostepne {
-    background: #21a73c;
+    background: #008F72;
 }
 .offer-list-box__status-container.offer-list-box__status--sprzedane {
     background: #ec0303;

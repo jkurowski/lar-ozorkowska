@@ -22,9 +22,7 @@
                 <div class="row">
                     <div class="col-xl-6 mx-auto text-center">
                         <div class="section-header mb-3">
-                            <h1 class="section-header__title section-header__title--h1">Nowe Mieszkania przy Księżym Młynie
-                            </h1>
-                            <p class="section-header__subtitle">rodzaje mieszkań</p>
+                            <p class="section-header__subtitle">Znajdź swój apartament!</p>
                         </div>
                     </div>
                 </div>
