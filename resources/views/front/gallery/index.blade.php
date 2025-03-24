@@ -22,9 +22,8 @@
                     <div class="col-lg-4 mx-auto text-center">
                         <div class="section-header mb-3">
                             <h1 class="section-header__title section-header__title--h1">Galeria inwestycji</h1>
-                            <p class="section-header__subtitle">Poznaj nas bliżej</p>
+                            <p class="section-header__subtitle">Zobacz Hi Tower z każdej perspektywy!</p>
                         </div>
-                        <p class="section-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
                     </div>
                 </div>
                 <ul class="nav nav-tabs mb-4" id="galleryTab" role="tablist">
