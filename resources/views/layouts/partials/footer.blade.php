@@ -9,13 +9,13 @@
 
                     <p class="mt-4">Zaobserwuj nas:</p>
                     <div class="social-media d-flex align-items-center">
-                        <div class="social-media-item d-flex align-items-center pe-md-3 pe-xxl-4">
+                        <div class="social-media-item d-none align-items-center pe-md-3 pe-xxl-4">
                             <img src="{{ asset('images/ig.svg') }}" alt="instagram" class="social-icon" width="48" height="48" loading="lazy">
                             <a href="https://www.instagram.com/hitower_lodz/" target="_blank">@Ozorkowska.28</a>
                         </div>
                         <div class="social-media-item d-flex align-items-center">
                             <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon" width="48" height="48" loading="lazy">
-                            <a href="https://www.facebook.com/hitowerlodz" target="_blank">/Ozorkowska.28</a>
+                            <a href="https://www.facebook.com/deweloper.pminvest" target="_blank">/Ozorkowska.28</a>
                         </div>
                     </div>
                 </div>

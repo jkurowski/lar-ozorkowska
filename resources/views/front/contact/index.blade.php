@@ -52,11 +52,13 @@
                 <div class="row mt-5">
                     <div class="col-11 col-sm-10 mx-auto cta__box project-gradient">
                         <div class="cta__img-bg">
-                            <img src="{{ asset('images/tlo-cta2.jpg') }}" alt="budynek" class="" width="476"
-                                height="569" loading="lazy">
+                            <img src="{{ asset('images/sprzedawca-piotr.jpg') }}"
+                                 alt="budynek"
+                                 class=""
+                                 width="480"
+                                 height="594"
+                                 loading="lazy">
                         </div>
-                        <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="550"
-                            height="522" loading="lazy">
                         <div class="row">
                             <div class="col-xl-6">
                                 <form class="contact-form">

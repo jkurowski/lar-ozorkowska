@@ -40,7 +40,7 @@
             </div>
             <div class="d-flex align-items-center top-menu__fast-contact">
                 <div class="top-menu__social d-flex align-items-center">
-                    <a href="https://www.facebook.com/hitowerlodz" class="social-link social-link-fb" target="_blank">
+                    <a href="https://www.facebook.com/deweloper.pminvest" class="social-link social-link-fb" target="_blank">
                         <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon social-icon-fb">
                         <img src="{{ asset('images/fb-hover.svg') }}" alt="facebook" class="social-icon-hover social-icon-fb-hover">
                     </a>
