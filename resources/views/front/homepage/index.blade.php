@@ -145,7 +145,7 @@
                 <div class="row">
                     <div class="col-lg-8 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g1.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/g1.jpg') }}" class="swipebox">
                                 <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo"
                                     loading="lazy" decoding="async">
                             </a>
@@ -153,7 +153,7 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g2.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/g2.jpg') }}" class="swipebox">
                                 <img src="{{ asset('images/g2.jpg') }}" alt="Wizualizacja" class="gallery-photo"
                                     loading="lazy" decoding="async">
                             </a>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g3.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/g3.jpg') }}" class="swipebox">
                                 <img src="{{ asset('images/g3.jpg') }}" alt="Wizualizacja" class="gallery-photo"
                                     loading="lazy" decoding="async">
                             </a>
@@ -169,7 +169,7 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g4.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/g4.jpg') }}" class="swipebox">
                                 <img src="{{ asset('images/g4.jpg') }}" alt="Wizualizacja" class="gallery-photo"
                                     loading="lazy" decoding="async">
                             </a>
@@ -177,7 +177,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g5.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/g5.jpg') }}" class="swipebox">
                                 <img src="{{ asset('images/g5.jpg') }}" alt="Wizualizacja" class="gallery-photo"
                                     loading="lazy" decoding="async">
                             </a>
