@@ -883,18 +883,22 @@ main {
     right: 0;
 }
 .cta__img-bg img {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
     -o-object-fit: cover;
     object-fit: cover;
 }
 .cta__box .section-header__title {
-    font-size: 3.125rem;
+    font-size: 40px;
+    line-height: 40px;
 }
 .cta__box .section-header__subtitle {
     font-size: 1rem;
 }
 .cta__contact-details {
-    margin-left: 0.5rem;
-    line-height: 14px;
+    margin-left: .5rem;
+    line-height: normal;
+    font-size: 19px;
 }
 .cta__contact-details p {
     font-size: 0.75rem;
@@ -907,6 +911,12 @@ main {
 .project-gradient a:hover {
     color: var(--text-color-main);
 }
+
+.pzfd {
+    max-width: 350px;
+    height: auto;
+}
+
 .map__legend {
     border-bottom: 1px solid rgba(147, 113, 68, 0.5);
     padding: 1.5rem 0;
