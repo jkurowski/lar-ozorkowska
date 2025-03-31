@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front\Static;
 
 use App\Http\Controllers\Controller;
+use App\Models\Image;
 use App\Models\Inline;
 use App\Models\Investment;
 use App\Models\Map;
@@ -19,9 +20,11 @@ class IndexController extends Controller
 
     public function investment()
     {
+        $images = Image::where('gallery_id', 1)->orderBy("sort")->get();
+
         $page = Page::find(2);
         $markers = Map::all();
-        return view('front.static.investment', compact('page', 'markers'));
+        return view('front.static.investment', compact('page', 'markers', 'images'));
     }
 
     public function amenities()
