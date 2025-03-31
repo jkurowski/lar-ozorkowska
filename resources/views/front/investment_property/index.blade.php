@@ -44,7 +44,7 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="section-header">
-                            <h1 class="section-header__title section-header__title--h1">{{ $property->name }}</h1>
+                            <h1 class="section-header__title section-header__title--h1">{{ $property->name_list }} Hi {{ $property->number }}</h1>
                             <p class="section-header__subtitle">Indywidualnie dostosowane do potrzeb</p>
                         </div>
                         <div class="desc-anim">
@@ -109,7 +109,7 @@
                                         <div class="apartment-box project-gradient">
                                             <div class="apartment-box__name">
                                                 <p class="">{{ $r->name_list }}</p>
-                                                <p class="">nr {{ $r->number }}</p>
+                                                <p class="">Hi {{ $r->number }}</p>
                                             </div>
                                             <div class="apartment-box__details row my-4">
                                                 <div class="col-sm-4 pe-0">

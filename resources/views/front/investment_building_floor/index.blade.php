@@ -103,7 +103,7 @@
                                             <div class="col-lg-4">
                                                 <div class="apartment-box__name">
                                                     <p class="">{{$r->name_list}}</p>
-                                                    <p class="mb-0">nr {{$r->number}}</p>
+                                                    <p class="mb-0">Hi {{$r->number}}</p>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">

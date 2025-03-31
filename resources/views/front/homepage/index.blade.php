@@ -178,7 +178,7 @@
                                     <div class="apartment-box project-gradient">
                                         <div class="apartment-box__name">
                                             <p class="">{{ $r->name_list }}</p>
-                                            <p class="">nr {{ $r->number }}</p>
+                                            <p class="">Hi {{ $r->number }}</p>
                                         </div>
                                         <div class="apartment-box__details row my-4">
                                             <div class="col-sm-4 pe-0">
