@@ -27,7 +27,7 @@
                         <div class="section-desc mb-4">
                             <p>Współpracujemy z firmą WS Budownictwo, która może zająć się wykończeniem Twojego mieszkania pod klucz. Decydując się na usługi tego typu firmy jesteś w stanie oszczędzić wiele czasu i stresu. Fachowcy zajmą się projektem, dostawami, zakupami, zarządzaniem budżetem i remontem. Wprowadź się do swojego wymarzonego mieszkania w terminie i w dobrym nastroju.</p>
                         </div>
-                        <a href="{{ route('front.contact.index') }}" class="project-btn">Kontakt</a>
+                        <a href="{{ asset('uploads/broszura-informacyjna.pdf') }}" target="_blank" class="project-btn">Ulotka</a>
                     </div>
                     <div class="col-xl-6 offset-xl-1 position-relative d-flex justify-content-end align-items-end">
                         <div class="img-sec__bg blurred-bg">
