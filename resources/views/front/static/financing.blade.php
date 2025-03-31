@@ -19,28 +19,33 @@
         <section class="first-sec finance-sec position-relative sec-pad">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-5 text-center text-sm-start">
-                        <div class="section-header mb-3">
-                            <h1 class="section-header__title section-header__title--h1">Finansowanie</h1>
-                            <p class="section-header__subtitle">PROFESJONALNA OPIEKA SPECJALISTY</p>
+                    <div class="col-xl-5 text-center text-sm-start align-items-center d-flex">
+                        <div>
+                            <div class="section-header mb-3">
+                                <h1 class="section-header__title section-header__title--h1">Finansowanie</h1>
+                                <p class="section-header__subtitle">PROFESJONALNA OPIEKA SPECJALISTY</p>
+                            </div>
+                            <div class="section-desc mb-4">
+                                <p>Obsługą kredytów hipotecznych dla klientów zajmie się: <br><b>Pan Michał Chrakowiecki</b></p>
+                                <div class="cta__contact">
+                                    <div class="d-flex align-items-center me-sm-5">
+                                        <img src="http://ozorkowska.test/images/phone.svg" alt="Numer telefonu">
+                                        <div class="cta__contact-details">
+                                            <a href="tel:+48603751281">603 751 281</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="http://ozorkowska.test/images/email.svg" alt="Adres e-mail">
+                                        <div class="cta__contact-details">
+                                            <a href="mailto:m.chrakowiecki@gremium.info.pl">m.chrakowiecki@gremium.info.pl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="section-desc mb-4">
-                            <p>Oferujemy pomoc na każdym etapie finansowania nieruchomości. Specjaliści z firmy GREMIUM
-                                znajdą dla Ciebie najlepszą ofertę i przeprowadzą przez wszystkie formalności związane z
-                                uzyskaniem kredytu. Odpowiedzą także na wszystkie Twoje pytania i rozwieją ewentualne
-                                wątpliwości.</p>
-
-                        </div>
-                        <a href="{{ route('front.contact.index') }}" class="project-btn">Kontakt</a>
                     </div>
-                    <div
-                        class="photo-anim col-xl-6 offset-xl-1 position-relative d-flex justify-content-end align-items-end">
-                        <div class="img-sec__bg blurred-bg">
-                            <img src="{{ asset('images/finansowanie-tlo.jpg') }}" alt="grafika" width="340"
-                                height="576" loading="eager">
-                        </div>
-                        <img src="{{ asset('images/finansowanie.png') }}" alt="kobieta" width="580" height="580"
-                            loading="eager" class="sec__photo">
+                    <div class="photo-anim col-xl-6 offset-xl-1 position-relative d-flex justify-content-center align-items-end">
+                        <img src="{{ asset('images/sprzedawca-michal-2.jpg') }}" alt="Obsługą kredytów hipotecznych" width="600" height="600" loading="eager" class="w-100 h-auto">
                     </div>
 
                 </div>
