@@ -58,13 +58,19 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="gallery1-tab" data-bs-toggle="tab" data-bs-target="#gallery1"
                             type="button" role="tab" aria-controls="gallery1" aria-selected="true">
-                            Pakiet srebrny <br> <small>(lokal M2)</small>
+                            Pakiet srebrny
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="gallery2-tab" data-bs-toggle="tab" data-bs-target="#gallery2"
                             type="button" role="tab" aria-controls="gallery2" aria-selected="false" tabindex="-1">
-                            Pakiet złoty <br> <small>(lokal M3)</small>
+                            Pakiet złoty
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery3-tab" data-bs-toggle="tab" data-bs-target="#gallery3"
+                            type="button" role="tab" aria-controls="gallery3" aria-selected="false" tabindex="-1">
+                            Pakiet platynowy
                         </button>
                     </li>
                 </ul>
@@ -72,100 +78,54 @@
             <div class="container">
                 <div class="tab-content" id="galleryTabContent">
                     <div class="tab-pane active" id="gallery1" role="tabpanel" aria-labelledby="gallery1-tab">
-                        <div class="row">
-                            <div class="col-lg-8 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/s1.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/s1_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
+                        <div class="row justify-content-center">
+                            @foreach($silver as $p)
+                                <div class="col-lg-4 mt-4">
+                                    <div class="border-gradient-photo">
+                                        <a href="/uploads/gallery/images/{{$p->file}}" class="swipebox" rel="gallery-22" title="">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$p->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}" width="520" height="293">
+                                            </picture>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/s2.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/s2_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/s3.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/s3_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/s4.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/s4_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/s5.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/s5_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
-
                     </div>
                     <div class="tab-pane" id="gallery2" role="tabpanel" aria-labelledby="gallery2-tab">
-                        <div class="row">
-                            <div class="col-lg-8 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/z1.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/z1_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
+                        <div class="row justify-content-center">
+                            @foreach($golden as $p)
+                                <div class="col-lg-4 mt-4">
+                                    <div class="border-gradient-photo">
+                                        <a href="/uploads/gallery/images/{{$p->file}}" class="swipebox" rel="gallery-22" title="">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$p->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}" width="520" height="293">
+                                            </picture>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/z2.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/z2_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="gallery3" role="tabpanel" aria-labelledby="gallery3-tab">
+                        <div class="row justify-content-center">
+                            @foreach($platinium as $p)
+                                <div class="col-lg-4 mt-4">
+                                    <div class="border-gradient-photo">
+                                        <a href="/uploads/gallery/images/{{$p->file}}" class="swipebox" rel="gallery-22" title="">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$p->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}" width="520" height="293">
+                                            </picture>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/z3.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/z3_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/z4.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/z4_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/z5.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/z5_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 mb-4">
-                                <div class="gallery-photo-container">
-                                    <a href="{{ asset('images/z6.jpg') }}" class="glightbox">
-                                        <img src="{{ asset('images/z6_thumb.webp') }}" alt="Wizualizacja"
-                                            class="gallery-photo" loading="lazy">
-                                    </a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
