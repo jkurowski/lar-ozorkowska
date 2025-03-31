@@ -328,14 +328,44 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-4 mb-lg-0">
-                            <div class="col-12">
-                                <p>Dojazd do centrum: 8 minut.</p>
-                                <p>Dojazd do autostrady A1: 15 minut.</p>
+                        <div class="row mb-0 mb-sm-4 mb-lg-0">
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">5 min</b><p>Księży Młyn</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">3 min</b><p>Park Podolskiego</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">7 min</b><p>Park Źródliska / Palmiarnia</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">10 min</b><p>Monopolis</p>
+                            </div>
+                        </div>
+                        <div class="row mt-0 mt-sm-5">
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">8 min</b><p>Galeria Łódzka</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">11 min</b><p>Off Piotrkowska</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">10 min</b><p>Centrum Nauki i Techniki EC1</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">12 min</b><p>Politechnika Łódzka</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-2 mt-sm-0">
                         <div id="map"></div>
                     </div>
                 </div>

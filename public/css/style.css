@@ -927,7 +927,7 @@ main {
     margin-left: 1rem;
 }
 #map {
-    height: 36rem;
+    height: 43rem
 }
 .blurred-bg {
     position: relative;
@@ -1857,6 +1857,17 @@ main {
     .section-header__subtitle {
         font-size: 1rem;
     }
+
+    .jak-daleko {
+        margin-bottom: 20px;
+    }
+    .jak-daleko img {
+        width: 27px;
+        height: 27px;
+    }
+    .jak-daleko b {
+        font-size: 21px;
+    }
 }
 @media (max-width: 344.98px) {
     .apartment-desc .project-link::after {
@@ -1877,6 +1888,15 @@ main {
     .fs-xl-xxl-small {
         font-size: 0.825rem;
     }
+}
+
+.jak-daleko b {
+    font-size: 25px;
+}
+.jak-daleko p {
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0;
 }
 
 /* Fonty
