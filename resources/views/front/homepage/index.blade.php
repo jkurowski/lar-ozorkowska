@@ -142,47 +142,20 @@
                             to nowoczesny budynek, który łączy funkcjonalne rozwiązania z nowoczesnym designem.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mb-4">
-                        <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g1.jpg') }}" class="swipebox">
-                                <img src="{{ asset('images/g1.jpg') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy" decoding="async">
-                            </a>
+                <div class="row justify-content-center">
+                    @foreach($images as $p)
+                        <div class="col-lg-4 mt-4">
+                            <div class="border-gradient-photo">
+                                <a href="/uploads/gallery/images/{{$p->file}}" class="swipebox" rel="gallery-22" title="">
+                                    <picture>
+                                        <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$p->file_webp) }}">
+                                        <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}">
+                                        <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}" width="520" height="293">
+                                    </picture>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g2.jpg') }}" class="swipebox">
-                                <img src="{{ asset('images/g2.jpg') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy" decoding="async">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g3.jpg') }}" class="swipebox">
-                                <img src="{{ asset('images/g3.jpg') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy" decoding="async">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g4.jpg') }}" class="swipebox">
-                                <img src="{{ asset('images/g4.jpg') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy" decoding="async">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="gallery-photo-container">
-                            <a href="{{ asset('images/g5.jpg') }}" class="swipebox">
-                                <img src="{{ asset('images/g5.jpg') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy" decoding="async">
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

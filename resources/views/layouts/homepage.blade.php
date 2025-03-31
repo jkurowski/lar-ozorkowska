@@ -215,7 +215,8 @@
                     let id = option;
                     let value = option === 'object' ? option : key;
                     let selected = id === parseInt(selectedValue) ? 'selected' : '';
-                    $(selector).append(`<option value="${option}" ${selected}>Piętro ${value}</option>`);
+                    let label = (option === 5) ? 'Parter' : `Piętro ${value}`;
+                    $(selector).append(`<option value="${option}" ${selected}>${label}</option>`);
                 });
             }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front\Developro;
 
 use App\Http\Controllers\Controller;
+use App\Models\Floor;
 use App\Models\Investment;
 use Illuminate\Http\Request;
 
@@ -41,13 +42,15 @@ class InvestmentController extends Controller
         ));
 
         $properties = $investment_room->properties;
+        $floors = Floor::orderBy('position')->get();
 
         $page = Page::where('id', $this->pageId)->first();
         return view('front.developro.investment.index', [
             'investment' => $investment,
             'properties' => $properties,
             'uniqueRooms' => $this->repository->getUniqueRooms($investment_room->properties),
-            'page' => $page
+            'page' => $page,
+            'floors' => $floors
         ]);
     }
 

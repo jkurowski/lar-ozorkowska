@@ -86,7 +86,10 @@
                                                 <div class="select-container">
                                                     <label for="floor" class="form-label">Piętro</label>
                                                     <select id="floor" name="s_pietro" class="form-select">
-                                                        <option value="">Wszystkie</option>
+                                                        <option value="" {{ request('s_pietro') == null ? 'selected' : '' }}>Wszystkie</option>
+                                                        @foreach($floors as $f)
+                                                            <option value="{{ $f->id }}" {{ request('s_pietro') == $f->id ? 'selected' : '' }}>{{ $f->name }}</option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
@@ -271,7 +274,7 @@
                         // Update select options based on response
                         updateSelect('#rooms', response.filters.rooms, rooms);
                         updateSelect('#area', response.filters.areas, area);
-                        updateFloorSelect('#floor', response.filters.floors, floor);
+                        //updateFloorSelect('#floor', response.filters.floors, floor);
                     }
                 });
             }
@@ -288,15 +291,16 @@
                 });
             }
 
-            function updateFloorSelect(selector, options, selectedValue) {
-                $(selector).html('<option value="">Wszystkie</option>');
-                $.each(options, function(key, option) {
-                    let id = option;
-                    let value = option === 'object' ? option : key;
-                    let selected = id === parseInt(selectedValue) ? 'selected' : '';
-                    $(selector).append(`<option value="${option}" ${selected}>Piętro ${value}</option>`);
-                });
-            }
+            // function updateFloorSelect(selector, options, selectedValue) {
+            //     $(selector).html('<option value="">Wszystkie</option>');
+            //     $.each(options, function(key, option) {
+            //         let id = option;
+            //         let value = option === 'object' ? option : key;
+            //         let selected = id === parseInt(selectedValue) ? 'selected' : '';
+            //         let label = (option === 5) ? 'Parter' : `Piętro ${value}`;
+            //         $(selector).append(`<option value="${option}" ${selected}>${label}</option>`);
+            //     });
+            // }
 
             $('#rooms, #area, #floor').on('change', function() {
                 fetchFilters('update');
