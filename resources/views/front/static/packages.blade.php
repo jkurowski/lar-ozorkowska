@@ -54,6 +54,15 @@
                             projekt wykonany na podstawie katalogu firmy.</p>
                     </div>
                 </div>
+
+                <div class="row mb-5">
+                    <div class="col-12 text-center d-flex gap-3 justify-content-center">
+                        <a href="/uploads/katalog_pakiet_srebrny_2025.pdf" target="_blank" class="project-btn">Pobierz katalog: pakiet srebrny&nbsp;&nbsp;</a>
+                        <a href="/uploads/katalog_pakiet_zloty_2025.pdf" target="_blank" class="project-btn">Pobierz katalog: pakiet złoty&nbsp;&nbsp;</a>
+                        <a href="/uploads/katalog_pakiet_platynowy_2025.pdf" target="_blank" class="project-btn">Pobierz katalog: pakiet platynowy&nbsp;&nbsp;</a>
+                    </div>
+                </div>
+
                 <ul class="nav nav-tabs mb-4" id="galleryTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="gallery1-tab" data-bs-toggle="tab" data-bs-target="#gallery1"
