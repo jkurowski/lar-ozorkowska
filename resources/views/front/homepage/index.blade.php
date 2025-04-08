@@ -388,7 +388,7 @@
                     <div class="col-xl-11 col-xxl-9 mx-auto">
                         <div class="row">
                             <div class="col-xl-4">
-                                <a href="%placeholder%">
+                                <a href="/mieszkania?s_pokoje=2#mainsearch">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
                                         <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
                                             class="choose-size__box-bg" width="320" height="394">
@@ -398,13 +398,12 @@
                                             class="choose-size__box-img" width="250" height="180">
                                         <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
-
                                         <p>Apartamenty 2 pokojowe</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-xl-4">
-                                <a href="%placeholder%">
+                                <a href="/mieszkania?s_pokoje=3#mainsearch">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
                                         <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
                                             class="choose-size__box-bg" width="320" height="394">
@@ -420,7 +419,7 @@
                                 </a>
                             </div>
                             <div class="col-xl-4">
-                                <a href="%placeholder%">
+                                <a href="/mieszkania?s_pokoje=4#mainsearch">
                                     <div class="choose-size__box d-flex align-items-end justify-content-center">
                                         <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
                                             class="choose-size__box-bg" width="320" height="394">
@@ -430,7 +429,6 @@
                                             class="choose-size__box-img" width="250" height="180">
                                         <img src="{{ asset('images/wiz-kolor-3.png') }}" alt="grafika"
                                             class="choose-size__box-img-hover" width="250" height="180">
-
                                         <p>Apartament 4 pokojowy</p>
                                     </div>
                                 </a>
