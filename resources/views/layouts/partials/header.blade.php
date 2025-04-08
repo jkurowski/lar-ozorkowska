@@ -12,7 +12,7 @@
                 <span class="icon-bar bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav pe-0 pe-xxl-4">
+                <ul class="navbar-nav pe-0 pe-xxl-3">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('front.investment') }}">O inwestycji</a>
                     </li>
@@ -39,13 +39,15 @@
                 </ul>
             </div>
             <div class="d-flex align-items-center top-menu__fast-contact">
-                <div class="top-menu__social d-flex align-items-center">
+                <div class="top-menu__social d-flex align-items-center justify-content-center">
                     <a href="https://www.facebook.com/deweloper.pminvest" class="social-link social-link-fb" target="_blank">
                         <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon social-icon-fb">
                         <img src="{{ asset('images/fb-hover.svg') }}" alt="facebook" class="social-icon-hover social-icon-fb-hover">
                     </a>
                 </div>
-                <a href="{{ route('front.contact.index') }}" class="project-btn">Skontaktuj się</a>
+                <div class="top-menu__social d-flex align-items-center justify-content-center top-menu-nobefore">
+                    <a href="tel:+48536882090"><img src="{{ asset('images/phone-green.svg') }}" alt="facebook" class=""> <span>536 882 090</span></a>
+                </div>
             </div>
         </nav>
     </div>

@@ -271,17 +271,26 @@ main {
 }
 .top-menu__social {
     position: relative;
-    width: 6rem;
+    width: 50px;
     height: 2.8rem;
 }
 .top-menu__social::before {
-    content: "";
-    width: 1px;
-    height: calc(100% - 10px);
-    position: absolute;
-    top: 5px;
-    left: 0;
-    background: var(--text-color-secondary);
+    /*content: "";*/
+    /*width: 1px;*/
+    /*height: calc(100% - 10px);*/
+    /*position: absolute;*/
+    /*top: 5px;*/
+    /*left: 0;*/
+    /*background: var(--text-color-secondary);*/
+}
+.top-menu__social.top-menu-nobefore {
+    width: 140px;
+}
+.top-menu__social.top-menu-nobefore a {
+    color: #008f72;
+}
+.top-menu__social.top-menu-nobefore::before {
+    display: none;
 }
 .social-link {
     width: 3rem;
@@ -291,7 +300,7 @@ main {
 .social-icon-fb-hover {
     position: absolute;
     top: 0;
-    right: 1.5rem;
+    right: 0;
     display: block;
 }
 .social-icon-ig,
@@ -1495,6 +1504,9 @@ main {
     .top-menu__social {
         width: 70px;
     }
+    .top-menu__social.top-menu-nobefore {
+        width: 140px;
+    }
     .social-icon-ig,
     .social-icon-ig-hover {
         left: 0.625rem;
@@ -1867,6 +1879,13 @@ main {
     }
     .jak-daleko b {
         font-size: 21px;
+    }
+
+    .top-menu-nobefore span {
+        display: none;
+    }
+    .top-menu__social.top-menu-nobefore {
+        width: 70px;
     }
 }
 @media (max-width: 344.98px) {
