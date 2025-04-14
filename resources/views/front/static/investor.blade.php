@@ -49,7 +49,7 @@
                                 <p>rzetelność</p>
                             </div>
                         </div>
-                        <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>
+                        <a href="https://pm-invest.com.pl/" class="project-btn" target="_blank">Sprawdź</a>
                     </div>
                     <div
                         class="photo-anim col-xl-6 offset-xl-1 position-relative d-flex justify-content-end align-items-end">
