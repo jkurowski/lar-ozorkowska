@@ -22,10 +22,10 @@
                     <div class="col-xl-5 text-center text-sm-start">
                         <div class="section-header mb-3">
                             <h1 class="section-header__title section-header__title--h1">Pakiety wykończenia</h1>
-                            <p class="section-header__subtitle">TWOJE WYMARZONE MIESZKANIE POD KLUCZ</p>
+                            <p class="section-header__subtitle">TWÓJ WYMARZONY APARTAMENT POD KLUCZ</p>
                         </div>
                         <div class="section-desc mb-4">
-                            <p>Współpracujemy z firmą WS Budownictwo, która może zająć się wykończeniem Twojego mieszkania pod klucz. Decydując się na usługi tego typu firmy jesteś w stanie oszczędzić wiele czasu i stresu. Fachowcy zajmą się projektem, dostawami, zakupami, zarządzaniem budżetem i remontem. Wprowadź się do swojego wymarzonego mieszkania w terminie i w dobrym nastroju.</p>
+                            <p>Współpracujemy z firmą WS Budownictwo, która może zająć się wykończeniem Twojego apartamentu pod klucz. Decydując się na usługi tego typu firmy jesteś w stanie oszczędzić wiele czasu i stresu. Fachowcy zajmą się projektem, dostawami, zakupami, zarządzaniem budżetem i remontem. Wprowadź się do swojego wymarzonego apartamentu w terminie i w dobrym nastroju.</p>
                         </div>
                         <a href="{{ asset('uploads/broszura-informacyjna.pdf') }}" target="_blank" class="project-btn">Ulotka</a>
                     </div>
