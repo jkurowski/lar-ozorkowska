@@ -263,7 +263,13 @@
         });
 
         const icons = [];
-        for (let i = 0; i <= 6; i++) {
+        icons[0] = L.icon({
+            iconUrl: `{{ asset('images/mapicons/0.png') }}`,
+            shadowUrl: '',
+            iconSize: [50, 50],
+            iconAnchor: [25, 32]
+        });
+        for (let i = 1; i <= 6; i++) {
             icons[i] = L.icon({
                 iconUrl: `{{ asset('images/mapicons/${i}.png') }}`,
                 shadowUrl: '',
