@@ -37,7 +37,7 @@
                                     <div class="d-flex align-items-center">
                                         <img src="http://ozorkowska.test/images/email.svg" alt="Adres e-mail">
                                         <div class="cta__contact-details">
-                                            <a href="mailto:m.chrakowiecki@gremium.info.pl">m.chrakowiecki@gremium.info.pl</a>
+                                            <a href="mailto:m.chrakowiecki@gremiumkredyty.pl">m.chrakowiecki@gremiumkredyty.pl</a>
                                         </div>
                                     </div>
                                 </div>
