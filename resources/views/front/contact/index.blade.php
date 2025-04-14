@@ -19,18 +19,17 @@
         <section class="first-sec sec-pad">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-5 mx-auto">
+                    <div class="col-xl-7 mx-auto">
                         <div class="section-header text-center mb-3">
                             <h1 class="section-header__title section-header__title--h1">Kontakt</h1>
-                            <p class="section-header__subtitle">skontaktuj się z nami</p>
                         </div>
                         <div class="section-desc text-center mb-5">
-                            <p> Skontaktuj się z naszymi doradcami, aby poznać wszystkie szczegóły oferty.</p>
+                            <p>Masz pytania? Chcesz poznać szczegóły oferty lub po prostu dowiedzieć się więcej? <br>Nasi doradcy są tu dla Ciebie – chętnie opowiedzą o inwestycji i pomogą wybrać apartament dopasowany do Twoich potrzeb. <br>Zrób pierwszy krok – resztą zajmiemy się wspólnie.</p>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center me-sm-5 mb-4 mb-md-0">
-                                    <img src="{{ asset('images/phone.svg') }}" alt="telefon" width="70" height="70">
+                                    <img src="{{ asset('images/phone-black.svg') }}" alt="telefon" width="70" height="70">
                                     <div class="contact-details">
                                         <p>zadzwoń</p>
                                         <a href="tel:+48536882090">536 882 090</a>
