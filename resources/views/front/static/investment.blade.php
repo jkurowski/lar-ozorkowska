@@ -273,11 +273,10 @@
         }
 
         const markers = [];
-        markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
-
         @foreach($markers as $m)
         markers.push(L.marker([{{ $m->lat }}, {{ $m->lng }}], {icon: icons[{{ $m->group_id }}]}).bindPopup('{{ $m->name }}'));
         @endforeach
+        markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
 
         const featureGroup = L.featureGroup(markers);
 
