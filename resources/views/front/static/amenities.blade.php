@@ -111,8 +111,8 @@
                                  loading="lazy" class="attractions__box-img">
                             <p class="attractions__box-name">KSIĘŻY MŁYN</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">8 min</p>
+                                <img src="{{ asset('images/dojazd-rower.svg') }}" alt="auto">
+                                <p class="attractions__box-time">5 min</p>
                             </div>
                         </div>
                     </div>
@@ -122,8 +122,8 @@
                                  loading="lazy" class="attractions__box-img">
                             <p class="attractions__box-name">PALMIARNIA</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">8 min</p>
+                                <img src="{{ asset('images/dojazd-rower.svg') }}" alt="auto">
+                                <p class="attractions__box-time">7 min</p>
                             </div>
                         </div>
                     </div>
@@ -133,8 +133,8 @@
                                  loading="lazy" class="attractions__box-img">
                             <p class="attractions__box-name">PARK ŹRÓDLISKA</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">8 min</p>
+                                <img src="{{ asset('images/dojazd-rower.svg') }}" alt="auto">
+                                <p class="attractions__box-time">7 min</p>
                             </div>
                         </div>
                     </div>
@@ -144,8 +144,8 @@
                                  loading="lazy" class="attractions__box-img">
                             <p class="attractions__box-name">Monopolis</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">8 min</p>
+                                <img src="{{ asset('images/dojazd-rower.svg') }}" alt="auto">
+                                <p class="attractions__box-time">10 min</p>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                             <p class="attractions__box-name">Planetarium EC1</p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">13 min</p>
+                                <p class="attractions__box-time">10 min</p>
                             </div>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                             <p class="attractions__box-name">Politechnika Łódzka</p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">14 min</p>
+                                <p class="attractions__box-time">12 min</p>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                             <p class="attractions__box-name">Park Podolski</p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">8 min</p>
+                                <p class="attractions__box-time">3 min</p>
                             </div>
                         </div>
                     </div>
