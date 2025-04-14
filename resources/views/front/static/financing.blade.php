@@ -29,13 +29,13 @@
                                 <p>Obsługą kredytów hipotecznych dla klientów zajmie się: <br><b>Pan Michał Chrakowiecki</b></p>
                                 <div class="cta__contact">
                                     <div class="d-flex align-items-center me-sm-5">
-                                        <img src="http://ozorkowska.test/images/phone.svg" alt="Numer telefonu">
+                                        <img src="{{ asset('images/phone.svg') }}" alt="Numer telefonu">
                                         <div class="cta__contact-details">
                                             <a href="tel:+48603751281">603 751 281</a>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <img src="http://ozorkowska.test/images/email.svg" alt="Adres e-mail">
+                                        <img src="{{ asset('images/email.svg') }}" alt="Adres e-mail">
                                         <div class="cta__contact-details">
                                             <a href="mailto:m.chrakowiecki@gremiumkredyty.pl">m.chrakowiecki@gremiumkredyty.pl</a>
                                         </div>
