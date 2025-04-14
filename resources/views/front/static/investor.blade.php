@@ -25,10 +25,7 @@
                             <p class="section-header__subtitle">Nasze wartości i zasady</p>
                         </div>
                         <div class="section-desc mb-4">
-                            <p>Nasza spółka, której początki sięgają 1999 roku, posiada wieloletnie doświadczenie w
-                                zarządzaniu projektami budowlanymi na terenie całego kraju. W ostatnich 5 latach
-                                zarządzaliśmy 10 projektami deweloperskimi o powierzchni 35.000 m2 (na co składa się 823
-                                lokali mieszkalnych i 14 lokali użytkowych). Wyróżnia nas:</p>
+                            <p>Nasza spółka, działająca nieprzerwanie od 1999 roku, może pochwalić się wieloletnim doświadczeniem w zarządzaniu projektami budowlanymi na terenie całej Polski. Tylko w ostatnich 5 latach z sukcesem nadzorowaliśmy 10 inwestycji deweloperskich o łącznej powierzchni 35 000 m², w ramach których powstały 823 mieszkania i 14 lokali usługowych. Stabilność, doświadczenie i sprawdzony zespół sprawiają, że realizacja HI TOWER to pewna inwestycja – zbudowana na solidnych fundamentach. Tworzymy miejsca, w których sami chcielibyśmy mieszkać. Wierzymy, że komfort zaczyna się od zaufania i dokładamy wszelkich starań, by to zaufanie budować każdego dnia.</p>
                         </div>
                         <div class="row our-princples mb-2">
                             <div class="col-md-6 d-flex align-items-center mb-4">
