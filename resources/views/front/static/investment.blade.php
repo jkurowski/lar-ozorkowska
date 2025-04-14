@@ -318,11 +318,11 @@
                 zIndexOffset: 1000
             }
         ).bindPopup('Inwestycja');
+        featureGroup.addLayer(alwaysIncludedMarker);
 
         // Function to filter markers
         function filterMarkers(group) {
             featureGroup.clearLayers();
-            featureGroup.addLayer(alwaysIncludedMarker);
             markers.forEach(marker => {
                 if (group === null || marker.options.icon.options.iconUrl.includes(`/${group}.png`)) {
                     featureGroup.addLayer(marker);
