@@ -311,7 +311,13 @@
             });
         }));
 
-        const alwaysIncludedMarker = L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja');
+        const alwaysIncludedMarker = L.marker(
+            [51.74445857171649, 19.487093873682273],
+            {
+                icon: icons[0],
+                zIndexOffset: 1000
+            }
+        ).bindPopup('Inwestycja');
 
         // Function to filter markers
         function filterMarkers(group) {
