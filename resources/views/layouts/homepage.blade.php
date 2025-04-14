@@ -259,7 +259,13 @@
         });
 
         const icons = [];
-        for (let i = 0; i <= 6; i++) {
+        icons[0] = L.icon({
+            iconUrl: `{{ asset('images/mapicons/0.png') }}`,
+            shadowUrl: '',
+            iconSize: [50, 50],
+            iconAnchor: [25, 32]
+        });
+        for (let i = 1; i <= 6; i++) {
             icons[i] = L.icon({
                 iconUrl: `{{ asset('images/mapicons/${i}.png') }}`,
                 shadowUrl: '',
@@ -269,11 +275,10 @@
         }
 
         const markers = [];
-        markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
-
         @foreach($markers as $m)
         markers.push(L.marker([{{ $m->lat }}, {{ $m->lng }}], {icon: icons[{{ $m->group_id }}]}).bindPopup('{{ $m->name }}'));
         @endforeach
+        //markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
 
         const featureGroup = L.featureGroup(markers);
 
@@ -308,12 +313,18 @@
             });
         }));
 
-        const alwaysIncludedMarker = L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja');
+        const alwaysIncludedMarker = L.marker(
+            [51.74445857171649, 19.487093873682273],
+            {
+                icon: icons[0],
+                zIndexOffset: 1000
+            }
+        ).bindPopup('Inwestycja');
+        featureGroup.addLayer(alwaysIncludedMarker);
 
         // Function to filter markers
         function filterMarkers(group) {
             featureGroup.clearLayers();
-            featureGroup.addLayer(alwaysIncludedMarker);
             markers.forEach(marker => {
                 if (group === null || marker.options.icon.options.iconUrl.includes(`/${group}.png`)) {
                     featureGroup.addLayer(marker);
