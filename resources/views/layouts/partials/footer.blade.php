@@ -6,18 +6,15 @@
                     <a href="/" class="navbar-brand">
                         <img src="{{ asset('images/logo.svg') }}" width="204" height="56" alt="logo" loading="eager">
                     </a>
-
                     <p class="mt-4">Zaobserwuj nas:</p>
                     <div class="social-media d-flex align-items-center">
-                        <div class="social-media-item d-none align-items-center pe-md-3 pe-xxl-4">
-                            <img src="{{ asset('images/ig.svg') }}" alt="instagram" class="social-icon" width="48" height="48" loading="lazy">
-                            <a href="https://www.instagram.com/hitower_lodz/" target="_blank">@Ozorkowska.28</a>
-                        </div>
                         <div class="social-media-item d-flex align-items-center">
-                            <img src="{{ asset('images/fb.svg') }}" alt="facebook" class="social-icon" width="48" height="48" loading="lazy">
-                            <a href="https://www.facebook.com/deweloper.pminvest" target="_blank">/Ozorkowska.28</a>
+                            <a href="https://www.facebook.com/deweloper.pminvest" target="_blank">
+                                <img src="{{ asset('images/fb.svg') }}" alt="Ikonka Facebook" class="" width="68" height="68" loading="lazy">
+                            </a>
                         </div>
                     </div>
+                    <img src="{{ asset('images/pzfd_logo.png') }}" width="180" height="62px" alt="Logo PZFD" loading="lazy">
                 </div>
                 <div class="col-xl-7 offset-xl-1">
                     <ul class="footer-nav text-center text-sm-start">
@@ -39,19 +36,19 @@
                     </ul>
                     <div class="footer__contact d-flex align-items-center">
                         <div class="footer__contact-item d-flex align-items-center pe-md-4">
-                            <img src="{{ asset('images/phone.svg') }}" alt="telefon" class="contact-icon"
+                            <img src="{{ asset('images/phone-black.svg') }}" alt="Ikonka telefonu" class="contact-icon"
                                 width="48" height="48" loading="lazy">
                             <a href="tel:+48536882090">536 882 090</a>
                         </div>
                         <div class="footer__contact-item d-flex align-items-center pe-md-4">
-                            <img src="{{ asset('images/email.svg') }}" alt="email" class="contact-icon"
+                            <img src="{{ asset('images/email.svg') }}" alt="Ikonka adresu e-mail" class="contact-icon"
                                 width="48" height="48" loading="lazy">
                             <a href="mailto:sprzedaz@ozorkowska28.pl">sprzedaz@ozorkowska28.pl</a>
                         </div>
                         <div class="footer__contact-item d-flex align-items-center footer__contact-address">
-                            <img src="{{ asset('images/pin.svg') }}" alt="pinezka" class="contact-icon" width="48"
+                            <img src="{{ asset('images/pin.svg') }}" alt="Ikonka położenia na mapie" class="contact-icon" width="48"
                                 height="48" loading="lazy">
-                            <p>ul. Ozorkowksa 28, <br> 93-286 Łódź</p>
+                            <p>Plac Zwycięstwa 2, <br> 90-312 Łódź</p>
                         </div>
                     </div>
                 </div>

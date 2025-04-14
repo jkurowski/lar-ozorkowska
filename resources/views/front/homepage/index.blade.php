@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="{{ route('front.investor') }}" class="project-link">Czytaj więcej</a>
+                            <a href="https://pm-invest.com.pl/" class="project-link" target="_blank">Sprawdź</a>
                         </div>
                     </div>
                     <div class="col-xl-5 position-relative d-none d-xl-block">
@@ -299,7 +299,7 @@
                             <h2 class="section-header__title">Lokalizacja</h2>
                             <p class="section-header__subtitle">Poznaj naszą okolicę</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego apartamentu. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -339,7 +339,7 @@
                             </div>
                             <div class="col-6 col-sm-3 text-center jak-daleko">
                                 <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
-                                <b class="d-block w-100">7 min</b><p>Park Źródliska / Palmiarnia</p>
+                                <b class="d-block w-100">7 min</b><p>Park Źródliska Palmiarnia</p>
                             </div>
                             <div class="col-6 col-sm-3 text-center jak-daleko">
                                 <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
@@ -394,10 +394,16 @@
                                             class="choose-size__box-bg" width="320" height="394">
                                         <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
                                             class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur.png') }}" alt="grafika"
-                                            class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor.png') }}" alt="grafika"
-                                            class="choose-size__box-img-hover" width="250" height="180">
+                                        <img src="{{ asset('images/apartament-2-pokoje.jpg') }}"
+                                             alt="Wizualizacja apartamentu 2 pokojowego"
+                                             class="choose-size__box-img"
+                                             width="250"
+                                             height="180">
+                                        <img src="{{ asset('images/apartament-2-pokoje.jpg') }}"
+                                             alt="Wizualizacja apartamentu 2 pokojowego"
+                                             class="choose-size__box-img-hover"
+                                             width="250"
+                                             height="180">
                                         <p>Apartamenty 2 pokojowe</p>
                                     </div>
                                 </a>
@@ -409,11 +415,16 @@
                                             class="choose-size__box-bg" width="320" height="394">
                                         <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
                                             class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur-2.png') }}" alt="grafika"
-                                            class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor-2.png') }}" alt="grafika"
-                                            class="choose-size__box-img-hover" width="250" height="180">
-
+                                        <img src="{{ asset('images/apartament-3-pokoje.jpg') }}"
+                                             alt="Wizualizacja apartamentu 3 pokojowego"
+                                             class="choose-size__box-img"
+                                             width="250"
+                                             height="180">
+                                        <img src="{{ asset('images/apartament-3-pokoje.jpg') }}"
+                                             alt="Wizualizacja apartamentu 3 pokojowego"
+                                             class="choose-size__box-img-hover"
+                                             width="250"
+                                             height="180">
                                         <p>Apartamenty 3 pokojowe</p>
                                     </div>
                                 </a>
@@ -425,10 +436,16 @@
                                             class="choose-size__box-bg" width="320" height="394">
                                         <img src="{{ asset('images/rozmiar-tlo-hover.svg') }}" alt="grafika"
                                             class="choose-size__box-bg-hover" width="320" height="394">
-                                        <img src="{{ asset('images/wiz-kontur-3.png') }}" alt="grafika"
-                                            class="choose-size__box-img" width="250" height="180">
-                                        <img src="{{ asset('images/wiz-kolor-3.png') }}" alt="grafika"
-                                            class="choose-size__box-img-hover" width="250" height="180">
+                                        <img src="{{ asset('images/apartament-4-pokoje.jpg') }}"
+                                             alt="Wizualizacja apartamentu 4 pokojowego"
+                                             class="choose-size__box-img"
+                                             width="250"
+                                             height="180">
+                                        <img src="{{ asset('images/apartament-4-pokoje.jpg') }}"
+                                             alt="Wizualizacja apartamentu 4 pokojowego"
+                                             class="choose-size__box-img-hover"
+                                             width="250"
+                                             height="180">
                                         <p>Apartament 4 pokojowy</p>
                                     </div>
                                 </a>

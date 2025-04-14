@@ -190,7 +190,7 @@
                     },
                     success: function(response) {
                         // Update select options based on response
-                        updateSelect('#rooms', response.filters.rooms, rooms);
+                        updateRooms('#rooms', response.filters.rooms, rooms);
                         updateSelect('#area', response.filters.areas, area);
                         updateFloorSelect('#floor', response.filters.floors, floor);
                     }
@@ -198,14 +198,23 @@
             }
 
             function updateSelect(selector, options, selectedValue) {
-                // Convert all options to strings for comparison
                 options = options.map(option => option.toString());
-                selectedValue = selectedValue.toString(); // Convert selectedValue to string
-
+                selectedValue = selectedValue.toString();
                 $(selector).html('<option value="">Wszystkie</option>');
                 options.forEach(option => {
                     let selected = option === selectedValue ? 'selected' : '';
                     $(selector).append(`<option value="${option}" ${selected}>${option}</option>`);
+                });
+            }
+
+            function updateRooms(selector, options, selectedValue) {
+                options = options.map(option => option.toString());
+                selectedValue = selectedValue.toString();
+                $(selector).html('<option value="">Wszystkie</option>');
+                options.forEach(option => {
+                    let selected = option === selectedValue ? 'selected' : '';
+                    let label = option === '1' ? 'Lokal usługowy' : option;
+                    $(selector).append(`<option value="${option}" ${selected}>${label}</option>`);
                 });
             }
 
