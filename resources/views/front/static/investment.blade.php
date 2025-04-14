@@ -25,12 +25,7 @@
                             <p class="section-header__subtitle">Informacje o projekcie</p>
                         </div>
                         <div class="section-desc mb-5">
-                            <p>W budynku przewidzieliśmy 29 lokali - 28 apartamentów mieszkalnych i jeden lokal usługowy na
-                                parterze. Wszystkie mieszkania ulokowane będą w 10-piętrowym budynku, z którego będzie
-                                rozpościerał się panoramiczny widok na miasto. Oferujemy lokale 2, 3 i 4-pokojowe o
-                                powierzchni użytkowej od 39 m2 do 78 m2. Teren wokół budynku będzie ogrodzony i urządzony
-                                zielenią. Dodatkowo zaprojektowaliśmy dwukondygnacyjną halę garażową, rowerownię (ze stacją
-                                napraw) oraz taras widokowy ze strefą wypoczynku.</p>
+                            <p>W budynku zaprojektowaliśmy 29 lokali – 28 nowoczesnych apartamentów i jeden praktyczny lokal usługowy na parterze. Wszystkie apartamenty znajdą się w 10-piętrowym budynku, z którego rozpościera się zachwycający widok na miasto. Oferujemy funkcjonalne układy 2-, 3- i 4-pokojowe o powierzchni od 40 m² do 79 m² – idealne zarówno na dobry start, jak i na rodzinne życie. Otoczenie budynku będzie ogrodzone, bezpieczne i pełne zieleni. Do dyspozycji mieszkańców oddamy także dwupoziomowy garaż, rowerownie ze stacją napraw oraz taras widokowy z przestrzenią do odpoczynku i spotkań.</p>
                         </div>
 
                         <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>
@@ -90,7 +85,7 @@
                     <div class="col-lg-5 text-center text-sm-start mb-5">
                         <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
                             <h2 class="section-header__title">Apartamenty Ozorkowksa</h2>
-                            <p class="section-header__subtitle">Mieszkania, które spełniają oczekiwania</p>
+                            <p class="section-header__subtitle">Apartamenty, które spełniają oczekiwania</p>
                         </div>
                         <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">To zamknięte
                             kameralne osiedle powstało z myślą o młodych i ambitnych osobach, które poszukują swojej
@@ -101,42 +96,35 @@
                     <div class="col-xl-7 col-xxl-6 text-center">
                         <div class="row">
                             <div class="col-lg-4">
-                                <a href="">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
-                                            class="number-box__bg" width="204" height="250" loading="lazy">
-                                        <div class="number-box__middle">
-                                            <p class="number-box__number">28</p>
-                                            <p class="number-box__desc">mieszkań</p>
-                                        </div>
+                                <div class="number-box">
+                                    <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
+                                         class="number-box__bg" width="204" height="250" loading="lazy">
+                                    <div class="number-box__middle">
+                                        <p class="number-box__number">28</p>
+                                        <p class="number-box__desc">apartamentów</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="col-lg-4">
-                                <a href="">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
-                                            class="number-box__bg" width="204" height="250" loading="lazy">
-                                        <div class="number-box__middle">
-                                            <p class="number-box__number">1473 m<sup>2</sup></p>
-                                            <p class="number-box__desc">metrów</p>
-                                        </div>
+                                <div class="number-box">
+                                    <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
+                                         class="number-box__bg" width="204" height="250" loading="lazy">
+                                    <div class="number-box__middle">
+                                        <p class="number-box__number">10</p>
+                                        <p class="number-box__desc">pięter</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="col-lg-4">
-                                <a href="">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
-                                            class="number-box__bg" width="204" height="250" loading="lazy">
-                                        <div class="number-box__middle">
-                                            <p class="number-box__number">25</p>
-                                            <p class="number-box__desc">miejsc parkingowych</p>
-                                        </div>
+                                <div class="number-box">
+                                    <img src="{{ asset('images/rozmiar-tlo.svg') }}" alt="grafika"
+                                         class="number-box__bg" width="204" height="250" loading="lazy">
+                                    <div class="number-box__middle">
+                                        <p class="number-box__number">25</p>
+                                        <p class="number-box__desc">miejsc parkingowych</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
