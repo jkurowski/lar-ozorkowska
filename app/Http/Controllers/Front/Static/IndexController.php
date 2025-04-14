@@ -29,8 +29,9 @@ class IndexController extends Controller
 
     public function amenities()
     {
+        $markers = Map::all();
         $page = Page::find(3);
-        return view('front.static.amenities', compact('page'));
+        return view('front.static.amenities', compact('page', 'markers'));
     }
 
     public function packages()

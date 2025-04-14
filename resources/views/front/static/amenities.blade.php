@@ -24,76 +24,64 @@
                             <h1 class="section-header__title section-header__title--h1">Udogodnienia</h1>
                             <p class="section-header__subtitle">Apartamenty Hitower</p>
                         </div>
-                        <p class="section-desc">HI TOWER to unikatowy projekt w okolicy - jako jedyni oferujemy apartamenty
-                            o wysokim standardzie, które dodatkowo będą posiadały szereg nowoczesnych i komfortowych dla
-                            przyszłych mieszkańców rozwiązań.</p>
+                        <p class="section-desc">HI TOWER to wyjątkowa inwestycja w tej części miasta – jako jedyni oferujemy apartamenty o podwyższonym standardzie, wzbogacone o nowoczesne rozwiązania, które realnie podnoszą komfort codziennego życia. To przestrzeń stworzona z myślą o tych, którzy cenią jakość, funkcjonalność i wygodę na co dzień. Wybierz komfort na własnych zasadach.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 order-1 order-lg-1 align-self-end">
+                    <div class="col-lg-4 order-1 order-lg-1 align-self-end" data-aos="fade-up" data-aos-duration="700"
+                         data-aos-delay="500">
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list1.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>FUNKCJONALNE ROZKŁADY</p>
-                                <p>W naszej ofercie znajdziesz mieszkania 2, 3 i 4-pokojowe o powierzchni użytkowej od 39 m2
-                                    do 78 m2.
-                                </p>
+                                <p>Funkcjonalne rozkłady</p>
+                                <p>W naszej ofercie znajdziesz apartamenty  2, 3 i 4 pokojowe o powierzchni użytkowej od 40 m<sup>2</sup> do 79 m<sup>2</sup></p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list2.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>
-                                    ŚWIETNA LOKALIZACJA
-                                </p>
-                                <p>
-                                    Centrum miasta gwarantuje dostęp do wszelkiego rodzaju udogodnień - punktów handlowych i usługowych, placówek edukacyjnych, szerokiej oferty gastronomicznej.
-                                </p>
+                                <p>Świetna lokalizacja</p>
+                                <p>Bliska okolica inwestycji gwarantuje dostęp do wszelkiego rodzaju udogodnień – obiektów handlowo-usługowych, placówek edukacyjnych i zdrowotnych, miejsc do rekreacji i odpoczynku oraz szerokiej oferty gastronomicznej.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list3.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>BEZPIECZEŃSTWO</p>
-                                <p>Zamknięte osiedle z przewidzianym monitoringiem oraz instalacją videodomofonów.
-                                </p>
+                                <p>Bezpieczeństwo</p>
+                                <p>Teren osiedla ogrodzony i monitorowany z możliwością podglądu przez mieszkańców z systemu wideodomofonów. Drzwi wejściowe do mieszkań o podwyższonej klacie antywłamaniowej.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mt-5 mt-lg-0 order-3 order-lg-2 position-relative align-self-end">
                         <div class="why-us__img-bg">
                             <div class="blurred-bg">
-                                <img src="{{ asset('images/udogodnienia-tlo.png') }}" alt="budynek" class="img-bg"
-                                    width="438" height="458" loading="eager">
+                                <img src="{{ asset('images/udogodnienia-tlo.png') }}" alt="budynek" class="img-bg" width="438" height="458" loading="lazy">
                             </div>
                         </div>
-                        <img src="{{ asset('images/udogodnienia.png') }}" alt="budynek" class="why-us__img d-block mx-auto"
-                            width="349" height="606" loading="eager">
+                        <img src="{{ asset('images/udogodnienia.png') }}" alt="budynek"
+                             class="why-us__img d-block mx-auto" width="349" height="606" loading="lazy">
                     </div>
-                    <div class="col-lg-4 order-2 order-lg-3 align-self-end">
+                    <div class="col-lg-4 order-2 order-lg-3 align-self-end" data-aos="fade-up" data-aos-duration="700"
+                         data-aos-delay="500">
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list4.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>NOWOCZESNE I KOMFORTOWE ROZWIĄZANIA</p>
-                                <p>W standardzie wykończenia każdego apartamentu zapewniamy Smart Home oraz klimatyzację.
-                                </p>
+                                <p>Nowoczesne i komfortowe rozwiązania</p>
+                                <p>Możliwość sterowania oświetleniem z jednego miejsca w każdym apartamencie, skrzynki paczkowe, wózkownia oraz rowerowania do dyspozycji mieszkańców.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list5.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>MIEJSCA POSTOJOWE</p>
-                                <p>Na terenie osiedla przewidziano dwie kondygnacje podziemnej hali garażowej.
-                                </p>
+                                <p>Miejsca postojowe</p>
+                                <p>Dwukondygnacyjna zamykana automatycznie hala garażowa z wydzielonymi komórkami lokatorskimi.</p>
                             </div>
                         </div>
                         <div class="why-us__list d-flex align-items-start">
                             <img src="{{ asset('images/list6.svg') }}" alt="ikonka">
                             <div class="why-us__list-desc">
-                                <p>CZĘŚCI WSPÓLNE</p>
-                                <p>Oprócz wysokiego standardu korytarzy i klatek schodowych zaprojektowaliśmy także
-                                    rowerownię oraz taras widokowy ze strefą wypoczynku.
-                                </p>
+                                <p>Części wspólne</p>
+                                <p>Niepowtarzalny taras widokowy ze strefą wypoczynku zlokalizowany na 10 piętrze budynku oraz wysoki standard wykończenia holu wejściowego i klatek schodowych.</p>
                             </div>
                         </div>
                     </div>
@@ -117,6 +105,50 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
+                    <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
+                        <div class="attractions__box">
+                            <img src="{{ asset('images/ksiezy-mlyn.jpg') }}" alt="KSIĘŻY MŁYN" width="320" height="393"
+                                 loading="lazy" class="attractions__box-img">
+                            <p class="attractions__box-name">KSIĘŻY MŁYN</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
+                                <p class="attractions__box-time">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
+                        <div class="attractions__box">
+                            <img src="{{ asset('images/palmiarnia.jpg') }}" alt="Monopolis" width="320" height="393"
+                                 loading="lazy" class="attractions__box-img">
+                            <p class="attractions__box-name">PALMIARNIA</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
+                                <p class="attractions__box-time">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
+                        <div class="attractions__box">
+                            <img src="{{ asset('images/park-zrodliska.jpg') }}" alt="Monopolis" width="320" height="393"
+                                 loading="lazy" class="attractions__box-img">
+                            <p class="attractions__box-name">PARK ŹRÓDLISKA</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
+                                <p class="attractions__box-time">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
+                        <div class="attractions__box">
+                            <img src="{{ asset('images/monopolis.jpg') }}" alt="Monopolis" width="320" height="393"
+                                 loading="lazy" class="attractions__box-img">
+                            <p class="attractions__box-name">Monopolis</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
+                                <p class="attractions__box-time">8 min</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
                         <div class="attractions__box">
                             <img src="{{ asset('images/galeria.png') }}" alt="atrakcja" width="320" height="393"
@@ -175,6 +207,7 @@
                 </div>
             </div>
         </section>
+
         <section class="contact-sec text-center text-sm-start sec-pad">
             <div class="container">
                 <div class="row">
@@ -183,60 +216,73 @@
                             <h2 class="section-header__title">Lokalizacja</h2>
                             <p class="section-header__subtitle">Poznaj naszą okolicę</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-                            Nasza inwestycja zlokalizowana jest w samym sercu miasta, dzięki czemu przyszli mieszkańcy HI
-                            TOWER będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to
-                            najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową
-                            okolicę, która zapewni Ci komfortowe i wygodne życie.
-                        </p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego apartamentu. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="row mb-5">
                             <div class="col-6">
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/zakupy.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>zakupy</p>
+                                <div class="map__legend d-flex align-items-center" data-group="1">
+                                    <img src="{{ asset('images/zakupy.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>zakupy</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/edukacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>edukacja</p>
+                                <div class="map__legend d-flex align-items-center" data-group="2">
+                                    <img src="{{ asset('images/edukacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>edukacja</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/zdrowie.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>zdrowie</p>
+                                <div class="map__legend d-flex align-items-center" data-group="3">
+                                    <img src="{{ asset('images/zdrowie.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>zdrowie</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/rekreacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>rekreacja</p>
+                                <div class="map__legend d-flex align-items-center" data-group="4">
+                                    <img src="{{ asset('images/rekreacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>rekreacja</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/komunikacja.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>komunikacja</p>
+                                <div class="map__legend d-flex align-items-center" data-group="5">
+                                    <img src="{{ asset('images/komunikacja.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"> <p>komunikacja</p>
                                 </div>
-                                <div class="map__legend d-flex align-items-center">
-                                    <img src="{{ asset('images/rozrywka.svg') }}" alt="ikonka" width="64"
-                                        height="64" loading="lazy">
-                                    <p>rozrywka</p>
+                                <div class="map__legend d-flex align-items-center" data-group="6">
+                                    <img src="{{ asset('images/rozrywka.svg') }}" alt="ikonka" width="64" height="64" loading="lazy"><p>rozrywka</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-4 mb-lg-0">
-                            <div class="col-12">
-                                <p>Dojazd do centrum w …..</p>
-                                <p>Dojazd do autostrady A1 w …..</p>
+                        <div class="row mb-0 mb-sm-4 mb-lg-0">
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">5 min</b><p>Księży Młyn</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">3 min</b><p>Park Podolskiego</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">7 min</b><p>Park Źródliska Palmiarnia</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/bike.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">10 min</b><p>Monopolis</p>
+                            </div>
+                        </div>
+                        <div class="row mt-0 mt-sm-5">
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">8 min</b><p>Galeria Łódzka</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">11 min</b><p>Off Piotrkowska</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">10 min</b><p>Centrum Nauki i Techniki EC1</p>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center jak-daleko">
+                                <img src="{{ asset('images/car.svg') }}" alt="Ikonka roweru" width="41" height="41" loading="lazy">
+                                <b class="d-block w-100">12 min</b><p>Politechnika Łódzka</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-2 mt-sm-0">
                         <div id="map"></div>
                     </div>
                 </div>
@@ -246,3 +292,99 @@
         <x-cta></x-cta>
     </main>
 @endsection
+@push('scripts')
+<style>
+    .leaflet-marker-icon {
+        border-radius: 50%;
+    }
+</style>
+<script src="{{ asset('/js/leaflet.min.js') }}" charset="utf-8"></script>
+<link href="{{ asset('/css/leaflet.min.css') }}" rel="stylesheet">
+<script>
+    const tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    });
+
+    const icons = [];
+    for (let i = 0; i <= 6; i++) {
+        icons[i] = L.icon({
+            iconUrl: `{{ asset('images/mapicons/${i}.png') }}`,
+            shadowUrl: '',
+            iconSize: [40, 40],
+            iconAnchor: [20, 32]
+        });
+    }
+
+    const markers = [];
+    markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
+
+    @foreach($markers as $m)
+    markers.push(L.marker([{{ $m->lat }}, {{ $m->lng }}], {icon: icons[{{ $m->group_id }}]}).bindPopup('{{ $m->name }}'));
+    @endforeach
+
+    const featureGroup = L.featureGroup(markers);
+
+    const mapDiv = document.getElementById("map");
+    let map = new L.Map(mapDiv, {
+        center: [0, 0],
+        zoom: 0,
+        layers: [tileLayer, featureGroup]
+    });
+
+    map.fitBounds(featureGroup.getBounds(), {
+        padding: [50, 50]
+    });
+
+    map.on('popupclose', function () {
+        map.fitBounds(featureGroup.getBounds(), {
+            padding: [50, 50]
+        });
+    });
+
+    function debounce(func) {
+        let timer;
+        return function (event) {
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(func, 100, event);
+        };
+    }
+
+    window.addEventListener("resize", debounce(function (e) {
+        map.fitBounds(featureGroup.getBounds(), {
+            padding: [50, 50]
+        });
+    }));
+
+    const alwaysIncludedMarker = L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja');
+
+    // Function to filter markers
+    function filterMarkers(group) {
+        featureGroup.clearLayers();
+        featureGroup.addLayer(alwaysIncludedMarker);
+        markers.forEach(marker => {
+            if (group === null || marker.options.icon.options.iconUrl.includes(`/${group}.png`)) {
+                featureGroup.addLayer(marker);
+            }
+        });
+        map.fitBounds(featureGroup.getBounds(), {
+            padding: [50, 50]
+        });
+    }
+
+    // Add click event listeners to the divs
+    document.querySelectorAll('.map__legend').forEach(div => {
+        div.addEventListener('click', function() {
+            const group = this.getAttribute('data-group');
+            filterMarkers(group);
+        });
+    });
+
+    // Optionally add a reset button to show all markers
+    const resetButton = document.getElementById('resetButton');
+    if (resetButton) {
+        resetButton.addEventListener('click', function() {
+            filterMarkers(null);
+        });
+    }
+</script>
+@endpush

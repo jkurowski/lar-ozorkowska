@@ -370,6 +370,7 @@
                 </div>
             </div>
         </section>
+
         <section class="choose-size blurred-bg sec-pad position-relative">
             <img src="{{ asset('images/mloda-para.jpg') }}" alt="inwestycja" class="img-bg" width="1920"
                 height="1015" loading="lazy">
