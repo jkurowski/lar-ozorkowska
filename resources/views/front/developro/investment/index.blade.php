@@ -133,8 +133,12 @@
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-4">
                                                         <div class="apartment-box__name">
-                                                            <p class="">{{ $r->name_list }}</p>
-                                                            <p class="mb-0">Hi {{ $r->number }}</p>
+                                                            @if($r->id == 4)
+                                                                <p class="">{{ $r->name_list }}</p>
+                                                                <p class="mb-0">{{ $r->number }}</p>
+                                                            @else
+                                                                <p class="mb-0">Hi {{ $r->number }}</p>
+                                                            @endif
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
