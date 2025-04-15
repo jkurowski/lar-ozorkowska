@@ -66,11 +66,11 @@
                                                 <div class="select-container">
                                                     <label for="rooms" class="form-label">Ilość pokoi</label>
                                                     <select id="rooms" name="s_pokoje" class="form-select">
-                                                        <option value="">Wszystkie</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
+                                                        <option value="" {{ request('s_pokoje') == null ? 'selected' : '' }}>Wszystkie</option>
+                                                        <option value="1" {{ request('s_pokoje') == 1 ? 'selected' : '' }}>1</option>
+                                                        <option value="2" {{ request('s_pokoje') == 2 ? 'selected' : '' }}>2</option>
+                                                        <option value="3" {{ request('s_pokoje') == 3 ? 'selected' : '' }}>3</option>
+                                                        <option value="4" {{ request('s_pokoje') == 4 ? 'selected' : '' }}>4</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -97,8 +97,7 @@
                                     </div>
                                     <div class="col-sm-1 align-self-center text-center mt-3 mt-sm-0 p-0">
                                         <button type="submit">
-                                            <img src="{{ asset('images/search.svg') }}" alt="ikona szukaj" width="65"
-                                                height="65" loading="lazy">
+                                            <img src="{{ asset('images/search.svg') }}" alt="ikona szukaj" width="65" height="65" loading="lazy">
                                         </button>
                                     </div>
                                 </div>
@@ -128,7 +127,6 @@
                                 @if ($properties)
                                     @foreach ($properties as $r)
                                         <div class="offer-list-box position-relative mb-4">
-
                                             <div class="apartment-box project-gradient">
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-4">
@@ -276,7 +274,7 @@
                     },
                     success: function(response) {
                         // Update select options based on response
-                        updateSelect('#rooms', response.filters.rooms, rooms);
+                        //updateSelect('#rooms', response.filters.rooms, rooms);
                         updateSelect('#area', response.filters.areas, area);
                         //updateFloorSelect('#floor', response.filters.floors, floor);
                     }
