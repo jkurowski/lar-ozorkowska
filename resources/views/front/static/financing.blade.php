@@ -18,8 +18,8 @@
         </section>
         <section class="first-sec finance-sec position-relative sec-pad">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 text-center text-sm-start align-items-center d-flex">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-7 col-lg-5 col-xxl-4 text-center text-sm-start align-items-center d-flex">
                         <div>
                             <div class="section-header mb-3">
                                 <h1 class="section-header__title section-header__title--h1">Finansowanie</h1>
@@ -44,8 +44,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="photo-anim col-xl-6 offset-xl-1 position-relative d-flex justify-content-center align-items-end">
-                        <img src="{{ asset('images/sprzedawca-michal-2.jpg') }}" alt="Obsługą kredytów hipotecznych" width="600" height="600" loading="eager" class="w-100 h-auto">
+                    <div class="photo-anim col-7 col-md-5 col-lg-5 col-xxl-4 position-relative d-flex justify-content-center align-items-end">
+                        <img src="{{ asset('images/sprzedawca-michal-2.jpg') }}" alt="Obsługą kredytów hipotecznych" width="446" height="600" loading="eager" class="w-100 h-auto">
                     </div>
 
                 </div>

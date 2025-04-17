@@ -16,8 +16,13 @@
                 </nav>
             </div>
         </section>
-        <section class="first-sec investor-sec position-relative sec-pad">
+        <section class="first-sec investor-sec position-relative sec-pad pt-4">
             <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <img src="{{ asset('images/pminvest-logo.png') }}" alt="Logotyp PM Invest" width="180" height="185">
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xl-5 text-center text-sm-start">
                         <div class="section-header mb-3">
@@ -101,7 +106,7 @@
                             <p>Przedmiot naszej działalności obejmuje cały zakres zarządzania projektami - planowanie (w tym analiza parametrów technicznych i ekonomicznych projektu), opracowanie budżetów i harmonogramów inwestycji, projektowanie z uzyskaniem pozwolenia na budowę, wybór wykonawców i ich kontraktowanie, kierowanie procesem budowlanym, nadzorowanie prac i rozliczanie wszystkich uczestników procesu, odbiory i uzyskanie pozwolenia na użytkowanie, rozliczenie kontraktu oraz innych czynności związanych z zakończeniem procesu inwestycyjnego.</p>
                         </div>
 
-                        <a href="{{ route('front.developro.investment.index') }}" class="project-btn">Sprawdź</a>
+                        <a href="https://pm-invest.com.pl/" class="project-btn" target="_blank">Sprawdź</a>
                     </div>
                     <div class="col-xl-6 offset-xl-1  position-relative d-flex justify-content-end align-items-end">
                         <div class="img-sec__bg blurred-bg">

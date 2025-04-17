@@ -4,8 +4,7 @@
             <div class="col-11 col-sm-10 col-xxl-8 mx-auto cta__box project-gradient" data-aos="zoom-in"
                  data-aos-duration="700">
                 <div class="cta__img-bg">
-                    <img src="{{ asset('images/tlo-cta.jpg') }}" alt="budynek" class="" width="420"
-                         height="400" loading="lazy">
+                    <img src="{{ asset('images/tlo-cta.jpg') }}" alt="budynek" class="" width="420" height="400" loading="lazy">
                 </div>
                 <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta__img" width="458"
                      height="434" loading="lazy">
@@ -16,7 +15,7 @@
                         </div>
                         <div class="cta__contact">
                             <div class="d-flex align-items-center me-sm-5">
-                                <img src="{{ asset('images/phone.svg') }}" alt="Numer telefonu">
+                                <img src="{{ asset('images/phone-black.svg') }}" alt="Numer telefonu">
                                 <div class="cta__contact-details">
                                     <a href="tel:+48536882090">536 882 090</a>
                                 </div>
