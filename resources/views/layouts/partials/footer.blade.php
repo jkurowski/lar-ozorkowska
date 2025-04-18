@@ -14,8 +14,8 @@
                             </a>
                         </div>
                     </div>
-                    <img src="{{ asset('images/pminvest-logo.png') }}" alt="Logotyp PM Invest" width="80" height="82" class="me-4">
-                    <img src="{{ asset('images/pzfd_logo.png') }}" width="180" height="62px" alt="Logo PZFD" loading="lazy">
+                    <a href="https://pm-invest.com.pl/" class="me-4"><img src="{{ asset('images/pminvest-logo.png') }}" alt="Logotyp PM Invest" width="80" height="82"></a>
+                    <a href="https://www.pzfd.pl/s/developers" target="_blank"><img src="{{ asset('images/pzfd_logo.png') }}" width="180" height="62px" alt="Logo PZFD" loading="lazy"></a>
                 </div>
                 <div class="col-xl-7 offset-xl-1">
                     <ul class="footer-nav text-center text-sm-start">
