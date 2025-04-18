@@ -18,11 +18,6 @@
         </section>
         <section class="first-sec investor-sec position-relative sec-pad pt-4">
             <div class="container">
-                <div class="row mb-5">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="{{ asset('images/pminvest-logo.png') }}" alt="Logotyp PM Invest" width="180" height="185">
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xl-5 text-center text-sm-start">
                         <div class="section-header mb-3">
@@ -122,7 +117,8 @@
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center align-items-center">
-                        <img src="{{ asset('images/PZFD_jestesmyczlonkiem.png') }}" alt="PZFD logo" width="704" height="371" loading="lazy" class="pzfd">
+                        <a href="https://pm-invest.com.pl/" class="me-4"><img src="{{ asset('images/pminvest-logo.png') }}" alt="Logotyp PM Invest" width="80" height="82"></a>
+                        <a href="https://www.pzfd.pl/s/developers" target="_blank" rel="nofollow"><img src="{{ asset('images/pzfd_logo.png') }}" width="180" height="62px" alt="Logo PZFD" loading="lazy"></a>
                     </div>
                 </div>
             </div>
