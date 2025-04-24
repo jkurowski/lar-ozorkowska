@@ -140,6 +140,17 @@
                     </div>
                     <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
                         <div class="attractions__box">
+                            <img src="{{ asset('images/park-podolski.png') }}" alt="atrakcja" width="320"
+                                 height="331" loading="lazy" class="attractions__box-img">
+                            <p class="attractions__box-name">Park Podolski</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{{ asset('images/dojazd-rower.svg') }}" alt="auto">
+                                <p class="attractions__box-time">3 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
+                        <div class="attractions__box">
                             <img src="{{ asset('images/monopolis.jpg') }}" alt="Monopolis" width="320" height="393"
                                  loading="lazy" class="attractions__box-img">
                             <p class="attractions__box-name">Monopolis</p>
@@ -190,17 +201,6 @@
                             <div class="d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
                                 <p class="attractions__box-time">12 min</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4 mb-5 mb-xl-4">
-                        <div class="attractions__box">
-                            <img src="{{ asset('images/park-podolski.png') }}" alt="atrakcja" width="320"
-                                height="331" loading="lazy" class="attractions__box-img">
-                            <p class="attractions__box-name">Park Podolski</p>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <img src="{{ asset('images/dojazd.svg') }}" alt="auto">
-                                <p class="attractions__box-time">3 min</p>
                             </div>
                         </div>
                     </div>

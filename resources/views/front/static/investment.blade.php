@@ -169,11 +169,7 @@
                             <h2 class="section-header__title">Lokalizacja</h2>
                             <p class="section-header__subtitle">Poznaj naszą okolicę</p>
                         </div>
-                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza
-                            inwestycja zlokalizowana jest w samym sercu miasta, dzięki czemu przyszli mieszkańcy HI TOWER
-                            będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to
-                            najważniejsza kwestia podczas wyboru idealnego mieszkania. Warto zainwestować w rozwojową
-                            okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
+                        <p class="section-desc" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Nasza inwestycja zlokalizowana jest przy Księżym Młynie, dzięki czemu przyszli mieszkańcy Hi Tower będą mogli korzystać ze wszystkich udogodnień z tym związanych. Atrakcyjna lokalizacja to najważniejsza kwestia podczas wyboru idealnego apartamentu. Warto zainwestować w rozwojową okolicę, która zapewni Ci komfortowe i wygodne życie.</p>
                     </div>
                 </div>
                 <div class="row">
