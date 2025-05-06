@@ -9,14 +9,13 @@
                         <h4 class="page-title row"><i class="fe-inbox"></i>RODO: regułki</h4>
                     </div>
                     <div class="col-6 d-flex justify-content-end align-items-center form-group-submit">
-                        <a href="{{route('admin.rodo.rules.create')}}" class="btn btn-primary">Dodaj regułkę</a>
+                        <a href="{{route('admin.rodo.rules.create')}}" class="btn btn-primary d-none">Dodaj regułkę</a>
                     </div>
                 </div>
             </div>
 
             <div class="card-header border-bottom card-nav">
                 <nav class="nav">
-                    <a class="nav-link {{ Request::routeIs('admin.crm.inbox.index') ? ' active' : '' }}" href="{{ route('admin.crm.inbox.index') }}"><span class="fe-list"></span> Lista wiadomości</a>
                     <a class="nav-link {{ Request::routeIs('admin.rodo.rules.index') ? ' active' : '' }}" href="{{ route('admin.rodo.rules.index') }}"><span class="fe-check-square"></span> RODO: regułki</a>
                     <a class="nav-link" href="{{ route('admin.rodo.clients.index') }}"><span class="fe-users"></span> RODO: użytkownicy</a>
                     <a class="nav-link" href="{{ route('admin.rodo.settings.index') }}"><span class="fe-settings"></span> RODO: ustawienia</a>
@@ -57,7 +56,7 @@
                                 <td>{{ $p->created_at }}</td>
                                 <td>{{ $p->updated_at }}</td>
                                 <td class="option-120">
-                                    <div class="btn-group">
+                                    <div class="btn-group d-none">
                                         <a href="{{route('admin.rodo.rules.edit', $p)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
                                         <form method="POST" action="{{route('admin.rodo.rules.destroy', $p)}}">
                                             {{ csrf_field() }}
@@ -78,7 +77,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 d-flex justify-content-end">
-                    <a href="{{route('admin.rodo.rules.create')}}" class="btn btn-primary">Dodaj regułkę</a>
+                    <a href="{{route('admin.rodo.rules.create')}}" class="btn btn-primary d-none">Dodaj regułkę</a>
                 </div>
             </div>
         </div>
