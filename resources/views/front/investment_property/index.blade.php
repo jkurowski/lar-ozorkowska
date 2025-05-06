@@ -179,7 +179,7 @@
                                 <p>Na podstawie z art. 13 ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016) informujemy, iż przesyłając wiadomość za pomocą formularza kontaktowego wyrażacie Państwo zgodę na:</p>
                             </div>
                             @foreach ($rules as $r)
-                                <div class="mb-3 form-check position-relative @error('rule_'.$r->id) is-invalid @enderror">
+                                <div class="mb-3 form-check position-relative d-flex @error('rule_'.$r->id) is-invalid @enderror">
                                     <input name="rule_{{$r->id}}" type="checkbox" class="form-check-input @if($r->required === 1) validate[required] @endif" id="rule_{{$r->id}}" data-prompt-position="topLeft:-25px">
                                     <label class="form-check-label form-check-label--check" for="rule_{{$r->id}}">{!! $r->text !!}</label>
                                     @error('rule_'.$r->id)

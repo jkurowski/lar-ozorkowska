@@ -1932,3 +1932,28 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 #swipebox-prev:before {float:left;content:"\f053"}
 #swipebox-next:before {float:right;content:"\f054"}
 #swipebox-close:before {float:right;content:"\f00d";font-size:30px}
+
+.rodo p, .form-check p {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+}
+.rodo {
+    margin-bottom: 16px;
+}
+.form-check {
+    margin-left: 10px;
+}
+.cta-woman {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: -48px;
+}
+
+@media (max-width: 1399.98px) {
+    .rodo p, .form-check p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
