@@ -175,11 +175,19 @@
                                 <label for="Message" class="lab-anim">Wiadomość</label>
                                 <textarea id="Message" name="Message" class="form-control" rows="2" maxlength="3000" required></textarea>
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="check1">
-                                <label class="form-check-label" for="check1">Akceptuję <a
-                                        href="polityka-prywatnosci.html">Politykę prywatności*.</a> </label>
+                            <div class="col-12 rodo">
+                                <p>Na podstawie z art. 13 ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016) informujemy, iż przesyłając wiadomość za pomocą formularza kontaktowego wyrażacie Państwo zgodę na:</p>
                             </div>
+                            @foreach ($rules as $r)
+                                <div class="mb-3 form-check position-relative @error('rule_'.$r->id) is-invalid @enderror">
+                                    <input name="rule_{{$r->id}}" type="checkbox" class="form-check-input @if($r->required === 1) validate[required] @endif" id="rule_{{$r->id}}" data-prompt-position="topLeft:-25px">
+                                    <label class="form-check-label form-check-label--check" for="rule_{{$r->id}}">{!! $r->text !!}</label>
+                                    @error('rule_'.$r->id)
+                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                    @enderror
+                                </div>
+                            @endforeach
+
                             <div class="text-center text-sm-end">
                                 <button type="submit" class="project-btn project-btn--white"><span>Wyślij</span></button>
                             </div>
