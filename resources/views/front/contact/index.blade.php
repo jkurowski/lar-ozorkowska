@@ -50,23 +50,35 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-11 col-sm-10 mx-auto cta__box project-gradient">
-                        <form class="contact-form row">
+                        <form class="contact-form row validateForm" id="contactForm" method="post" action="{{ route('front.contact.form') }}">
                             <div class="col-12">
                                 <div class="box-anim mb-3">
                                     <label for="name" class="lab-anim">Imię</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input name="form_name" type="text" class="form-control validate[required] @error('form_name') is-invalid @enderror" id="name" value="{{ old('form_name') }}">
+                                    @error('form_name')
+                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                    @enderror
                                 </div>
                                 <div class="box-anim mb-3">
                                     <label for="phone" class="lab-anim">Telefon</label>
-                                    <input type="tel" class="form-control" id="phone">
+                                    <input name="form_phone" type="tel" class="form-control validate[required] @error('form_phone') is-invalid @enderror" id="phone" value="{{ old('form_phone') }}">
+                                    @error('form_phone')
+                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                    @enderror
                                 </div>
                                 <div class="box-anim mb-3">
                                     <label for="email" class="lab-anim">Adres e-mail</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input name="form_email" type="email" class="form-control validate[required] @error('form_email') is-invalid @enderror" id="email" value="{{ old('form_email') }}">
+                                    @error('form_email')
+                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                    @enderror
                                 </div>
                                 <div class="mb-4 box-anim">
                                     <label for="Message" class="lab-anim">Wiadomość</label>
-                                    <textarea id="Message" name="Message" class="form-control" rows="2" maxlength="3000" required></textarea>
+                                    <textarea id="Message" name="form_message" class="form-control validate[required] @error('form_message') is-invalid @enderror" rows="2" maxlength="3000" required></textarea>
+                                    @error('form_message')
+                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6">
@@ -97,3 +109,36 @@
         </section>
     </main>
 @endsection
+@push('scripts')
+    <script src="{{ asset('js/validation.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('js/pl.js') }}" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".validateForm").validationEngine({
+                validateNonVisibleFields: true,
+                updatePromptsPosition:true,
+                promptPosition : "topRight:-137px",
+                autoPositionUpdate: false
+            });
+        });
+
+        function onRecaptchaSuccess(token) {
+            $(".validateForm").validationEngine('updatePromptsPosition');
+            const isValid = $(".validateForm").validationEngine('validate');
+            if (isValid) {
+                $("#contactForm").submit();
+            } else {
+                grecaptcha.reset();
+            }
+        }
+        @if (session('success') || session('warning') || $errors->any())
+        $(window).load(function() {
+            const aboveHeight = $('header').outerHeight();
+            $('html, body').stop().animate({
+                scrollTop: $('.validateForm').offset().top-aboveHeight
+            }, 1500, 'easeInOutExpo');
+        });
+        @endif
+    </script>
+@endpush

@@ -1948,12 +1948,26 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
     max-width: 100%;
     height: auto;
     position: relative;
-    margin-bottom: -48px;
+    bottom: -48px;
+}
+@media (max-width: 1499.98px) {
+    .cta-woman {
+        bottom: -56px;
+    }
 }
 
 @media (max-width: 1399.98px) {
     .rodo p, .form-check p {
         font-size: 13px;
         line-height: 16px;
+    }
+    .cta-woman {
+        bottom: -69px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .cta-woman {
+        bottom: -188px;
     }
 }
