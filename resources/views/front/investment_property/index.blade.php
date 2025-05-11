@@ -48,8 +48,6 @@
                             <p class="section-header__subtitle">Indywidualnie dostosowane do potrzeb</p>
                         </div>
                         <div class="desc-anim">
-
-
                             <div>
                                 <div class="row my-5 apartment__details">
                                     <div class="col-4">
@@ -158,22 +156,49 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 mx-auto">
-                        <form class="contact-form">
+                        <div class="row">
+                            <div class="col-12">
+                                @if (session('success'))
+                                    <div class="alert alert-success border-0">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
+                                @if (session('warning'))
+                                    <div class="alert alert-warning border-0">
+                                        {{ session('warning') }}
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+                        <form class="contact-form validateForm" id="contactForm" method="post" action="{{route('front.contact.property', $property->id)}}">
+                            {{ csrf_field() }}
                             <div class="box-anim mb-3">
                                 <label for="name" class="lab-anim">Imię</label>
-                                <input type="text" class="form-control" id="name">
+                                <input name="form_name" type="text" class="form-control validate[required] @error('form_name') is-invalid @enderror" id="name" value="{{ old('form_name') }}">
+                                @error('form_name')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                             <div class="box-anim mb-3">
                                 <label for="phone" class="lab-anim">Telefon</label>
-                                <input type="tel" class="form-control" id="phone">
+                                <input name="form_phone" type="tel" class="form-control validate[required] @error('form_phone') is-invalid @enderror" id="phone" value="{{ old('form_phone') }}">
+                                @error('form_phone')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                             <div class="box-anim mb-3">
                                 <label for="email" class="lab-anim">Adres e-mail</label>
-                                <input type="email" class="form-control" id="email">
+                                <input name="form_email" type="email" class="form-control validate[required] @error('form_email') is-invalid @enderror" id="email" value="{{ old('form_email') }}">
+                                @error('form_email')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                             <div class="mb-4 box-anim">
                                 <label for="Message" class="lab-anim">Wiadomość</label>
-                                <textarea id="Message" name="Message" class="form-control" rows="2" maxlength="3000" required></textarea>
+                                <textarea id="Message" name="form_message" class="form-control validate[required] @error('form_message') is-invalid @enderror" rows="2" maxlength="3000" required></textarea>
+                                @error('form_message')
+                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                @enderror
                             </div>
                             <div class="col-12 rodo">
                                 <p>Na podstawie z art. 13 ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016) informujemy, iż przesyłając wiadomość za pomocą formularza kontaktowego wyrażacie Państwo zgodę na:</p>
@@ -189,7 +214,17 @@
                             @endforeach
 
                             <div class="text-center text-sm-end">
-                                <button type="submit" class="project-btn project-btn--white"><span>Wyślij</span></button>
+                                <input name="form_page" type="hidden" value="{{ $property->name }}">
+                                <input name="investment_id" type="hidden" value="{{ $investment->id }}">
+                                <input name="investment_name" type="hidden" value="{{ $investment->name }}">
+                                <script type="text/javascript">
+                                    @if(config('services.recaptcha.v3_site_key') && config('services.recaptcha.v3_secret_key'))
+                                    document.write("<button type=\"submit\" class=\"project-btn project-btn--white g-recaptcha\" data-sitekey=\"{{ config('services.recaptcha.v3_site_key') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ</button>");
+                                    @else
+                                    document.write("<button class=\"project-btn project-btn--white\" type=\"submit\">WYŚLIJ</button>");
+                                    @endif
+                                </script>
+                                <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
                             </div>
                         </form>
                     </div>
@@ -200,16 +235,28 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('/js/validation.js') }}" charset="utf-8"></script>
-    <script src="{{ asset('/js/pl.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('js/validation.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('js/pl.js') }}" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function(){
             $(".validateForm").validationEngine({
                 validateNonVisibleFields: true,
-                updatePromptsPosition: true,
-                promptPosition: "topRight:-137px"
+                updatePromptsPosition:true,
+                promptPosition : "topRight:-137px",
+                autoPositionUpdate: false
             });
         });
+
+        function onRecaptchaSuccess(token) {
+            $(".validateForm").validationEngine('updatePromptsPosition');
+            const isValid = $(".validateForm").validationEngine('validate');
+            if (isValid) {
+                $("#contactForm").submit();
+            } else {
+                grecaptcha.reset();
+            }
+        }
         @if (session('success') || session('warning'))
             $(window).load(function() {
                 const aboveHeight = $('header').outerHeight();

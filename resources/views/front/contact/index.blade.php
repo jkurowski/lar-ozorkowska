@@ -48,10 +48,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-11 col-sm-10 mx-auto cta__box project-gradient">
+                <div class="row mt-5 pe-4 pe-sm-0 ps-4 ps-sm-0">
+                    <div class="col-12 col-md-11 col-lg-10 mx-auto cta__box project-gradient">
                         <form class="contact-form row validateForm" id="contactForm" method="post" action="{{ route('front.contact.form') }}">
+                            {{ csrf_field() }}
                             <div class="col-12">
+                                @if (session('success'))
+                                    <div class="alert alert-success border-0">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
+                                @if (session('warning'))
+                                    <div class="alert alert-warning border-0">
+                                        {{ session('warning') }}
+                                    </div>
+                                @endif
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="box-anim mb-3">
                                     <label for="name" class="lab-anim">Imię</label>
                                     <input name="form_name" type="text" class="form-control validate[required] @error('form_name') is-invalid @enderror" id="name" value="{{ old('form_name') }}">
@@ -59,6 +72,8 @@
                                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                     @enderror
                                 </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="box-anim mb-3">
                                     <label for="phone" class="lab-anim">Telefon</label>
                                     <input name="form_phone" type="tel" class="form-control validate[required] @error('form_phone') is-invalid @enderror" id="phone" value="{{ old('form_phone') }}">
@@ -66,6 +81,8 @@
                                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                     @enderror
                                 </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <div class="box-anim mb-3">
                                     <label for="email" class="lab-anim">Adres e-mail</label>
                                     <input name="form_email" type="email" class="form-control validate[required] @error('form_email') is-invalid @enderror" id="email" value="{{ old('form_email') }}">
@@ -73,6 +90,8 @@
                                     <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                     @enderror
                                 </div>
+                            </div>
+                            <div class="col-12">
                                 <div class="mb-4 box-anim">
                                     <label for="Message" class="lab-anim">Wiadomość</label>
                                     <textarea id="Message" name="form_message" class="form-control validate[required] @error('form_message') is-invalid @enderror" rows="2" maxlength="3000" required></textarea>
@@ -81,7 +100,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-xl-6">
                                 <div class="rodo">
                                     <p>Na podstawie z art. 13 ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016) informujemy, iż przesyłając wiadomość za pomocą formularza kontaktowego wyrażacie Państwo zgodę na:</p>
                                 </div>
@@ -96,10 +115,18 @@
                                 @endforeach
 
                                 <div class="text-center text-sm-end">
-                                    <button type="submit" class="project-btn project-btn--white"><span>Wyślij</span></button>
+                                        <input name="form_page" type="hidden" value="Kontakt">
+                                        <script type="text/javascript">
+                                            @if(config('services.recaptcha.v3_site_key') && config('services.recaptcha.v3_secret_key'))
+                                            document.write("<button type=\"submit\" class=\"project-btn project-btn--white g-recaptcha\" data-sitekey=\"{{ config('services.recaptcha.v3_site_key') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ</button>");
+                                            @else
+                                            document.write("<button class=\"project-btn project-btn--white\" type=\"submit\">WYŚLIJ</button>");
+                                            @endif
+                                        </script>
+                                        <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
                                 </div>
                             </div>
-                            <div class="d-none d-lg-block col-6 d-flex align-items-end">
+                            <div class="d-none d-xl-block col-6 d-flex align-items-end">
                                 <img src="{{ asset('images/kobieta-cta.png') }}" alt="kobieta" class="cta-woman" width="550" height="522" loading="lazy">
                             </div>
                         </form>

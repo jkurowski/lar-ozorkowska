@@ -131,7 +131,7 @@ class ContactController extends Controller
                 'success',
                 'Twoja wiadomość została wysłana. W najbliższym czasie skontaktujemy się z Państwem celem omówienia szczegółów!'
             )
-            : redirect()->route('contact')->with(
+            : redirect()->route('front.contact.index')->with(
                 'success',
                 'Twoja wiadomość została wysłana. W najbliższym czasie skontaktujemy się z Państwem celem omówienia szczegółów!'
             );
