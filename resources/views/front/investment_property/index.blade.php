@@ -121,12 +121,11 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                        class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                        target="_blank">Sprawdź</a>
+                                                        class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small">Sprawdź</a>
                                                 </div>
                                             </div>
                                             <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                class="stretched-link" target="_blank"></a>
+                                                class="stretched-link"></a>
                                         </div>
                                     </div>
                                 @endforeach
