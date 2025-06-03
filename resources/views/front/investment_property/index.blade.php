@@ -1,7 +1,7 @@
 @extends('layouts.page', ['body_class' => 'investments'])
 
 @section('meta_title', $floor->name . ' - ' . $property->name_list . 'Hi '.$property->number)
-@section('seo_title', $investment->name.' - '.$investment->floor->name . ' - ' . $property->name_list . 'Hi '.$property->number)
+@section('seo_title', $investment->floor->name . ' - ' . $property->name_list . 'Hi '.$property->number)
 @section('seo_description', $page->meta_description)
 @section('content')
     <main class="single-apartment">
