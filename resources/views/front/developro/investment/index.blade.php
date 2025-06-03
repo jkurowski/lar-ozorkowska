@@ -199,7 +199,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
+                                                                <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
                                                                     class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current">Sprawdź</a>
                                                             </div>
                                                         </div>
@@ -210,7 +210,7 @@
                                                             <span>{{ roomStatus($r->status) }}</span>
                                                         </div>
                                                     </div>
-                                                    <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
+                                                    <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
                                                         class="stretched-link"></a>
                                                 </div>
                                             </div>
