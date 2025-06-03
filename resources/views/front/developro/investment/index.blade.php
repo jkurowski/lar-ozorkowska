@@ -113,16 +113,15 @@
                     <div class="col-xl-8 mx-auto pt-4 d-flex aligm-items-center justify-content-end">
                         <div class="list-view d-flex aligm-items-center">
                             <div id="list">
-                                <img src="{{ asset('images/lista.svg') }}" alt="ikonka listy"
-                                    class="list-view__icon active">
+                                <img src="{{ asset('images/lista.svg') }}" alt="ikonka listy" class="list-view__icon">
                             </div>
                             <div id="grid" class="ps-3">
-                                <img src="{{ asset('images/siatka.svg') }}" alt="ikonka siatki" class="list-view__icon">
+                                <img src="{{ asset('images/siatka.svg') }}" alt="ikonka siatki" class="list-view__icon active">
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-8 mx-auto mt-3">
-                        <div id="offerList" class="list">
+                        <div id="offerList" class="grid">
                             <div class="offerList offerList-list">
                                 @if ($properties)
                                     @foreach ($properties as $r)
@@ -155,8 +154,7 @@
                                                     </div>
                                                     <div class="col-lg-2">
                                                         <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                            class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small"
-                                                            target="_blank">Sprawdź</a>
+                                                            class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current fs-xl-xxl-small">Sprawdź</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,7 +165,7 @@
                                                 </div>
                                             </div>
                                             <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                class="stretched-link" target="_blank"></a>
+                                                class="stretched-link"></a>
                                         </div>
                                     @endforeach
                                 @endif
@@ -202,8 +200,7 @@
                                                         <div class="row">
                                                             <div class="col-12">
                                                                 <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                                    class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current"
-                                                                    target="_blank">Sprawdź</a>
+                                                                    class="project-link project-link--white z-2 border px-2 py-1 rounded border-color-current">Sprawdź</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -214,7 +211,7 @@
                                                         </div>
                                                     </div>
                                                     <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
-                                                        class="stretched-link" target="_blank"></a>
+                                                        class="stretched-link"></a>
                                                 </div>
                                             </div>
                                         @endforeach
