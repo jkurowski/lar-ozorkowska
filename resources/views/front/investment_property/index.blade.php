@@ -260,8 +260,18 @@
                 const aboveHeight = $('header').outerHeight();
                 $('html, body').stop().animate({
                     scrollTop: $('.alert').offset().top - aboveHeight
-                }, 1500, 'easeInOutExpo');
+                }, 1500);
             });
+        @endif
+        @if ($errors->any())
+        $(window).load(function() {
+            const aboveHeight = $('header').outerHeight();
+            var firstError = $('.invalid-feedback:visible').first();
+            if (firstError.length) {
+                var scrollTo = firstError.offset().top - aboveHeight - 60;
+                $('html, body').animate({ scrollTop: scrollTo }, 500);
+            }
+        });
         @endif
     </script>
 @endpush
