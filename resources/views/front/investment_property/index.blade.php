@@ -41,7 +41,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-6">
                         <div class="section-header">
                             <h1 class="section-header__title section-header__title--h1">{{ $property->name_list }} Hi {{ $property->number }}</h1>
                             <p class="section-header__subtitle">Indywidualnie dostosowane do potrzeb</p>
@@ -68,20 +68,102 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class="photo-anim mt-5">
+                            @if ($property->file)
+                                <a href="{{ asset('/investment/property/' . $property->file) }}" class="swipebox">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="{{ asset('/investment/property/thumbs/webp/' . $property->file_webp) }}">
+                                        <source type="image/jpeg"
+                                                srcset="{{ asset('/investment/property/thumbs/' . $property->file) }}">
+                                        <img src="{{ asset('/investment/property/thumbs/' . $property->file) }}"
+                                             alt="{{ $property->name }}" class="w-100">
+                                    </picture>
+                                </a>
+                            @endif
+                        </div>
                     </div>
-                    <div class="col-lg-7 pt-lg-4 photo-anim text-end">
-                        @if ($property->file)
-                            <a href="{{ asset('/investment/property/' . $property->file) }}" class="swipebox">
-                                <picture>
-                                    <source type="image/webp"
-                                        srcset="{{ asset('/investment/property/thumbs/webp/' . $property->file_webp) }}">
-                                    <source type="image/jpeg"
-                                        srcset="{{ asset('/investment/property/thumbs/' . $property->file) }}">
-                                    <img src="{{ asset('/investment/property/thumbs/' . $property->file) }}"
-                                        alt="{{ $property->name }}" class="w-100">
-                                </picture>
-                            </a>
-                        @endif
+                    <div class="col-6">
+                        <section id="formularz-kontaktowy" class="p-4 project-gradient @if($similar->count() == 0) mt-5 @endif">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                @if (session('success'))
+                                                    <div class="alert alert-success border-0">
+                                                        {{ session('success') }}
+                                                    </div>
+                                                @endif
+                                                @if (session('warning'))
+                                                    <div class="alert alert-warning border-0">
+                                                        {{ session('warning') }}
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        <form class="contact-form validateForm" id="contactForm" method="post" action="{{route('front.contact.property', $property->id)}}">
+                                            {{ csrf_field() }}
+                                            <div class="box-anim mb-3">
+                                                <label for="name" class="lab-anim">Imię</label>
+                                                <input name="form_name" type="text" class="form-control validate[required] @error('form_name') is-invalid @enderror" id="name" value="{{ old('form_name') }}">
+                                                @error('form_name')
+                                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                                @enderror
+                                            </div>
+                                            <div class="box-anim mb-3">
+                                                <label for="phone" class="lab-anim">Telefon</label>
+                                                <input name="form_phone" type="tel" class="form-control validate[required] @error('form_phone') is-invalid @enderror" id="phone" value="{{ old('form_phone') }}">
+                                                @error('form_phone')
+                                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                                @enderror
+                                            </div>
+                                            <div class="box-anim mb-3">
+                                                <label for="email" class="lab-anim">Adres e-mail</label>
+                                                <input name="form_email" type="email" class="form-control validate[required] @error('form_email') is-invalid @enderror" id="email" value="{{ old('form_email') }}">
+                                                @error('form_email')
+                                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                                @enderror
+                                            </div>
+                                            <div class="mb-4 box-anim">
+                                                <label for="Message" class="lab-anim">Wiadomość</label>
+                                                <textarea id="Message" name="form_message" class="form-control validate[required] @error('form_message') is-invalid @enderror" rows="2" maxlength="3000" required></textarea>
+                                                @error('form_message')
+                                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                                @enderror
+                                            </div>
+                                            <div class="col-12 rodo">
+                                                <p>Na podstawie z art. 13 ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016) informujemy, iż przesyłając wiadomość za pomocą formularza kontaktowego wyrażacie Państwo zgodę na:</p>
+                                            </div>
+                                            @foreach ($rules as $r)
+                                                <div class="mb-3 form-check position-relative d-flex @error('rule_'.$r->id) is-invalid @enderror">
+                                                    <input name="rule_{{$r->id}}" type="checkbox" class="form-check-input @if($r->required === 1) validate[required] @endif" id="rule_{{$r->id}}" data-prompt-position="topLeft:-25px">
+                                                    <label class="form-check-label form-check-label--check" for="rule_{{$r->id}}">{!! $r->text !!}</label>
+                                                    @error('rule_'.$r->id)
+                                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                                    @enderror
+                                                </div>
+                                            @endforeach
+
+                                            <div class="text-center text-sm-end">
+                                                <input name="form_page" type="hidden" value="{{ $property->name }}">
+                                                <input name="investment_id" type="hidden" value="{{ $investment->id }}">
+                                                <input name="investment_name" type="hidden" value="{{ $investment->name }}">
+                                                <script type="text/javascript">
+                                                    @if(config('services.recaptcha.v3_site_key') && config('services.recaptcha.v3_secret_key'))
+                                                    document.write("<button type=\"submit\" class=\"project-btn project-btn--white g-recaptcha\" data-sitekey=\"{{ config('services.recaptcha.v3_site_key') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ</button>");
+                                                    @else
+                                                    document.write("<button class=\"project-btn project-btn--white\" type=\"submit\">WYŚLIJ</button>");
+                                                    @endif
+                                                </script>
+                                                <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -141,94 +223,6 @@
                 </div>
             </section>
         @endif
-        <section id="formularz-kontaktowy" class="sec-pad project-gradient @if($similar->count() == 0) mt-5 @endif">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 mx-auto text-center mb-5">
-                        <div class="section-header mb-3" data-aos="fade-up" data-aos-duration="700">
-                            <h2 class="section-header__title">Zapytaj o mieszkanie</h2>
-                            <p class="section-header__subtitle">Indywidualne konsultacje</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 mx-auto">
-                        <div class="row">
-                            <div class="col-12">
-                                @if (session('success'))
-                                    <div class="alert alert-success border-0">
-                                        {{ session('success') }}
-                                    </div>
-                                @endif
-                                @if (session('warning'))
-                                    <div class="alert alert-warning border-0">
-                                        {{ session('warning') }}
-                                    </div>
-                                @endif
-                            </div>
-                        </div>
-                        <form class="contact-form validateForm" id="contactForm" method="post" action="{{route('front.contact.property', $property->id)}}">
-                            {{ csrf_field() }}
-                            <div class="box-anim mb-3">
-                                <label for="name" class="lab-anim">Imię</label>
-                                <input name="form_name" type="text" class="form-control validate[required] @error('form_name') is-invalid @enderror" id="name" value="{{ old('form_name') }}">
-                                @error('form_name')
-                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                @enderror
-                            </div>
-                            <div class="box-anim mb-3">
-                                <label for="phone" class="lab-anim">Telefon</label>
-                                <input name="form_phone" type="tel" class="form-control validate[required] @error('form_phone') is-invalid @enderror" id="phone" value="{{ old('form_phone') }}">
-                                @error('form_phone')
-                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                @enderror
-                            </div>
-                            <div class="box-anim mb-3">
-                                <label for="email" class="lab-anim">Adres e-mail</label>
-                                <input name="form_email" type="email" class="form-control validate[required] @error('form_email') is-invalid @enderror" id="email" value="{{ old('form_email') }}">
-                                @error('form_email')
-                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                @enderror
-                            </div>
-                            <div class="mb-4 box-anim">
-                                <label for="Message" class="lab-anim">Wiadomość</label>
-                                <textarea id="Message" name="form_message" class="form-control validate[required] @error('form_message') is-invalid @enderror" rows="2" maxlength="3000" required></textarea>
-                                @error('form_message')
-                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                @enderror
-                            </div>
-                            <div class="col-12 rodo">
-                                <p>Na podstawie z art. 13 ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016) informujemy, iż przesyłając wiadomość za pomocą formularza kontaktowego wyrażacie Państwo zgodę na:</p>
-                            </div>
-                            @foreach ($rules as $r)
-                                <div class="mb-3 form-check position-relative d-flex @error('rule_'.$r->id) is-invalid @enderror">
-                                    <input name="rule_{{$r->id}}" type="checkbox" class="form-check-input @if($r->required === 1) validate[required] @endif" id="rule_{{$r->id}}" data-prompt-position="topLeft:-25px">
-                                    <label class="form-check-label form-check-label--check" for="rule_{{$r->id}}">{!! $r->text !!}</label>
-                                    @error('rule_'.$r->id)
-                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                    @enderror
-                                </div>
-                            @endforeach
-
-                            <div class="text-center text-sm-end">
-                                <input name="form_page" type="hidden" value="{{ $property->name }}">
-                                <input name="investment_id" type="hidden" value="{{ $investment->id }}">
-                                <input name="investment_name" type="hidden" value="{{ $investment->name }}">
-                                <script type="text/javascript">
-                                    @if(config('services.recaptcha.v3_site_key') && config('services.recaptcha.v3_secret_key'))
-                                    document.write("<button type=\"submit\" class=\"project-btn project-btn--white g-recaptcha\" data-sitekey=\"{{ config('services.recaptcha.v3_site_key') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ</button>");
-                                    @else
-                                    document.write("<button class=\"project-btn project-btn--white\" type=\"submit\">WYŚLIJ</button>");
-                                    @endif
-                                </script>
-                                <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 @endsection
 

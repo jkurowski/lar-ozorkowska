@@ -1946,8 +1946,8 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 #swipebox-close:before {float:right;content:"\f00d";font-size:30px}
 
 .rodo p, .form-check p {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 17px;
     margin: 0;
 }
 .rodo {
