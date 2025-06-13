@@ -41,7 +41,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6 pe-5">
+                    <div class="col-12 col-lg-6 pe-2 pe-lg-5">
                         <div class="section-header">
                             <h1 class="section-header__title section-header__title--h1">{{ $property->name_list }} Hi {{ $property->number }}</h1>
                             <p class="section-header__subtitle">Indywidualnie dostosowane do potrzeb</p>
@@ -84,7 +84,7 @@
                             @endif
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <section id="formularz-kontaktowy" class="p-4 project-gradient @if($similar->count() == 0) mt-5 @endif">
                             <div class="container">
                                 <div class="row">
