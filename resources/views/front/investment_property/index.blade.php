@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                        <section id="formularz-kontaktowy" class="p-4 project-gradient @if($similar->count() == 0) mt-5 @endif">
+                        <section id="formularz-kontaktowy" class="p-2 p-lg-4 project-gradient @if($similar->count() == 0) mt-5 @endif">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
