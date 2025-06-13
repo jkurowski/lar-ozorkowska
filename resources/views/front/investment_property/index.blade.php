@@ -41,7 +41,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 pe-5">
                         <div class="section-header">
                             <h1 class="section-header__title section-header__title--h1">{{ $property->name_list }} Hi {{ $property->number }}</h1>
                             <p class="section-header__subtitle">Indywidualnie dostosowane do potrzeb</p>

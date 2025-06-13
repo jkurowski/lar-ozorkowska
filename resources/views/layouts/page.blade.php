@@ -40,7 +40,7 @@
     <link rel="preload" as='style'
         href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap">
     <link rel='preload' as='style' href="{{ asset('/css/bootstrap.min.css') }}">
-    <link rel='preload' as='style' href="{{ asset('/css/style.min.css') }}">
+    <link rel='preload' as='style' href="{{ asset('/css/style.min.css') }}?v=13062025_1">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
