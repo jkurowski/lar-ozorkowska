@@ -69,8 +69,7 @@
         <div class="container py-2">
             <div class="row justify-content-center">
                 <div class="col-12 text-center small mb-3">
-                    <p>Niniejsze przedsięwzięcie deweloperskie, zgodnie z przepisami przejściowymi ustawy z dnia 21 maja 2025 r. o zmianie ustawy o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego oraz Deweloperskim Funduszu Gwarancyjnym, nie jest jeszcze objęte obowiązkiem prezentowania szczegółowych cen ofertowych. Obowiązki informacyjne w tym zostaną w pełni wdrożone najpóźniej do dnia 11 września
-                        2025 r.</p>
+                    <p>Niniejsze przedsięwzięcie deweloperskie, zgodnie z przepisami przejściowymi ustawy z dnia 21 maja 2025 r. o zmianie ustawy o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego oraz Deweloperskim Funduszu Gwarancyjnym, nie jest jeszcze objęte obowiązkiem prezentowania szczegółowych cen ofertowych. Obowiązki informacyjne w tym zostaną w pełni wdrożone najpóźniej do dnia 11 września 2025 r.</p>
                 </div>
             </div>
             <div class="row">
