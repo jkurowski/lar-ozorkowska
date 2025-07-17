@@ -72,6 +72,7 @@ class PropertyFormRequest extends FormRequest
             'visitor_related_type' => 'integer',
             'visitor_related_ids' => 'required_if:visitor_related_type,3|array|min:1',
             'type' => 'required|integer',
+            'vat' => '',
             'price' => ['nullable', 'regex:/^\d+(\.\d{1,2})?$/'],
             'price_brutto' => ['nullable', 'regex:/^\d+(\.\d{1,2})?$/'],
             'promotion_price' => [
