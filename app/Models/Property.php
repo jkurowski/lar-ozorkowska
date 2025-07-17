@@ -19,6 +19,7 @@ class Property extends Model
      * @var array
      */
     protected $fillable = [
+        'id',
         'investment_id',
         'building_id',
         'floor_id',
@@ -31,6 +32,10 @@ class Property extends Model
         'rooms',
         'area',
         'price',
+        'price_brutto',
+        'price_30',
+        'vat',
+        'bank_account',
         'additional',
         'garden_area',
         'balcony_area',
@@ -52,7 +57,12 @@ class Property extends Model
         'meta_title',
         'meta_description',
         'views',
-        'active'
+        'active',
+        'highlighted',
+        'promotion_end_date',
+        'promotion_price',
+        'promotion_price_show',
+        'visitor_related_type'
     ];
 
     /**
